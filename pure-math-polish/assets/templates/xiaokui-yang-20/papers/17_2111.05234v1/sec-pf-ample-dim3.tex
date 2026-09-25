@@ -1,0 +1,417 @@
+\section{Ampleness of \texorpdfstring{$-(K_X+\Delta)$}{text}, Proof of \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text}}\label{section-pf-thmc}
+
+In this section, we are devoted to the proof of  \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text}.
+Let $(X,\Delta)$ be a projective klt threefold pair such that the anti-log canonical divisor $-(K_X+\Delta)$ is strictly nef.
+%The whole section is devoted to the proof of {\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}. 
+ 
+%To prove \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text}, we need to do some preparations by recalling and also generalizing some previous results to the singular (pair) setting. 
+%Second, we apply such results to prove \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text}. 
+\subsection{\texorpdfstring{$\mathbb{Q}$}{text}-effectivity of \texorpdfstring{$-(K_X+\Delta)$}{text}}
+To show the ampleness of $-(K_X+\Delta)$, we aim to show that $-(K_X+\Delta)$ is \textit{num-effective}, i.e., numerically equivalent to an effective divisor, which is our main result  {\hyperref[prop-klt-eff-ample]{Proposition \ref*{prop-klt-eff-ample}}} in this subsection.
+Before that, we recall and generalize some previous results for the convenience of our proofs.
+
+First we give the following generalization of \cite[Lemma 1.1]{Ser95}.
+
+\begin{lemme}[{cf.~\cite[Lemma 1.1]{Ser95}}]\label{lem_strict_nef_k}
+Let $(X,\Delta)$ be a projective klt pair, and $L_X$  a strictly nef $\mathbb{Q}$-divisor on $X$.
+Then $(K_X+\Delta)+tL_X$ is  strictly nef for every $t>2m\dim X$ where $m$ is the Cartier index of $L_X$.
+\end{lemme}
+
+
+
+\begin{proof}
+By the cone theorem (cf.~\cite[Theorem 3.7, p.~76]{KM98}), every curve $C$ in $X$ is numerically equivalent to a linear combination 
+$M+\sum a_iC_i$ (a finite sum), where  $M$ is  pseudo-effective such that $M\cdot (K_X+\Delta)\geqslant 0$ and the $C_i$'s are (integral) rational curves satisfying $0<C_i\cdot (-K_X-\Delta)\leqslant2\dim X$	 with $a_i>0$.
+Since $mL_X$ is Cartier and strictly nef,  we have $L_X\cdot M\geqslant 0$, and $L_X\cdot C_i\geqslant \frac{1}{m}$ for all $i$.
+Therefore, for each $C_i$, 
+\begin{align}\tag{\dag}\label{eq_lem_strict}
+((K_X+\Delta)+tL_X)\cdot C_i\geqslant tL_X\cdot C_i-2\dim X>0.
+\end{align}
+If $(K_X+\Delta)\cdot C\geqslant 0$, then $((K_X+\Delta)+tL_X)\cdot C>0$ since $L_X\cdot C>0$.
+If $(K_X+\Delta)\cdot C<0$, then the decomposition of $C$ contains some $C_i$; hence our lemma follows from (\ref{eq_lem_strict}).
+\end{proof}
+
+We remark here that, when $\dim X=2$, the conclusion of  {\hyperref[lem_strict_nef_k]{Lemma  \ref*{lem_strict_nef_k}}} holds for a more optimal lower bound $t>3$ (cf.~\cite[Proposition 3.8]{Fuj12}). 
+
+
+\begin{lemme}\label{lem-big-ample}
+Let $(X,\Delta)$ be a projective klt pair, 
+and $L_X$  a strictly nef $\mathbb{Q}$-divisor on $X$.	
+Suppose  $a(K_X+\Delta)+bL_X$ is big for some $a,b\geqslant 0$.
+Then $(K_X+\Delta)+tL_X$ is ample for sufficiently large $t$. 
+\end{lemme}
+
+
+\begin{proof}
+If $a=0$, then $L_X$ is big. %, hence it follows from 
+If $a\neq 0$, then $(K_X+\Delta)+\frac{b}{a}L_X$ is big.
+In both cases, it follows from  {\hyperref[lem_strict_nef_k]{Lemma  \ref*{lem_strict_nef_k}}} that $(K_X+\Delta)+tL_X$ is strictly nef and big for $t\gg 1$, noting that nef divisors are always pseudo-effective.
+Then $2((K_X+\Delta)+tL_X)-(K_X+\Delta)$ is also nef and big.
+By the base-point-free theorem (cf.~\cite[Theorem 3.3, p.~75]{KM98}), some multiple of $(K_X+\Delta)+tL_X$ defines a morphism $X\to\mathbb{P}^N$, which is finite by the projection formula. Therefore, $(K_X+\Delta)+tL_X$ is ample, and our lemma is proved.
+\end{proof}
+
+
+We denote by $\overline{\textup{NE}}(X)$ (resp. $\overline{\textup{ME}}(X)$) the \textit{Mori cone} (resp. \textit{movable cone}) of a projective variety $X$ (cf.~\cite{BDPP13}).
+The following lemma characterizes the situation when $K+tL$ is not big. 
+\begin{lemme}\label{lem-not-big-some}
+Let $(X,\Delta)$ be a projective klt  pair of dimension $n$, 
+and $L_X$  a strictly nef $\mathbb{Q}$-divisor on $X$.	
+Then $(K_X+\Delta)+uL_X$ is not big for some rational number $u>2mn$ with $m$  the Cartier index of $L_X$, if and only if
+$(K_X+\Delta)^i\cdot L_X^{n-i}=0$ for any $0\leqslant i\leqslant n$. 	
+Moreover, if one of the  equivalent conditions holds, there exists a  class $0\neq \alpha\in\overline{\textup{ME}}(X)$ such that 
+$(K_X+\Delta)\cdot\alpha=L_X\cdot\alpha=0$. 
+\end{lemme}
+
+\begin{proof}
+Suppose first that $(K_X+\Delta)+uL_X$ is not big for some rational number $u>2mn$. 
+Set $u':=u-2mn>0$, $D_1:=(K_X+\Delta)+(u'/2+2mn)L_X$ and $D_2:=(u'/2)L_X$.	
+Then $(K_X+\Delta+uL_X)^n=(D_1+D_2)^n=0$.
+Since both $D_1$ and $D_2$ are nef (cf.~{\hyperref[lem_strict_nef_k]{Lemma  \ref*{lem_strict_nef_k}}}), the vanishing $D_1^i\cdot D_2^{n-i}=0$ for every $0\leqslant i\leqslant n$  yields $(K_X+\Delta)^i\cdot L_X^{n-i}=0$ for any $0\leqslant i\leqslant n$. 
+Conversely, if $(K_X+\Delta)^i\cdot L_X^{n-i}=0$ for any $0\leqslant i\leqslant n$, then $((K_X+\Delta)+uL_X)^n=0$ for any $u$; in this case, $(K_X+\Delta)+uL_X$ being not big for any $u>2mn$ follows from \cite[Proposition 2.61, p.~68]{KM98} and {\hyperref[lem_strict_nef_k]{Lemma  \ref*{lem_strict_nef_k}}}. 
+Therefore, the first part of our theorem is proved.
+
+Assume that the nef divisor $K_X+\Delta+uL_X$ is not big for some $u>2mn$. 
+Then, there exists a class $\alpha\in\overline{\textup{ME}}(X)$ such that $(K_X+\Delta+uL_X)\cdot\alpha=0$ (cf.~\cite[Theorem 2.2 and the remarks therein]{BDPP13}). 
+%Indeed, we can choose $\alpha$ to be a rational class.
+%Neither $K_X+\Delta+uL_X$ nor $-(K_X+\Delta+uL_X)$ being strictly positive  on $\overline{\textup{ME}}(X)$, there are rational points $P,Q\in\overline{\textup{ME}}(X)$ such that $(K_X+\Delta+uL_X)\cdot P\geqslant 0$ and $(K_X+\Delta+uL_X)\cdot Q\leqslant0$, noting that rational points are dense in $\overline{\textup{ME}}(X)$.
+%If one of the inequalities is an equality, then we are done.
+%Otherwise, we take $\mu:=-\frac{((K_X+\Delta+uL_X)\cdot P)}{((K_X+\Delta+uL_X)\cdot Q)}>0$ (a rational number) and $\alpha:=P+\mu Q\in\overline{\textup{ME}}(X)$, which is a rational class in $\overline{\textup{ME}}(X)$ satisfying $(K_X+\Delta+uL_X)\cdot\alpha=0$.
+Suppose that $L_X\cdot\alpha\neq 0$.  
+Then $L_X\cdot\alpha>0$ and thus $(K_X+\Delta)\cdot\alpha<0$.
+By the cone theorem (cf.~\cite[Theorem 3.7, p.~76]{KM98}), we have 
+$\alpha=M+\sum a_iC_i$ 
+where $M$ is a class lying in $\overline{\textup{NE}}(X)_{(K_X+\Delta)\geqslant 0}$, $a_i>0$, and the $C_i$ are extremal rational curves with $0<-(K_X+\Delta)\cdot C_i\leqslant 2n$.
+%Since $(K_X+\Delta)\cdot \alpha<0$, there exists a non-zero $i$, i.e., $k>0$.
+Now, for each $i$, the intersection $(K_X+\Delta+uL_X)\cdot C_i>0$, a contradiction to the choice of $\alpha$.
+So we have $(K_X+\Delta)\cdot \alpha=L_X\cdot\alpha=0$.
+\end{proof}
+
+
+
+
+%Now we give an alternative proof of {\hyperref[main_thm_surface]{Proposition  \ref*{main_thm_surface}}} (cf.~\cite[Corollary 1.8]{HL20}) by applying a recent result on \textit{almost strictly nef} divisors on surfaces. 
+%; cf. Proposition \ref{prop_Q-Goren_surface} for an extension to the non-normal case. 
+%The proof depends on a recent progress on the bigness of   \textit{almost strictly nef} divisors on smooth projective varieties (cf.~\cite[Theorem 20]{Cha20} and \cite[Proposition 2.3]{CCP08}). %
+
+
+%\begin{proof}[\textup{\textbf{Proof of {\hyperref[main_thm_surface]{Proposition \ref*{main_thm_surface}}}}}]
+%Taking a minimal resolution $\pi:\widetilde{X}\to X$, we see that $L_{\widetilde{X}}:=\pi^*L_X$ is almost strictly nef. 
+%By \cite[Theorem 26]{Cha20},  $K_{\widetilde{X}}+tL_{\widetilde{X}}$ is big for all $t>3$.
+%Then its push-down $K_X+tL_X$	 is big (as a Weil divisor) for  all $t>3$ (cf.~\cite[Lemma 4.10 (i\!i\!i) and its proof]{FKL16}), i.e., $K_X+tL_X$ lies in the interior part of the closure of the cone generated by effective Weil divisors on $X$ for all $t>3$.  
+%So $K_X+\Delta+tL_X$ is big (as a Cartier divisor) for all $t>3$.
+%Since $L_X$ is a strictly nef Cartier divisor, by  {\hyperref[lem-big-ample]{Lemma  \ref*{lem-big-ample}}} and the remark after it, we see that for $t>3$,  $K_X+\Delta+tL_X$ is strictly nef and $K_X+\Delta+2tL_X=2(K_X+\Delta+tL_X)-(K_X+\Delta)$ is  nef and big.  
+%Applying the base-point-free theorem for $K_X+\Delta+tL_X$ (cf.~\cite[Theorem 3.3, p. 75]{KM98}), %(cf.~{\hyperref[lem_strict_nef_k]{Lemma  \ref*{lem_strict_nef_k}}}) for $t\gg 1$,
+% our theorem follows from the strict nefness of $K_X+\Delta+tL_X$ for $t>3$ (cf. {\hyperref[lem-big-ample]{Lemma  \ref*{lem-big-ample}}} and the remark after it).   
+%The second part  follows from \cite{Zhang06}.
+%\end{proof}
+
+In the following, we slightly generalize \cite[Theorem 2.3]{Ser95} and \cite[Corollary 1.8]{HL20}  %{\hyperref[main_thm_surface]{Proposition \ref*{main_thm_surface}}}   
+to the following (not necessarily normal)  $\mathbb{Q}$-Gorenstein surface case (cf.~\cite[Conjecture 1.3]{CCP08}). 
+This is also mentioned at the end of \cite[Section 2]{Ser95}.
+
+For a $\mathbb{Q}$-factorial normal projective variety $X$ and a prime divisor $S\subseteq X$,  the \textit{canonical divisor} $K_S\in\textup{Pic}(S)\otimes\mathbb{Q}$ is defined by  
+$K_S:=\frac{1}{m}(mK_X+mS)|_S$, where $m\in\mathbb{N}$ is the smallest positive integer such that both $mK_X$ and $mS$ are Cartier divisors on $X$. 
+
+
+
+
+
+
+\begin{prop}\label{prop_Q-Goren_surface}
+Let $(X,\Delta)$ be a $\mathbb{Q}$-factorial klt threefold pair,  $S$ a prime divisor on $X$, and  $L_S$ a strictly nef  divisor (resp. almost strictly nef) on $S$.
+Then $K_S+tL_S$ is ample (resp. big) for sufficiently large $t$.
+\end{prop}
+\begin{proof}
+Since $X$ is $\mathbb{Q}$-factorial, there exists some positive integer $m$ such that $m(K_X+S)$ is Cartier. 
+Let $j:T\to S$ be the normalization, and $f:R\to T$  a minimal resolution.
+
+First, we show the case when $L_S$ is strictly nef. 
+In view of \cite[Proof of Theorem 2.3]{Ser95}, we only need to reprove the following injection	in \cite[Claim 4 of Proof of Theorem 2.3]{Ser95} for sufficiently large $r\gg 1$:
+\begin{equation}\label{eq-inclusion}
+f_*\scrO_R(rmK_R)\hookrightarrow j^*\scrO_S(rmK_S).
+\end{equation} %, and $\pi$ is the composition. 
+Since $(X,\Delta)$ is a dlt pair,  $X$ is Cohen-Macaulay (cf.~\cite[Theorems 5.10 and 5.22]{KM98}).
+By \cite[Lemma 5-1-9]{KMM87}, there is a natural injective homomorphism
+$$\omega_T^{[m]}:=(\omega_T^{\otimes m})^{\vee\vee}=\scrO_T(mK_T)\hookrightarrow j^*\scrO_X(m(K_X+S))=j^*\scrO_S(mK_S).$$
+On the other hand, it follows from \cite[Theorem (2.1)]{Sak84} that
+%taking the double dual, injection $\scrO_{\widetilde{E}}(K_{\widetilde{E}})\hookrightarrow \scrO(\sigma^*K_{E_N})=\sigma^*\scrO(K_{E_N})^{\vee\vee}\hookrightarrow \sigma^*n_E^*\scrO(K_E)$??? $\sigma^*n_E^*\scrO(K_E)$ is locally free and hence reflexive, reflexive hull? 
+$$f_*\scrO_R(f^*(mK_T))\cong\scrO_T(mK_T).$$
+Here, our $mK_T$  is only a Weil divisor. 
+Replacing $m$ by a multiple, we write $f^*(mK_T)=mK_R+\Gamma$ with $\Gamma$ being an effective (integral)  divisor (cf.~\cite[(4.1)]{Sak84}).
+Then 
+$$f_*\scrO_R(mK_R)\subseteq f_*(\scrO_R(mK_R)\otimes\scrO_R(\Gamma))=f_*\scrO_R(f^*(mK_T))\cong\scrO_T(mK_T)\hookrightarrow j^*\scrO_S(mK_S).$$
+%note that there is a non-zero trace map $f_*\omega_R\to\omega_T$% (cf.~\cite[Proposition 5.77]{KM98}), which induces a non-zero map 
+%$\delta_r:f_*(\omega_R^{\otimes r})\to\scrO_T(rK_T)$ for each $r$.
+%Since $f_*(\omega_R^{\otimes r})$ is a torsion free rank one sheaf,  $\delta_r$ is  injective.
+Hence, we get the inclusion {\hyperref[eq-inclusion]{(\ref*{eq-inclusion})}} as desired and  our proposition for the case $L_S$ being strictly nef is proved. 
+
+Second, if $L_S$ is almost strictly nef, then so is $f^*j^*L_S$.
+By \cite[Theorem 26]{Cha20}, our $K_T+tf^*j^*L_S$ is big for sufficiently large $t\gg 1$.
+Applying the inclusion {\hyperref[eq-inclusion]{(\ref*{eq-inclusion})}},  we see that,  for $t\gg 1$,  $K_{S}+tL_S$ is the sum of an effective divisor and the pushforward of some big divisor along a generically finite morphism; hence $K_{F_i}+tL_Y|_{F_i}$ is also big, and our proposition for the case $L_S$ being almost strictly nef is proved.
+\end{proof}
+
+
+
+In what follows, we  show the main result of this subsection, which  is a key to the proof of  {\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}. 
+%However, we are still not able to deal with the general  case when  $aL_X+b(K_X+\Delta)$ is num-effective (when $X$ is non-$\mathbb{Q}$-factorial) due to a gap of the adjunction.
+
+\begin{prop}\label{prop-klt-eff-ample}
+Let $(X,\Delta)$ be a projective klt threefold pair.
+Let $L_X$ be a strictly nef $\mathbb{Q}$-divisor on $X$.
+Suppose that $L_X$ is numerically equivalent to a non-zero effective divisor.
+Then $K_X+\Delta+tL_X$ is ample for sufficiently large $t$.
+\end{prop}
+
+
+Before proving {\hyperref[prop-klt-eff-ample]{Proposition \ref*{prop-klt-eff-ample}}}, we  give the lemma below, which can be easily deduced from Zariski decomposition on the surface (or Kodaira's lemma) and the Hodge index theorem. 
+\begin{lemme}\label{lem-hodge-nef-big}
+Let $L$ be a nef $\mathbb{Q}$-Cartier divisor on a smooth projective surface $S$.
+Suppose that $L\cdot B=0$ for some big $\mathbb{Q}$-Cartier divisor $B$ on $S$.
+Suppose further that $L^2=0$.
+Then $L\equiv 0$.
+\end{lemme}
+
+%With all the preparations settled, we will start the proof of   {\hyperref[prop-klt-eff-ample]{Proposition \ref*{prop-klt-eff-ample}}}.
+
+\begin{proof}[Proof of {\hyperref[prop-klt-eff-ample]{Proposition \ref*{prop-klt-eff-ample}}}]
+Suppose the contrary that $K_X+\Delta+tL_X$ is not ample for one (and hence any) $t\gg 1$.
+By {\hyperref[lem-big-ample]{Lemma \ref*{lem-big-ample}}} and {\hyperref[lem-not-big-some]{Lemma \ref*{lem-not-big-some}}} we have 
+\begin{equation}\label{eq_int-nb=0}
+(K_X+\Delta)^3=(K_X+\Delta)\cdot L_X^2=(K_X+\Delta)\cdot L_X=L_X^3=0.
+\end{equation}
+Let us take a $\mathbb{Q}$-factorialization $\pi:(Y,\Gamma)\to (X,\Delta)$, which is a small birational morphism (cf.~\cite[Corollary 1.37, pp.~29-30]{Kollar13}) and let $L_Y:=\pi^*L_X$ which is  nef but not big. 
+Then $L_Y^3=0$.
+
+Since $L_X$ is numerically equivalent to a non-zero effective divisor, our $L_Y$ is also numerically equivalent to an effective divisor $\sum n_iF_i$ such that $n_i>0$ for each $i$ and none of $F_i$ is $\pi$-exceptional by the choice of $\pi$.
+So it is clear that $L_Y|_{F_i}$ (as the pullback of $L_X|_{\pi(F_i)}$ via $\pi|_{F_i}$) is almost strictly nef (cf.~\hyperref[defn-almost-sn]{Definition \ref*{defn-almost-sn}}). 
+By {\hyperref[prop_Q-Goren_surface]{Proposition \ref*{prop_Q-Goren_surface}}}, we see that   $K_{F_i}+tL_Y|_{F_i}$ is also big for $t\gg 1$. 
+Since $L_Y^3=0$, we have $(L_Y|_{F_i})^2=L_Y^2\cdot F_i=0$ for every $i$ due to the nefness of $L_Y$. Then by {\hyperref[lem-hodge-nef-big]{Lemma \ref*{lem-hodge-nef-big}}}, we have
+$$0<L_Y|_{F_i}\cdot (K_{F_i}+tL_Y|_{F_i})=L_Y\cdot (K_Y+F_i)\cdot F_i.$$
+Notice that $L_Y\cdot F_i^2=0$ for every $i$. In fact, otherwise if $L_Y\cdot F_{i_0}^2>0$ for some $i_0$, then 
+\[
+0=F_{i_0}\cdot L_Y^2=F_{i_0}\cdot \sum n_iF_i\cdot L_Y\geqslant n_{i_0}L_Y\cdot F_{i_0}^2>0,
+\]
+which is absurd.
+Consequently, we have $L_Y\cdot K_Y\cdot F_i>0$ for every $i$, 
+and as a result,
+$$(K_Y+tL_Y)\cdot L_Y^2=K_Y\cdot L_Y^2=K_Y\cdot L_Y\cdot \sum n_iF_i>0.$$
+Since $L_Y$ is nef, the above inequality further implies that 
+\[
+(K_X+\Delta+tL_X)\cdot L_X^2=(K_Y+\Gamma+tL_Y)\cdot L_Y^2>0,
+\]
+by the projection formula. This nevertheless contradicts the calculation $L_X^3=(K_X+\Delta)\cdot L_X^2=0$, and the proposition is thus proved.
+\end{proof}
+
+
+\subsection{Proof of \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text}}
+In the beginning, let us recall
+the following conjecture on the numerical nonvanishing for generalized polarized pairs, which is closely related to our {\hyperref[main-conj-singular-ample]{Question \ref*{main-conj-singular-ample}}} (cf.~{\hyperref[prop-klt-eff-ample]{Proposition \ref*{prop-klt-eff-ample}}}). 
+Recall that the notion of \textit{generalized polarized pairs} was first introduced in \cite{BZ16} to deal with the effectivity of Iitaka fibrations.  %(cf.~\cite{Bir19}). 
+%We refer readers to \cite{Kaw98},  and \cite{HL17} for more information and applications on the generalized polarized pairs. 
+\begin{conj}[{\cite[Conjecture 1.2]{HL20}}]
+Let $(X,B+\mathbf{M})$ be a projective generalized log canonical pair.
+Suppose that 
+\begin{enumerate}
+\item[(i)] $K_X+B+\mathbf{M}_X$ is pseudo-effective; and
+\item[(ii)]	$\mathbf{M}=\sum_j\mu_j\mathbf{M}_j$ where $\mu_j\in\mathbb{R}_{>0}$ and $\mathbf{M}_j$ are nef Cartier $b$-divisors.
+\end{enumerate}
+Then there exists an effective $\mathbb{R}$-Cartier $\mathbb{R}$-divisor $D$ such that $K_X+B+\mathbf{M}_X\equiv D$.
+\end{conj}
+
+
+
+
+
+We shall apply the following theorem to prove our \hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}. 
+Indeed, Han and Liu showed this theorem in a more general setting (\cite[Theorem 4.5]{HL20}) by proving the existence of a good minimal model   after  passing $X$ to a higher model if necessary. 
+We refer readers to  \cite[Section 4]{HL20} for more technical details involved. 
+\begin{thm}[{cf.~\cite[Theorems 1.5 and 1.11]{HL20}}]\label{thm-hl20-numeff}
+Let $(X,\Delta+\mathbf{M}_X)$ be a $3$-dimensional projective generalized klt pair such that $\mathbf{M}_X$ is an $\mathbb{R}_{>0}$-linear combination of nef Cartier $b$-divisors.
+Suppose that $K_X+\Delta+\mathbf{M}_X$ is pseudo-effective and $K_X+\mathbf{M}_X$ is not pseudo-effective.
+Then $K_X+\Delta+\mathbf{M}_X$ is numerically equivalent to an effective $\mathbb{R}$-Cartier $\mathbb{R}$-divisor.
+\end{thm}
+
+
+\noindent
+With all the preparations settled down, 
+we begin to prove \hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}.
+First, it follows from \cite[Corollary 1.4.3]{BCHM10} that
+we can take a $\mathbb{Q}$-factorial terminalization $\tau:(Y,\Gamma)\to (X,\Delta)$ of $(X,\Delta)$ such that $(Y,\Gamma)$ is a $\mathbb{Q}$-factorial terminal pair. 
+
+
+\begin{thm}\label{thm-case-gammaneq0}
+If $\Gamma\neq 0$, then $-(K_X+\Delta)$ is ample.
+\end{thm}
+\begin{proof}
+Let us define $M_t:=-t(K_Y+\Gamma)$ with $t>1$.
+Then the sum $K_Y+\Gamma+M_t=(1-t)(K_Y+\Gamma)$ is nef and hence pseudo-effective, and $K_Y+M_t=(1-t)(K_Y+\Gamma)-\Gamma$.
+Clearly, one can choose suitable $t\rightarrow 1^+$ such that $K_Y+M_t$ is not pseudo-effective.
+Therefore, applying {\hyperref[thm-hl20-numeff]{Theorem  \ref*{thm-hl20-numeff}}}, we see that $-(K_Y+\Gamma)$ is num-effective.
+By the projection formula and the strict nefness of $-(K_X+\Delta)$, we see that $-(K_X+\Delta)$ is also num-effective. 
+So our theorem follows from {\hyperref[prop-klt-eff-ample]{Proposition  \ref*{prop-klt-eff-ample}}} (with $L_X$ replaced by $-(K_X+\Delta)$ therein).
+\end{proof}
+
+\begin{rmq}\label{rmq-case-gamma=0}
+If $\Gamma=0$, then our boundary divisor $\Delta=\tau_*\Gamma=0$.
+In this case, $\tau$ is  crepant and thus our $X$ has at worst canonical singularities (with strictly nef anti-canonical divisor $-K_X$).
+%Indeed, if $E$ is an exceptional divisor over $Y$, then the discrepancy $a(E,Y)=a(E,X)>0$.
+%If $E$ is $\tau$-exceptional, then $a(E,X)=0$.
+%Therefore, $X$ is a projective  threefold with at worst canonical singularities such that $-K_X$ is strictly nef. 
+Then  our \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text} in this case follows from \cite[Main Theorem]{Ueh00}. 
+Since in this case, our \texorpdfstring{{\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}}{text} covers \cite[Remark 3.8]{Ueh00}.
+For the convenience of readers, we shall give a simplified proof of \cite{Ueh00} here.
+\end{rmq}
+
+
+\textbf{In the following, we may assume that $\Gamma=0$.} 
+Suppose the contrary that $-K_X$ is not ample.
+Then we see have
+$$\dimcoh^0(Y,-rK_Y)=\dimcoh^0(X,-rK_X)=0$$ 
+where $r$ is the Cartier index of $K_X$ (cf.~{\hyperref[prop-klt-eff-ample]{Proposition \ref*{prop-klt-eff-ample}}}). 
+Besides, since $-K_X$ is not ample, it is not big (cf.~{\hyperref[lem-big-ample]{Lemma \ref*{lem-big-ample}}}). 
+Hence, $-K_Y$ is nef but not big, which implies that $K_Y^3=0$ (cf.~\cite[Proposition 2.61]{KM98}).  
+Moreover, since $Y$ is a $\mathbb{Q}$-factorial terminal threefold such that $-K_Y$ is nef but not big, it follows from \cite[Corollary 6.2]{KMM94} that $-K_Y\cdot \hat{c}_2(Y)\geqslant 0$ where $\hat{c}_2(Y)$ is the second Chern class of the sheaf $\hat{\Omega}_Y^1$.
+We note that, when $X$ is smooth in codimension two (which is the case when $X$ has only terminal singularities), $\hat{c}_2(X)$ coincides with the birational section Chern class $c_2(X)$ (cf.~e.g.~\cite[Proof of Claim 4.11]{GKP16b}).
+
+Let us recall the following symbols.  
+For a nef $\mathbb{R}$-Cartier $\mathbb{R}$-divisor $L$ on a normal projective variety $Y$,  the 
+\textit{numerical dimension} $\nu(Y,L)$ of $L$ is defined to be the maximum $t$ such that $L^t\not\equiv0$.
+We denote by $\kappa(Y,L)$ the \textit{Iitaka dimension} of $L$. 
+Clearly, 
+$\kappa(Y,L)\leqslant\nu(Y,L)\leqslant\dim Y$.   
+
+
+\begin{lemme}\label{lem-gamma0-h2>0}
+If $\Gamma=0$ and $-K_Y$ is not big, then $\dimcoh^2(Y,-rK_Y)>0$.
+\end{lemme}
+\begin{proof}
+Since $Y$ is rationally connected by {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}, we see that the Euler characteristic $\chi(\scrO_Y)>0$ (cf.~\cite[Corollary 4.18]{Deb01} and \cite[Theorem 5.22]{KM98}).
+Applying the Riemann-Roch formula for $-rK_Y$, we get
+$$\chi(-rK_Y)=\frac{1}{12}(-rK_Y)\hat{c}_2(Y)+\chi(\scrO_Y)>0,$$
+by noting that $K_Y^3=0$ and $\frac{1}{12}(-rK_Y)\hat{c}_2(Y)\geqslant 0$ (cf.~\cite[Corollary 6.2]{KMM94}).
+This together with $\dimcoh^0(Y,-rK_Y)=0$ (by our assumption that $-(K_X+\Delta)$ is not ample) implies our lemma.	
+\end{proof}
+
+
+\begin{lemme}\label{lem-gamma0-h1=h2}
+If $\Gamma=0$ and $-K_Y$ is not big, then for a sufficiently ample general hyperplane section $S$ on $Y$, we have $\Coh^1(S,(-rK_Y+S)|_S)\simeq\Coh^2(Y,-rK_Y)$.
+\end{lemme}
+\begin{proof}
+We consider the short exact sequence $$0\to\scrO_Y(-rK_Y)\to\scrO_Y(-rK_Y+S)\to\scrO_S((-rK_Y+S)|_S)\to 0$$ 
+and the induced long exact sequence
+$$\cdots\to \Coh^1(Y,-rK_Y+S)\to \Coh^1(S,(-rK_Y+S)|_S)\to \Coh^2(Y,-rK_Y)\to \Coh^2(Y,-rK_Y+S)\to\cdots$$
+Since $S$ is ample and $-rK_Y$ is nef, by the Fujita vanishing theorem (or Kawamata-Viehweg vanishing theorem), we have $\Coh^i(Y,-rK_Y+S)=0$ for $i>0$.
+Therefore,  $\Coh^1(S,(-rK_Y+S)|_S)\simeq\Coh^2(Y,-rK_Y)$ and our lemma is thus proved.
+\end{proof}
+
+\begin{lemme}\label{lem-gamma0-nu1}
+If $\Gamma=0$ and $-K_Y$ is not big, then the numerical dimension  $\nu(Y,-K_Y)$ of $-K_Y$ is $1$.
+\end{lemme}
+\begin{proof}
+If the numerical dimension $\nu(Y,-K_Y)=3$, then $-K_Y$ and hence $-(K_X+\Delta)$ are big, a contradiction to our assumption (cf.~{\hyperref[lem-big-ample]{Lemma \ref*{lem-big-ample}}}).
+Clearly, $-K_Y\not\equiv0$, and thus we only need to exclude the case $\nu(Y,-K_Y)=2$.
+Take a sufficiently ample general hypersurface $S$ on $Y$.
+Then we have $K_Y^2\cdot S\neq 0$ since $K_Y^2\not\equiv 0$.
+Therefore $-K_Y|_S$ is a nef and big divisor on $S$.
+Applying Serre duality and Kawamata-Viehweg vanishing theorem, we have $\Coh^1(S,(-rK_Y+S)|_S)=0$ (where $r$ is the Cartier index of $K_Y$),  a contradiction to 
+{\hyperref[lem-gamma0-h1=h2]{Lemma  \ref*{lem-gamma0-h1=h2}}} and 
+{\hyperref[lem-gamma0-h2>0]{Lemma  \ref*{lem-gamma0-h2>0}}}. 
+\end{proof}
+
+
+
+\begin{thm}\label{thm-case-gamma=0}
+If $\Gamma=0$, then $-(K_X+\Delta)$ is ample.	
+\end{thm}
+
+\begin{proof}
+Note that $\Delta=0$ in this case. 
+In view of {\hyperref[lem-gamma0-nu1]{Lemma  \ref*{lem-gamma0-nu1}}}, we only need to show the case $\nu(Y,-rK_Y)=1$ is impossible.
+Recall that $\tau:Y\to X$ is the $\mathbb{Q}$-factorial terminalization. 
+Assume that  $\nu(Y,-rK_Y)=1$. 
+Then, we have $(-K_Y|_S)^2=K_Y^2\cdot S=0$.
+Denote by $U$ the regular locus of $Y$.
+By {\hyperref[lem-finite-reg-algpi1]{Proposition   \ref*{lem-finite-reg-algpi1}}}, $\pi_1^{\textup{alg}}(U)$ is finite.
+Take a sufficiently general very ample divisor $S$ on $Y$, which is not contracted by $\tau$. 
+Then $\pi_1^{\textup{alg}}(U)\cong\pi_1^{\textup{alg}}(S\cap U)$ is finite (cf.~\cite[Theorem 1.1.3]{HL85}), noting that $U$ has the same homotopy type of the space obtained from $S\cap U$ by attaching cells of dimension $\ge 3$, but the fundamental group of a CW complex only depends on its $2$-skeleton (and hence $\pi_1(U)\cong\pi_1(S\cap U)$).
+Since our $S$ is general and $Y$ has at worst terminal (and hence isolated) singularities (cf.~\cite[Corollary 5.18]{KM98}), $S\cap U$ coincides with $S$.
+Therefore, $\pi_1^{\textup{alg}}(S)$ is finite.
+On the one hand, since $\pi_1^{\textup{alg}}(S)$ is finite, applying \cite{Miy88} for the nef divisor $-(r+1)K_Y|_S$ with $(-(r+1)K_Y|_S)^2=0$ (cf. also \cite[Theorem 3.6]{Ser95}), we see that, either $\Coh^1(S,(r+1)K_Y|_S)=0$, or there exists a positive integer $n$ such that $\Coh^0(S,-(r+1)nK_Y|_S)\neq 0$.
+On the other hand, it follows from {\hyperref[lem-gamma0-h1=h2]{Lemma  \ref*{lem-gamma0-h1=h2}}}, {\hyperref[lem-gamma0-h2>0]{Lemma  \ref*{lem-gamma0-h2>0}}} and Serre duality that
+$\Coh^1(S,(r+1)K_Y|_S)=\Coh^1(S,(-rK_Y+S)|_S)\neq 0$.
+In conclusion,  $-K_Y|_S$ is $\mathbb{Q}$-linearly equivalent to a non-zero effective divisor.
+Let $T:=\tau(S)$, which is still a surface due to the choice of $S$. 
+Then it follows from the commutative diagram that $-K_X|_T$ is $\mathbb{Q}$-linearly equivalent to a non-zero effective Weil $\mathbb{Q}$-divisor (as a curve) on $T$. 
+%noting that $-(K_X+\Delta)|_T$ is still strictly nef.
+Hence, it follows from the projection formula and from the strict nefness of $-K_X$ that $0<-K_X\cdot (-K_X|_T)=-K_Y\cdot (-K_Y|_S)=K_Y^2\cdot S=0$, which gives rise to a contradiction.
+\end{proof}
+
+
+%\begin{proof}
+%In view of {\hyperref[lem-gamma0-nu1]{Lemma  \ref*{lem-gamma0-nu1}}}, we only need to show the case $\nu(Y,-rK_Y)=1$ is impossible.
+%Assume that  $\nu(Y,-rK_Y)=1$. 
+%Denote by $U$ the regular locus of $Y$.
+%By {\hyperref[lem-finite-reg-algpi1]{Lemma  \ref*{lem-finite-reg-algpi1}}},  $\pi_1^{\textup{alg}}(U)$ is finite.
+%Let $S$ be a general (very ample) hyperplane section of $Y$.
+%Then $\pi_1^{\textup{alg}}(U)\cong\pi_1^{\textup{alg}}(S\cap U)$ is finite (cf.~\cite[Theorem 1.1.3]{HL85}), 
+%noting that $U$ has the same homotopy type of the space obtained from $S\cap U$ by attaching cells of dimension $\geqslant 3$, 
+%but the fundamental group of a CW complex only depends on its $2$-skeleton (and hence $\pi_1(U)\cong\pi_1(S\cap U)$). 
+%Since our $S$ is general and $Y$ has at worst terminal (and hence isolated) singularities (cf.~\cite[Corollary 5.18]{KM98}), $S\cap U$ coincides with $S$.
+%Therefore, $\pi_1^{\textup{alg}}(S)$ is finite. 
+%Since $\nu(S,-K_Y|_S)=1$, we have $(-K_Y|_S)^2=K_Y^2\cdot S=0$.
+%Now that $\pi_1^{\textup{alg}}(S)$ is finite, we can apply \cite[Theorem 2.1]{Miy88} (cf.~\cite[Theorem 3.6]{Ser95}) and then $-K_Y|_S$ is $\mathbb{Q}$-linearly equivalent to an effective divisor, noting that $H^1(S,(r+1)K_Y|_S)=H^1(S,-(r+1)K_Y|_S+K_S)=H^1(S,(-(r+1)K_Y+S)|_S)\neq 0$ (cf.~{\hyperref[lem-gamma0-h1=h2]{Lemma  \ref*{lem-gamma0-h1=h2}}} and 
+%{\hyperref[lem-gamma0-h2>0]{Lemma  \ref*{lem-gamma0-h2>0}}}). 
+%As a result, the nef dimension $\textup{nd}(-K_Y|_S)=2$, the numerical dimension $\nu(-K_Y|_S)=1$, and the Kodaira dimension $\kappa(-K_Y|_S)\geqslant 0$. 
+%Then, it follows from \cite[Proposition 6.1]{Amb04} that $S$ is uniruled. 
+%However, since our $S$ is sufficiently ample, our $K_S$ is also ample, a contradiction to \cite{BDPP13}.
+%\end{proof}
+
+
+
+\begin{proof}[Proof of \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text}]
+It follows directly from {\hyperref[thm-case-gammaneq0]{Theorem \ref*{thm-case-gammaneq0}}} and  {\hyperref[thm-case-gamma=0]{Theorem \ref*{thm-case-gamma=0}}} (cf.~{\hyperref[rmq-case-gamma=0]{Remark \ref*{rmq-case-gamma=0}}}).
+\end{proof}
+
+
+
+
+
+
+
+
+%\begin{prop}
+%Let $(X,\Delta)$ be a projective klt threefold pair.
+%Let $L_X$ be a strictly nef $\mathbb{Q}$-divisor on $X$.
+%Suppose that there is a non-zero effective divisor which is numerically equivalent to $aL_X+b(K_X+\Delta)$ for some $a$ and $b$.
+%Then $K_X+\Delta+tL_X$ is ample for sufficiently large $t\gg 1$.
+%\end{prop}
+
+%\begin{proof}
+%Suppose the contrary.
+%By \cite[Lemmas 2.3 and 2.4]{Zhong21}, we see that $K_X+\Delta+tL_X$ is not big (but nef) for some $t>6m$ with $m$ being the Cartier index of $L_X$.
+%Then we have $(K_X+\Delta)^3=L_X^3=(K_X+\Delta)\cdot L_X^2=(K_X+\Delta)^2\cdot L_X=0$ (cf.~\cite[Lemma 2.5]{Zhong21}).
+%Let us take the small $\mathbb{Q}$-factorization $\pi:(Y,\Gamma)\to (X,\Delta)$ (cf.~\cite[Corollary 1.4.3]{BCHM10}) and let $L_Y:=\pi^*L_X$ which is  nef but not big.
+%Then $(K_Y+\Gamma)^3=(K_Y+\Gamma)^2\cdot L_Y=(K_Y+\Gamma)\cdot L_Y^2=L_Y^3=0$,  and $aL_Y+b(K_Y+\Gamma)$ is also numerically equivalent to an effective divisor $\sum m_iF_i$ such that $m_i>0$ for each $i$ and none of $F_i$ is $\pi$-exceptional by the choice of $\pi$.
+%Then $(K_Y+\Gamma+tL_Y)^2\cdot (aL_Y+b(K_Y+\Gamma))=0$ for all $t$. 
+%Since $K_Y+\Gamma+tL_Y$ is nef for all $t\gg 1$, we have $F_i\cdot L_Y^2=F_i\cdot (K_Y+\Gamma)\cdot L_Y=F_i\cdot (K_Y+\Gamma)^2=0$ for each component $F_i$. 
+%On the other hand, it is clear that $L_Y|_{F_i}$ (as the pull back of $L_X|_{\pi(F_i)}$ along the restriction $\pi|_{F_i}$) is almost strictly nef.
+%Applying \cite[Theorem 20?????]{},  we see that $K_{F_i}+tL_Y|_{F_i}$ is big  for sufficiently large $t$.
+%Since $(L_Y|_{F_i})^2=L_Y^2\cdot F_i=0$, by Lemma \ref{lem-hodge-nef-big}, we have
+%$$0<L_Y|_{F_i}\cdot (K_{F_i}+tL_Y|_{F_i})=L_Y\cdot (K_Y+F_i)\cdot F_i.$$
+%There are two small cases.
+%If $L_Y\cdot F_{i_0}^2>0$ for some $i_0$, then 
+%$$0=F_{i_0}\cdot L_Y^2=F_{i_0}\cdot (aL_Y+b(K_Y+\Gamma))\cdot L_Y=F_{i_0}\cdot \sum m_iF_i\cdot L_Y\geqslant m_{i_0}L_Y\cdot F_{i_0}^2>0,$$
+%which is absurd.
+%Hence, we may assume that $L_Y\cdot K_Y\cdot F_i>0$ for every $i$.
+%As a result,
+%??????? (not clear for the contradiction)
+%\end{proof}
+
+%As a direct consequence of \texorpdfstring{{\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}}}{text}, the following corollary answers \cite[Conejcture 2.2]{CCP08} for the threefold case when the assumed almost strictly nef divisor $L$ is the anti-log canonical divisor. 
+%In general, even in the threefold case,  \cite[Conejcture 2.2]{CCP08} is still widely  open. 
+%\begin{cor}\label{cor-3fold-almost-big}
+%Let $(X,\Delta)$ be a projective klt threefold pair such that $-(K_X+\Delta)$ is almost strictly nef.
+%Then $-(K_X+\Delta)$ is big.
+%\end{cor}
+
+\vskip 2\baselineskip

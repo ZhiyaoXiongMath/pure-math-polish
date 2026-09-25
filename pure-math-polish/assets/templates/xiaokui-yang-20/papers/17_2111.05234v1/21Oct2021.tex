@@ -1,0 +1,155 @@
+\documentclass{./Article-eng}
+%\documentclass{./test}
+%\usepackage{systeme}
+%\usepackage{arydshln}
+
+\usepackage[all]{xy}
+\usepackage{hyperref}
+\hypersetup{colorlinks,allcolors=blue}
+%\usepackage{titlesec,titletoc,titleps}
+%\usepackage{titlesec}
+%\usepackage{tikz} %pictures
+\usepackage{tikz-cd}%implies
+%\usepackage{url}
+%\urlstyle{rm}
+
+
+
+\makeatletter
+\newcommand{\rmnum}[1]{\romannumeral #1}
+\newcommand{\Rmnum}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+
+
+
+
+
+%\usepackage{csquotes}
+%\usepackage{authblk}
+
+%\newcommand{\pullweil}{^{[\ast]}}
+\DeclareMathOperator{\ff}{f} % ff=flat+free
+\DeclareMathOperator{\plat}{flat}
+\DeclareMathOperator{\semistable}{ss}
+\DeclareMathOperator{\rat}{rat}
+%\DeclareMathOperator{\Zar}{Zar} % topologie de Zariski
+\newcommand{\RefSym}{\hat{\text{S}}}
+\DeclareMathOperator{\Chow}{Chow}
+\DeclareMathOperator{\Hilb}{Hilb}
+\DeclareMathOperator{\free}{f} % base point free part of a linear system
+\DeclareMathOperator{\base}{b} % fixed part of a linear system
+\DeclareMathOperator{\nilpotent}{nilp}
+
+\let\Gamma\varGamma
+\let\Delta\varDelta
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%%%% Titre
+\title[Alg. fib. spaces w/ strictly nef rel. anti-log can. divisor]{Algebraic fibre spaces with strictly nef relative anti-log canonical divisor}
+
+
+%\title{On singular projective varieties with strictly nef anti-log canonical divisor: the case of log terminal singularities}
+%\author{
+%Jie Liu\thanks{Institute of Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China. E-mail: {\tt jliu@amss.ac.cn}},\; Wenhao Ou\thanks{Institute of Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China. E-mail: {\tt wenhaoou@amss.ac.cn}},\; Juanyong Wang\thanks{HCMS, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China. E-mail: {\tt juanyong.wang@amss.ac.cn}},\; Xiaokui Yang\thanks{Department of Mathematics and Yau Mathematical Sciences Center, Tsinghua University, Beijing, 100084, China. E-mail: {\tt xkyang@mail.tsinghua.edu.cn}},\; Guolei Zhong\thanks{Department of Mathematics, National University of Singapore, 10 Lower Kent Ridge Road, Singapore 119076, Republic of Singapore. E-mail: {\tt zhongguolei@u.nus.edu}}
+%}
+
+\author{
+Jie Liu
+%\thanks{jliu@amss.ac.cn}
+}
+\address{
+Jie Liu\\
+Institute of Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China}
+\email{jliu@amss.ac.cn}
+
+
+\author{
+Wenhao Ou
+%\thanks{wenhaoou@amss.ac.cn}
+}
+\address{
+Wenhao Ou\\
+Institute of Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China}
+\email{wenhaoou@amss.ac.cn}
+
+\author{
+Juanyong Wang
+%\thanks{juanyong.wang@amss.ac.cn}
+}
+\address{
+Juanyong Wang\\
+HCMS, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China.}
+\email{juanyong.wang@amss.ac.cn}
+%\affil{Institute of Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China}
+
+\author{Xiaokui Yang
+%\thanks{xkyang@mail.tsinghua.edu.cn}
+}
+\address{
+Xiaokui Yang\\
+Department of Mathematics and Yau Mathematical Sciences Center, Tsinghua University, Beijing, 100084, China}
+\email{xkyang@mail.tsinghua.edu.cn}
+%\affil{Department of Mathematics and Yau Mathematical Sciences Center, Tsinghua University, Beijing, 100084, China}
+
+\author{Guolei Zhong
+%\thanks{zhongguolei@u.nus.edu}
+}
+\address{
+Guolei Zhong\\
+Department of Mathematics, National University of Singapore, 10 Lower Kent Ridge Road, Singapore 119076, Republic of Singapore}
+\email{zhongguolei@u.nus.edu}
+%\affil{Department of Mathematics, National University of Singapore, 10 Lower Kent Ridge Road, Singapore 119076, Republic of Singapore}
+
+
+
+
+
+\date{}
+
+%\begin{document}
+\maketitle
+\input{Abstract}
+\tableofcontents
+
+\input{Introduction}
+
+
+\input{Preliminary}
+
+%\input{sec-fun-gp-periodic-pts}
+\input{sec-fun-gp-periodic-pts-Liu-20211103}
+
+\input{sec-pf-thmabc}
+
+
+
+\input{sec-pf-ample-dim3}
+
+%\input{appendix}
+
+
+
+
+
+
+
+
+
+
+\begingroup
+\setstretch{1.0}
+
+\bibliographystyle{alpha}
+\bibliography{strict-nef}
+
+\endgroup
+\end{document}

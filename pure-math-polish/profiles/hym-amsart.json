@@ -1,0 +1,256 @@
+{
+  "name": "hym-amsart",
+  "primary_id": "2606.30121v1",
+  "corroborating_ids": [
+    "2606.21073v1",
+    "2606.21062v2",
+    "2606.15102v1",
+    "2604.02679v2",
+    "2603.10611v4"
+  ],
+  "class": "amsart",
+  "class_options": [
+    "12pt",
+    "reqno"
+  ],
+  "required_packages": [
+    "stix2",
+    "geometry",
+    "amsmath",
+    "amsthm",
+    "enumitem",
+    "fancyhdr"
+  ],
+  "page_settings": {
+    "geometry": "a4paper,top=1.2in,bottom=1.2in",
+    "textwidth": "6.1in",
+    "oddsidemargin": "-0.1in",
+    "evensidemargin": "-0.1in",
+    "footskip": "0.5in",
+    "headsep": "0.2in",
+    "headheight": "14pt",
+    "baselinestretch": "1.1"
+  },
+  "macros": {
+    "\\beq": {
+      "definition": "\\begin{equation}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 163
+    },
+    "\\eeq": {
+      "definition": "\\end{equation}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 164
+    },
+    "\\be": {
+      "definition": "\\begin{eqnarray*}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 165
+    },
+    "\\ee": {
+      "definition": "\\end{eqnarray*}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 166
+    },
+    "\\bd": {
+      "definition": "\\begin{enumerate}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 167
+    },
+    "\\ed": {
+      "definition": "\\end{enumerate}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 168
+    },
+    "\\btheorem": {
+      "definition": "\\begin{thm}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 135
+    },
+    "\\etheorem": {
+      "definition": "\\end{thm}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 136
+    },
+    "\\blemma": {
+      "definition": "\\begin{lemma}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 149
+    },
+    "\\elemma": {
+      "definition": "\\end{lemma}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 150
+    },
+    "\\bproof": {
+      "definition": "\\begin{proof}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 143
+    },
+    "\\eproof": {
+      "definition": "\\end{proof}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 144
+    },
+    "\\p": {
+      "definition": "\\partial",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 157
+    },
+    "\\bp": {
+      "definition": "\\bar{\\partial}",
+      "options": [],
+      "kind": "renewcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 173
+    },
+    "\\sq": {
+      "definition": "\\sqrt{-1}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 154
+    },
+    "\\bar": {
+      "definition": "\\overline",
+      "options": [],
+      "kind": "renewcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 158
+    },
+    "\\tilde": {
+      "definition": "\\widetilde",
+      "options": [],
+      "kind": "renewcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 171
+    },
+    "\\phi": {
+      "definition": "\\varphi",
+      "options": [],
+      "kind": "renewcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 161
+    },
+    "\\ts": {
+      "definition": "\\otimes",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 174
+    },
+    "\\om": {
+      "definition": "\\omega",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 201
+    },
+    "\\tr": {
+      "definition": "\\mathrm{tr}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 203
+    },
+    "\\Ric": {
+      "definition": "\\mathrm{Ric}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 187
+    },
+    "\\Vol": {
+      "definition": "\\mathrm{Vol}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 206
+    },
+    "\\End": {
+      "definition": "\\mathrm{End}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 211
+    },
+    "\\diag": {
+      "definition": "\\operatorname{diag}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 176
+    },
+    "\\rk": {
+      "definition": "{\\rm rk}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 96
+    },
+    "\\id": {
+      "definition": "\\mathrm{Id}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 95
+    },
+    "\\C": {
+      "definition": "{\\mathbb C}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 178
+    },
+    "\\R": {
+      "definition": "{\\mathbb R}",
+      "options": [],
+      "kind": "newcommand",
+      "source": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "definition_line": 179
+    }
+  },
+  "manual_checks": [
+    "No symbol distinction erased by bar/phi/tilde redefinition",
+    "Covariant curvature versus endomorphism curvature",
+    "No change of multiplication order or real/complex Laplacian",
+    "Metadata and theorem counters preserved"
+  ],
+  "limits": [
+    "Profile matches a verified family, not every source file verbatim",
+    "Lexical checks do not execute TeX or certify proofs"
+  ],
+  "corpus": "assets/templates/xiaokui-yang-20",
+  "macro_policy": "optional-unless-declared-or-used",
+  "convention_sensitive_macros": [
+    "\\ddbar",
+    "\\vol",
+    "\\>"
+  ]
+}

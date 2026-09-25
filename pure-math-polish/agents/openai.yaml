@@ -1,0 +1,15 @@
+interface:
+  display_name: Pure Math Polish
+  short_description: Polish pure-math papers with original Yang TeX templates
+  default_prompt: >-
+    Use $pure-math-polish to polish the supplied pure-mathematics manuscript.
+    Use only the bundled Xiaokui Yang papers as templates. Select the appropriate
+    source paper and match its LaTeX conventions within the authorized scope.
+    Check macro semantics before migration. Preserve mathematical content,
+    language, authorship and valid references. Audit the introduction in both
+    directions, compile the final source when available, inspect the PDF, and
+    deliver editable TeX with the corresponding PDF and concise change notes.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true

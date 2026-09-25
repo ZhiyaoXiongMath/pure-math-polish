@@ -1,0 +1,391 @@
+\begin{thebibliography}{BCHM10}
+
+\bibitem[Aro57]{Aronszajn1957}
+Nachman Aronszajn.
+\newblock A unique continuation theorem for solutions of elliptic partial
+  differential equations or inequalities of second order.
+\newblock {\em J. Math. Pures Appl. (9)}, 36:235--249, 1957.
+
+\bibitem[BCHM10]{Birkar2010}
+Caucher Birkar, Paolo Cascini, Christopher~D. Hacon, and James McKernan.
+\newblock Existence of minimal models for varieties of log general type.
+\newblock {\em J. Amer. Math. Soc.}, 23(2):405--468, 2010.
+
+\bibitem[BDPP13]{BoucksomDemaillyPuaunPeternell2013}
+S{\'e}bastien Boucksom, Jean-Pierre Demailly, Mihai P{\u a}un, and Thomas
+  Peternell.
+\newblock The pseudo-effective cone of a compact {K}\"ahler manifold and
+  varieties of negative {K}odaira dimension.
+\newblock {\em J. Algebraic Geom.}, 22(2):201--248, 2013.
+
+\bibitem[Cam92]{Campana1992}
+Fr\'{e}d\'{e}ric Campana.
+\newblock Connexit\'{e} rationnelle des vari\'{e}t\'{e}s de {F}ano.
+\newblock {\em Ann. Sci. \'{E}cole Norm. Sup. (4)}, 25(5):539--545, 1992.
+
+\bibitem[Cas13]{Cascini2013}
+Paolo Cascini.
+\newblock Rational curves on complex manifolds.
+\newblock {\em Milan J. Math.}, 81(2):291--315, 2013.
+
+\bibitem[CDP15]{Campana2015a}
+Fr\'{e}d\'{e}ric Campana, Jean-Pierre Demailly, and Thomas Peternell.
+\newblock Rationally connected manifolds and semipositivity of the {R}icci
+  curvature.
+\newblock In {\em Recent advances in algebraic geometry}, volume 417 of {\em
+  London Math. Soc. Lecture Note Ser.}, pages 71--91. Cambridge Univ. Press,
+  Cambridge, 2015.
+
+\bibitem[CH17]{Cao2017a}
+Junyan Cao and Andreas H\"{o}ring.
+\newblock Manifolds with nef anticanonical bundle.
+\newblock {\em J. Reine Angew. Math.}, 724:203--244, 2017.
+
+\bibitem[CH19]{Cao2019}
+Junyan Cao and Andreas H\"{o}ring.
+\newblock A decomposition theorem for projective manifolds with nef
+  anticanonical bundle.
+\newblock {\em J. Algebraic Geom.}, 28(3):567--597, 2019.
+
+\bibitem[CP91]{CampanaPeternell1991}
+Fr{\'e}d{\'e}ric Campana and Thomas Peternell.
+\newblock Projective manifolds whose tangent bundles are numerically effective.
+\newblock {\em Math. Ann.}, 289(1):169--187, 1991.
+
+\bibitem[CT12]{Chau2012}
+Albert Chau and Luen-Fai Tam.
+\newblock On quadratic orthogonal bisectional curvature.
+\newblock {\em J. Differential Geom.}, 92(2):187--200, 2012.
+
+\bibitem[dC98]{Cataldo1998}
+Mark Andrea~A. de~Cataldo.
+\newblock Singular {H}ermitian metrics on vector bundles.
+\newblock {\em J. Reine Angew. Math.}, 502:93--122, 1998.
+
+\bibitem[Dem85]{Demailly1985}
+Jean-Pierre Demailly.
+\newblock Champs magn\'{e}tiques et in\'{e}galit\'{e}s de {M}orse pour la
+  {$d''$}-cohomologie.
+\newblock {\em Ann. Inst. Fourier (Grenoble)}, 35(4):189--229, 1985.
+
+\bibitem[Dem92]{Demailly1992a}
+Jean-Pierre Demailly.
+\newblock Singular {H}ermitian metrics on positive line bundles.
+\newblock In {\em Complex algebraic varieties ({B}ayreuth, 1990)}, volume 1507
+  of {\em Lecture Notes in Math.}, pages 87--104. Springer, Berlin, 1992.
+
+\bibitem[Dem12]{Demailly2012}
+Jean-Pierre Demailly.
+\newblock {\em Analytic methods in algebraic geometry}, volume~1 of {\em
+  Surveys of Modern Mathematics}.
+\newblock International Press, Somerville, MA; Higher Education Press, Beijing,
+  2012.
+
+\bibitem[Don87]{Donaldson1987}
+S.~K. Donaldson.
+\newblock Infinite determinants, stable bundles and curvature.
+\newblock {\em Duke Math. J.}, 54(1):231--247, 1987.
+
+\bibitem[DPS94]{DemaillyPeternellSchneider1994}
+Jean-Pierre Demailly, Thomas Peternell, and Michael Schneider.
+\newblock Compact complex manifolds with numerically effective tangent bundles.
+\newblock {\em J. Algebraic Geom.}, 3(2):295--345, 1994.
+
+\bibitem[DPS01]{DemaillyPeternellSchneider2001}
+Jean-Pierre Demailly, Thomas Peternell, and Michael Schneider.
+\newblock Pseudo-effective line bundles on compact {K}\"ahler manifolds.
+\newblock {\em Internat. J. Math.}, 12(6):689--741, 2001.
+
+\bibitem[DT19]{Diverio2019}
+Simone Diverio and Stefano Trapani.
+\newblock Quasi-negative holomorphic sectional curvature and positivity of the
+  canonical bundle.
+\newblock {\em J. Differential Geom.}, 111(2):303--314, 2019.
+
+\bibitem[DWZZ20]{DengWangZhangZhou2020}
+Fusheng Deng, Zhiwei Wang, Liyou Zhang, and Xiangyu Zhou.
+\newblock Linear invariants of complex manifolds and their plurisubharmonic
+  variations.
+\newblock {\em J. Funct. Anal.}, 279(1):108514, 2020.
+
+\bibitem[FLW17]{FengLiuWan2017}
+Huitao Feng, Kefeng Liu, and Xueyuan Wan.
+\newblock Compact {K}\"{a}hler manifolds with positive orthogonal bisectional
+  curvature.
+\newblock {\em Math. Res. Lett.}, 24(3):767--780, 2017.
+
+\bibitem[Gau77]{Gauduchon1977}
+Paul Gauduchon.
+\newblock Fibr\'{e}s hermitiens \`a endomorphisme de {R}icci non n\'{e}gatif.
+\newblock {\em Bull. Soc. Math. France}, 105(2):113--140, 1977.
+
+\bibitem[GHS03]{Graber2003}
+Tom Graber, Joe Harris, and Jason Starr.
+\newblock Families of rationally connected varieties.
+\newblock {\em J. Amer. Math. Soc.}, 16(1):57--67, 2003.
+
+\bibitem[Gue18]{Guenancia2018}
+Henri Guenancia.
+\newblock Quasi-projective manifolds with negative holomorphic sectional
+  curvature.
+\newblock {\em preprint}, arXiv:1808.01854, 2018.
+
+\bibitem[HLTT18]{HuangLeeTamTong2018}
+Shaochuang Huang, Man-Chun Lee, Luen-Fai Tam, and Freid Tong.
+\newblock Long time existence of {K}ähler {R}icci flow and holomorphic
+  sectional curvature.
+\newblock {\em arXiv preprint}, 1805.12328, 2018.
+
+\bibitem[HLW10]{Heier2010}
+Gordon Heier, Steven S.~Y. Lu, and Bun Wong.
+\newblock On the canonical line bundle and negative holomorphic sectional
+  curvature.
+\newblock {\em Math. Res. Lett.}, 17(6):1101--1110, 2010.
+
+\bibitem[HLW16]{Heier2016}
+Gordon Heier, Steven S.~Y. Lu, and Bun Wong.
+\newblock K\"{a}hler manifolds of semi-negative holomorphic sectional
+  curvature.
+\newblock {\em J. Differential Geom.}, 104(3):419--441, 2016.
+
+\bibitem[HLWZ18]{Heier2018}
+Gordon Heier, Steven S.~Y. Lu, Bun Wong, and Fangyang Zheng.
+\newblock Reduction of manifolds with semi-negative holomorphic sectional
+  curvature.
+\newblock {\em Math. Ann.}, 372(3-4):951--962, 2018.
+
+\bibitem[HW15]{HeierWong2015}
+Gordon Heier and Bun Wong.
+\newblock On projective kähler manifolds of partially positive curvature and
+  rational connectedness.
+\newblock {\em arXiv preprint}, arXiv:1509.02149, 2015.
+
+\bibitem[Kaw85]{Kawamata1985}
+Y.~Kawamata.
+\newblock Pluricanonical systems on minimal algebraic varieties.
+\newblock {\em Invent. Math.}, 79(3):567--588, 1985.
+
+\bibitem[KMM92]{KollarMiyaokaMori1992}
+J{\'a}nos Koll{\'a}r, Yoichi Miyaoka, and Shigefumi Mori.
+\newblock Rational connectedness and boundedness of {F}ano manifolds.
+\newblock {\em J. Differential Geom.}, 36(3):765--779, 1992.
+
+\bibitem[Kod54]{Kodaira1954}
+K.~Kodaira.
+\newblock On {K}\"{a}hler varieties of restricted type (an intrinsic
+  characterization of algebraic varieties).
+\newblock {\em Ann. of Math. (2)}, 60:28--48, 1954.
+
+\bibitem[Lee18]{Lee2018}
+Man-Chun Lee.
+\newblock Compact hermitian manifolds with quasi-negative curvature.
+\newblock {\em To appear in Math. Ann.}, arXiv: 1810.07325, 2018.
+
+\bibitem[Liu14]{Liu2014b}
+Gang Liu.
+\newblock Compact {K}\"{a}hler manifolds with nonpositive bisectional
+  curvature.
+\newblock {\em Geom. Funct. Anal.}, 24(5):1591--1607, 2014.
+
+\bibitem[Liu19]{Liu2019}
+Jie Liu.
+\newblock Characterization of projective spaces and $\mathbb{P}^{r}$ -bundles
+  as ample divisors.
+\newblock {\em Nagoya Math. J.}, 233:155--169, 2019.
+
+\bibitem[LOY19]{LiOuYang2019}
+Duo Li, Wenhao Ou, and Xiaokui Yang.
+\newblock On projective varieties with strictly nef tangent bundles.
+\newblock {\em J. Math. Pures Appl. (9)}, 128:140--151, 2019.
+
+\bibitem[LOY20]{LiuOuYang2020}
+Jie Liu, Wenhao Ou, and Xiaokui Yang.
+\newblock Projective manifolds whose tangent bundle contains a strictly nef
+  subsheaf.
+\newblock {\em arXiv preprint}, 2004.08507, 2020.
+
+\bibitem[LWZ13]{LiWuZheng2013}
+Qun Li, Damin Wu, and Fangyang Zheng.
+\newblock An example of compact {K}\"{a}hler manifold with nonnegative
+  quadratic bisectional curvature.
+\newblock {\em Proc. Amer. Math. Soc.}, 141(6):2117--2126, 2013.
+
+\bibitem[LY17]{LiuYang2017}
+Kefeng Liu and Xiaokui Yang.
+\newblock Ricci curvatures on {H}ermitian manifolds.
+\newblock {\em Trans. Amer. Math. Soc.}, 369(7):5157--5196, 2017.
+
+\bibitem[Mat18a]{Matsumura2018a}
+Shin-ichi Matsumura.
+\newblock On morphisms of compact {K}ähler manifolds with semi-positive
+  holomorphic sectional curvature.
+\newblock {\em arXiv preprint}, arXiv:arXiv:1809.08859, 2018.
+
+\bibitem[Mat18b]{Matsumura2018b}
+Shin-ichi Matsumura.
+\newblock On projective manifolds with semi-positive holomorphic sectional
+  curvature.
+\newblock {\em arXiv preprint}, arXiv:1811.04182, 2018.
+
+\bibitem[Mat18c]{Matsumura2018}
+Shin-ichi Matsumura.
+\newblock On the image of {MRC} fibrations of projective manifolds with
+  semi-positive holomorphic sectional curvature.
+\newblock {\em arXiv preprint}, arXiv:1801.09081, 2018.
+
+\bibitem[MM07]{Ma2007}
+Xiaonan Ma and George Marinescu.
+\newblock {\em Holomorphic {M}orse inequalities and {B}ergman kernels}, volume
+  254 of {\em Progress in Mathematics}.
+\newblock Birkh\"{a}user Verlag, Basel, 2007.
+
+\bibitem[Mok88]{Mok1988}
+Ngaiming Mok.
+\newblock The uniformization theorem for compact {K}\"ahler manifolds of
+  nonnegative holomorphic bisectional curvature.
+\newblock {\em J. Differential Geom.}, 27(2):179--214, 1988.
+
+\bibitem[Mor79]{Mori1979}
+Shigefumi Mori.
+\newblock Projective manifolds with ample tangent bundles.
+\newblock {\em Ann. of Math. (2)}, 110(3):593--606, 1979.
+
+\bibitem[Mor82]{Mori1982}
+Shigefumi Mori.
+\newblock Threefolds whose canonical bundles are not numerically effective.
+\newblock {\em Ann. of Math. (2)}, 116(1):133--176, 1982.
+
+\bibitem[Nom18]{Nomura2018}
+Ryosuke Nomura.
+\newblock K\"{a}hler manifolds with negative holomorphic sectional curvature,
+  {K}\"{a}hler-{R}icci flow approach.
+\newblock {\em Int. Math. Res. Not. IMRN}, (21):6611--6616, 2018.
+
+\bibitem[NZ18a]{Ni2018}
+Lei Ni and Fangyang Zheng.
+\newblock Comparison and vanishing theorems for {K}\"{a}hler manifolds.
+\newblock {\em Calc. Var. Partial Differential Equations}, 57(6):Paper No. 151,
+  31, 2018.
+
+\bibitem[NZ18b]{NiZheng2018a}
+Lei Ni and Fangyang Zheng.
+\newblock Positivity and kodaira embedding theorem.
+\newblock {\em arXiv preprint}, arXiv:1804.09696, 2018.
+
+\bibitem[NZ19]{NiZheng2019b}
+Lei Ni and Fangyang Zheng.
+\newblock Kähler manifolds and cross quadratic bisectional curvature.
+\newblock {\em arXiv preprint}, arXiv:1903.02701, 2019.
+
+\bibitem[Pet06]{Peternell2006}
+Thomas Peternell.
+\newblock Kodaira dimension of subvarieties. {II}.
+\newblock {\em Internat. J. Math.}, 17(5):619--631, 2006.
+
+\bibitem[PT18]{Paun2018a}
+Mihai P\u{a}un and Shigeharu Takayama.
+\newblock Positivity of twisted relative pluricanonical bundles and their
+  direct images.
+\newblock {\em J. Algebraic Geom.}, 27(2):211--272, 2018.
+
+\bibitem[Rau15]{Raufi2015}
+Hossein Raufi.
+\newblock Singular hermitian metrics on holomorphic vector bundles.
+\newblock {\em Ark. Mat.}, 53(2):359--382, 2015.
+
+\bibitem[Siu84]{Siu1984}
+Yum-Tong Siu.
+\newblock A vanishing theorem for semipositive line bundles over
+  non-{K}\"{a}hler manifolds.
+\newblock {\em J. Differential Geom.}, 19(2):431--452, 1984.
+
+\bibitem[SY80]{SiuYau1980}
+Yum~Tong Siu and Shing~Tung Yau.
+\newblock Compact {K}\"ahler manifolds of positive bisectional curvature.
+\newblock {\em Invent. Math.}, 59(2):189--204, 1980.
+
+\bibitem[TY17]{TosattiYang2017}
+Valentino Tosatti and Xiaokui Yang.
+\newblock An extension of a theorem of {W}u-{Y}au.
+\newblock {\em J. Differential Geom.}, 107(3):573--579, 2017.
+
+\bibitem[UY86]{UhlenbeckYau1986}
+Karen~Keskulla Uhlenbeck and Shing-Tung Yau.
+\newblock On the existence of {H}ermitian-{Y}ang-{M}ills connections in stable
+  vector bundles.
+\newblock volume~39, pages S257--S293. 1986.
+\newblock Frontiers of the mathematical sciences: 1985 (New York, 1985).
+
+\bibitem[Won81]{Wong1981}
+B.~Wong.
+\newblock The uniformization of compact {K}\"{a}hler surfaces of negative
+  curvature.
+\newblock {\em J. Differential Geometry}, 16(3):407--420 (1982), 1981.
+
+\bibitem[WY16a]{WuYau2016}
+Damin Wu and Shing-Tung Yau.
+\newblock Negative holomorphic curvature and positive canonical bundle.
+\newblock {\em Invent. Math.}, 204(2):595--604, 2016.
+
+\bibitem[WY16b]{WuYau2016a}
+Damin Wu and Shing-Tung Yau.
+\newblock A remark on our paper ``{N}egative holomorphic curvature and positive
+  canonical bundle'' [ {MR}3489705].
+\newblock {\em Comm. Anal. Geom.}, 24(4):901--912, 2016.
+
+\bibitem[WY20]{WuYau2020}
+Damin Wu and Shing-Tung Yau.
+\newblock Invariant metrics on negatively pinched complete {K}\"{a}hler
+  manifolds.
+\newblock {\em J. Amer. Math. Soc.}, 33(1):103--133, 2020.
+
+\bibitem[WZ02]{Wu2002}
+Hung-Hsi Wu and Fangyang Zheng.
+\newblock Compact {K}\"{a}hler manifolds with nonpositive bisectional
+  curvature.
+\newblock {\em J. Differential Geom.}, 61(2):263--287, 2002.
+
+\bibitem[Yan18a]{Yang2018b}
+Xiaokui Yang.
+\newblock R{C}-positive metrics on rationally connected manifolds.
+\newblock {\em arXiv preprint}, arXiv:1807.03510, 2018.
+
+\bibitem[Yan18b]{Yang2018a}
+Xiaokui Yang.
+\newblock R{C}-positivity and the generalized energy density {I}: Rigidity.
+\newblock {\em arXiv preprint}, 1810.03276, 2018.
+
+\bibitem[Yan18c]{Yang2018}
+Xiaokui Yang.
+\newblock R{C}-positivity, rational connectedness and {Y}au's conjecture.
+\newblock {\em Camb. J. Math.}, 6(2):183--212, 2018.
+
+\bibitem[Yan18d]{Yang2021}
+Xiaokui Yang.
+\newblock R{C}-positivity, vanishing theorems and rigidity of holomorphic maps.
+\newblock {\em To appear in J. Inst. Math. Jussieu}, arXiv:1807.02601, 2018.
+
+\bibitem[Yan19]{Yang2019CM}
+Xiaokui Yang.
+\newblock A partial converse to the {A}ndreotti-{G}rauert theorem.
+\newblock {\em Compos. Math.}, 155(1):89--99, 2019.
+
+\bibitem[Yau78]{Yau1978}
+Shing-Tung Yau.
+\newblock On the {R}icci curvature of a compact {K}\"{a}hler manifold and the
+  complex {M}onge-{A}mp\`ere equation. {I}.
+\newblock {\em Comm. Pure Appl. Math.}, 31(3):339--411, 1978.
+
+\bibitem[Yau82]{Yau1982}
+Shing-Tung Yau.
+\newblock Problem section.
+\newblock In {\em Seminar on {D}ifferential {G}eometry}, volume 102 of {\em
+  Ann. of Math. Stud.}, pages 669--706. Princeton Univ. Press, Princeton, N.J.,
+  1982.
+
+\bibitem[YZ19]{YangZheng2019TAMS}
+Xiaokui Yang and Fangyang Zheng.
+\newblock On real bisectional curvature for {H}ermitian manifolds.
+\newblock {\em Trans. Amer. Math. Soc.}, 371(4):2703--2718, 2019.
+
+\end{thebibliography}

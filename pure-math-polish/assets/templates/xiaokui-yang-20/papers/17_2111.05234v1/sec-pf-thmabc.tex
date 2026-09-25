@@ -1,0 +1,373 @@
+%\section{Sections of MRC fibrations, Proof of \texorpdfstring{{\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}}{text}}
+\section{Proofs of \texorpdfstring{{\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}}{text},  \texorpdfstring{{\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}}{text} and \texorpdfstring{{\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable}}}}{text}}
+
+In this section, we shall prove our main results {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}} and {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}. 
+As an application of {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}, we show {\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable}}}. 
+
+
+
+\begin{assumption}
+\label{a.assumption}
+Throughout this section, we follow the following assumption and its notations.
+\begin{itemize}
+    \item Let $(X,\Delta)$ be a projective klt pair, and  $f:X\rightarrow Y$ a locally constant fibration (cf.~{\hyperref[defn-locally-constant]{Definition \ref*{defn-locally-constant}}}) onto a $\mathbb{Q}$-Gorenstein normal projective variety $Y$ such that the relative canonical divisor $-(K_{X/Y}+\Delta)$ is nef. If $Y$ is smooth, then it follows from {\hyperref[t.structureantinef]{Theorem \ref*{t.structureantinef}}} below that $f$ is a locally constant fibration.
+    \item Let $F$ be a fibre of $f$ and $G:=\pi_1(Y)$. 
+    \item Assume that there exists a very ample  divisor $A_F$ on $F$ which is $G$-linearized (cf.~\cite[Definition 3.2.3, Lemma 3.2.4]{Brion18}). If $Y$ is smooth, then the existence of such $A_F$ follows from {\hyperref[t.structureantinef]{Theorem \ref*{t.structureantinef}}}. 
+    \item By {\hyperref[defn-locally-constant]{Definition \ref*{defn-locally-constant}}}, our $G$ acts on  $F$ via the homomorphism $G\to \textup{Aut}_{A_F}(F)$.  
+    \item Denote by $\rho: \pi_1(Y) \to \text{GL}(V,\CC)$ the representation induced by $ \pi_1(Y)\rightarrow \text{Aut}(F,\Delta_F)$, where $V=\Coh^0(F, A_F)$.
+Denote by $Y^{\textup{univ}}$ the universal cover of $Y$. 
+Then we have the following (Cartesian) commutative diagram:
+\begin{center}
+\begin{tikzpicture}[scale=2.5]
+\node (A) at (0,0) {$Y$.};
+\node (B) at (0,1) {$Y^{\textup{univ}}$};
+\node (A1) at (-1.8,0) {$X$};
+\node (B1) at (-1.8,1) {$X{\times}_YY\univ\simeq Y\univ\times F$};
+\node (E) at (-0.9, 0.5) {$\square$};
+\path[->,font=\scriptsize,>=angle 90]
+(B) edge node[right]{$p_Y$} (A)
+(B1) edge node[left]{$p_X$} (A1)
+(B1) edge node[above]{$f\univ=\pr_1$} (B)
+(A1) edge node[below]{$f$} (A);
+\end{tikzpicture}
+\end{center}
+where $G$ acts on $Y\univ\times F$ via diagonal and $X\cong (Y\univ\times F)/G$.
+Let $\pr_2:X{\times}_YY\univ\simeq Y\univ\times F\to F$ be the second  projection.
+\end{itemize}
+\end{assumption}
+
+First recall the following structure theorem and criterion for locally constant fibrations. It is essentially proved in \cite{CCM19} and \cite{MW21} and it is the starting point for the proofs of our {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}} and {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}.
+
+\begin{thm}[{\cite{CCM19}, \cite[Theorem 4.7]{MW21}}]	\label{t.structureantinef}
+Let $(X,\Delta)$ be a klt pair, and  $f:X\rightarrow Y$ a fibration to a smooth projective variety. Let $F$ be a general fibre of $f$. If the relative anti-log canonical divisor $-(K_{X/Y}+\Delta)$ is nef, then  $f$ is a locally constant fibration induced by a  representation $\pi_1(Y)\rightarrow \Aut(F,\Delta_F)$. Moreover, there exists a sufficiently ample line bundle $A$ on $F$  which is $\pi_1(Y)$-linearized (cf. \cite[Defintion 3.2.3, Lemma 3.2.4]{Brion18}). 
+\end{thm}
+
+%For the reader's convenience, let us briefly recall the proof. Let $H$ be an ample enough line bundle on $X$ such that the following maps
+%\[
+%\text{Sym}^m H^0(X_y,H|_{X_y}) \rightarrow H^0(X_y, H^m|_{X_y})
+%\]
+%are  surjective for all $m\in \bbN$ and $y\in Y$ general, where $X_y$ is the fibre of $f$ over $y$. Thanks to \cite{CaoHoering2019}, after replacing $H$ by its multiple, we may assume that the determinant of the direct image sheaf $\det(f_*H)$ is numerically equivalent to $D^r$ for some line bundle $D$ on $Y$, where $r$ is the rank of $f_*\sO_X(H)$. 
+%Denote by $\widetilde{H}$ the line bundle $H \otimes (f^*D)^{-1}$. 
+%Then it is proved in \cite[Section 3]{CampanaCaoMatsumura2019} that the direct image sheaves $E_m\coloneqq f_* (\widetilde{H}^m)$ and $V_{m,p}\coloneqq f_*(\sO_{X}(-p\Delta)\otimes \widetilde{H}^m)$ are locally free and numerically flat for any $m\in\bbZ$ and any $p\in \bbN$ sufficiently divisible. Denote by $E$ the numerical flat vector bundle $f_*\widetilde{H}$. Let $\pi:\widetilde{Y}\rightarrow Y$ be the universal cover. Then we have a natural isomorphism $\bbP(\pi^*E)\cong \widetilde{Y}\times \bbP^{r-1}$. Then the numerical flatness of $E_m$ and $V_{m,p}$ implies that the defining equations of the fibres of the natural relative embedding 
+%\[
+%(\widetilde{Y}\times_{Y} X, \widetilde{Y}\times_Y \Delta) \rightarrow \widetilde{Y}\times \bbP^{r-1}
+%\]
+%is independent of $y\in \widetilde{Y}$ (see for instance \cite[Proposition 2.8]{MatsumuraWang2021}).
+
+The smoothness assumption of $Y$, however, cannot be removed in the theorem above: 
+%{\hyperref[t.structureantinef]{Theorem \ref*{t.structureantinef}}}.
+\begin{exa}
+\label{e.counter-example-for-singlar-base}
+Let $Y\subset \PP^{n+1}$ be a two-dimensional projective cone over a rational normal curve $C_n\subseteq \PP^n$. Then $Y$ is a Fano variety with klt singularities. Let $f:X\rightarrow Y$ be the blow-up of $Y$ at the vertex with exceptional divisor $E$. Then $X$ is smooth and $E$ is a smooth rational curve such that 
+\[
+f^*K_Y=K_X+\frac{1}{n}E.
+\]
+In particular, the pair $(X,\frac{1}{n}E)$ is klt and $-(K_{X/Y}+\frac{1}{n}E)$ is trivial and hence nef. In general, let $Y$ be a projective variety with klt singularities, but not terminal. Let $f:X\rightarrow Y$ be a terminal modification of $Y$. Let $\Delta$ be the $\QQ$-Weil divisor on $X$ defined as $K_X+\Delta=f^*K_Y$. Then $\Delta$ is effective, $(X,\Delta)$ is klt and the relative  anti-log canonical divisor $-(K_{X/Y}+\Delta)$ is trivial and hence nef. 
+\end{exa}
+
+In the following, we first show that if the fundamental group of a subvariety $Z$ of $Y$ is virtually solvable, then $-(K_{X/Y}+\Delta)$ cannot be strictly nef.
+
+\begin{prop}
+	\label{p.solvableflatsection}
+	Under {\hyperref[a.assumption]{Assumption \ref*{a.assumption}}}, let $\eta:Z\rightarrow Y$ be a morphism from another  $\mathbb{Q}$-Gorenstein normal projective   variety $Z$. 
+	If $\pi_1(Z)$ has a periodic point on $F$ via the composed map
+	\[
+	\bar{\rho}:\pi_1(Z) \xrightarrow{\eta_*} \pi_1(Y) \xrightarrow{\rho} \textup{GL}(V,\CC)
+	\]
+ then up to replacing $Z$ by some  finite \'etale cover if necessary,  
+	there is a lifting $\sigma:Z\rightarrow X$ of $\eta:Z\rightarrow Y$ such that the pull-back $\sigma^*(K_{X/Y}+\Delta)$ is numerically trivial.
+Further, if the image of $\pi_1(Z)$ under $\bar{\rho}$ is virtually solvable, then we can get such a periodic point on $F$. 
+\end{prop}
+
+Before we prove {\hyperref[p.solvableflatsection]{Proposition  \ref*{p.solvableflatsection}}}, we prepare the following lemma, which is an analogue of {\hyperref[l.fixedpointflatsection]{Lemma \ref*{l.fixedpointflatsection}}}. 
+
+\begin{lemme}
+\label{lem_lcf-section}
+Under {\hyperref[a.assumption]{Assumption \ref*{a.assumption}}}, we have the following statements. 
+\begin{itemize}
+\item[\rm(a)] Every $G$-fixed point $z$ (if exists) induces a section $\sigma:Y\to X$ of the locally constant fibration $f: (X,\Delta)\to Y$.
+\item[\rm(b)] Let $A_X$ be the quotient bundle of $A_F$ on $X$; that is $p_X^*A_X=\textup{pr}_2^*A_F$ (cf.~{\hyperref[a.assumption]{Assumption \ref*{a.assumption}}}).
+Set $E:=f_\ast\scrO_X(A_X)$. 
+Then every $G$-fixed point $z$ induces a short exact sequences of flat vector bundles 
+\[
+0\to E'\to E\to \scrO_Y(\sigma^\ast\!A)\to 0.
+\]
+In particular, $\sigma^*A_X\equiv 0$. 
+\end{itemize}
+\end{lemme}
+\begin{proof}
+Let $i:X\hookrightarrow\PP E$ be the embedding over $Y$ induced by $A_X$, with $\scrO_X(A_X)\simeq i^\ast\scrO_{\PP E}(1)$. 
+For each fibre $F$, we get a $G$-equivariant embedding $i_F: F\hookrightarrow\PP(\Coh^0(F,\scrO_F(A_F)))$. 
+By {\hyperref[l.fixedpointflatsection]{Lemma \ref*{l.fixedpointflatsection}}}, the $G$-fixed point $z\in F\subseteq\PP(\Coh^0(F, \scrO_F(A_F)))$ induces a subbundle $E'$ of $E$ so that $Q:=E/E'$ is a flat line bundle on $Y$ and the surjection $E\twoheadrightarrow Q$ corresponds to a section $\sigma_1: Y\to\PP E$ of the projective bundle $\PP E\to Y$  with $\sigma_1^\ast\scrO_{\PP E}(1)=Q\equiv 0$. 
+But for every $y\in Y$, $\sigma_1(y)$ corresponds to $z\in F$ under the (canonical) identification $X_y\simeq F$. Hence, the image $\sigma_1(Y)$ is contained in the image of $X$ under the canonical embedding. 
+%Since the image $\simga_1(Y)$ is just the image of $Y^{\text{univ}}\times \{z\}\subseteq$ under the natural morphism  $Y^{\text{univ}}\times\mathbb{P}(\Coh^0(F,\scrO_F(A_F)))\to\mathbb{P}(E)$ (cf.~).
+Denote by $\sigma$ the induced morphism $Y\to X$  and we then have
+\[
+0\equiv Q\simeq\sigma_1^\ast\scrO_{\PP E}(1)\simeq\sigma^\ast\scrO_X(A)=\scrO_Y(\sigma^\ast A),
+\]
+noting that $\sigma_1=i\circ\sigma$.
+%The second assertion of (b) follows from the fact that every numerically flat line bundle is numerically trivial.
+\end{proof}
+
+
+\begin{proof}[Proof of {\hyperref[p.solvableflatsection]{Proposition  \ref*{p.solvableflatsection}}}]
+	Let $X'\rightarrow Z$ be the locally constant fibration induced by $f$ (cf.~the arguments before {\hyperref[l.basechange]{Lemma \ref*{l.basechange}}}). 
+	By {\hyperref[l.basechange]{Lemma \ref*{l.basechange}}}, after replacing $Y$ by $Z$ and $X$ by $X'$, we may assume that $Z=Y$. 
+	Denote by $\overline{G_Y}$ the Zariski closure of the image $G_Y:=\rho(\pi_1(Y))$ in $\text{GL}(V,\CC)$. 
+
+First, we prove the second part of this proposition. 
+Suppose that $G_Y$ is virtually solvable.
+Then its closure $\overline{G_Y}$ is a virtually solvable linear algebraic group, which has finitely many components, and both $F$ and $\Delta_F$ are invariant under the induced action $\overline{G_Y}$ on $\PP(V)$. 
+	In particular, after replacing $Y$ by an appropriate finite \'etale cover, we may assume that $\overline{G_Y}$ itself is connected and solvable. 
+Thus, by Borel's fixed point theorem (cf.~\cite[Theorem 10.4, p.~137]{Bor69}), there exists a $\overline{G_Y}$-fixed-point $y\in F\subseteq  \PP(V)$ (cf.~{\hyperref[prop-sol-fixed]{Proposition  \ref*{prop-sol-fixed}}}), which completes the second part of our proof.
+	
+Now we prove the first part of this proposition. Let $m\in \NN$ be a sufficiently divisible positive integer. Then $-m(K_F+\Delta_F)+A_F$ is ample as $-(K_{F}+\Delta_F)=-(K_{X/Y}+\Delta)|_F$ is nef (cf.~{\hyperref[a.assumption]{Assumption \ref*{a.assumption}}}). Since both $K_{F}+\Delta_F$ and $A_F$ are $\overline{G_Y}$-linearized, for any positive integer $p$, the induced action of $\overline{G_Y}$ on the vector space
+\[
+V_{m,p}\coloneqq \Coh^0(F,\scrO_F(p(-m(K_F+\Delta_F)+A_F))
+\]
+induces a flat vector bundle structure on the direct image sheaf 
+\[
+E_{m,p}\coloneqq f_\ast\scrO_X(p(-m(K_{X/Y}+\Delta)+A_X)).
+\]
+Recall that $A_X$ is the quotient line bundle of $A_F$ on $X$, that is, we have $p_X^*A_X=\textup{pr}_2^*A_F$, where $p_X$ is the natural morphism and $p_2:Y^{\textup{univ}}\times F\rightarrow F$ is the second projection (cf.~{\hyperref[a.assumption]{Assumption \ref*{a.assumption}}}). 	
+Moreover, by the ampleness of $-m(K_F+\Delta_F))+A_F$, for sufficiently large $p\gg 1$ there exists an embedding $F\hookrightarrow \PP(V_{m,p})$ such that the restriction of the action $\overline{G_Y}$ on $\PP(V_{m,p})$ to $F$ coincides with the restriction of the action $\overline{G_Y}$ on $\PP(V)$ to $F$. In particular, the point $y\in F\subseteq \PP(V_{m,p})$ is a $\overline{G_Y}$-fixed point for the action of $\overline{G_Y}$ on the projective space $\PP(V_{m,p})$. Denote by $\sigma:Y\rightarrow X$ the section induced by $y$. Applying  {\hyperref[lem_lcf-section]{Lemma \ref*{lem_lcf-section}}} to $E_{m,1}$ $(m\not=0)$ and $E_{0,1}$, we see that the pull-backs
+\begin{center}
+$\sigma^*(-m(K_{X/Y}+\Delta)+A_X)$ \quad \quad and \quad \quad $\sigma^*A_X$
+\end{center}
+are both numerically trivial. As a consequence, the pull-back $\sigma^*(K_{X/Y}+\Delta)$ is numerically trivial.
+\end{proof}
+
+
+As a consequence of {\hyperref[p.solvableflatsection]{Proposition  \ref*{p.solvableflatsection}}}, 
+we are able to prove our first main result {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}. 
+After that, we slightly generalize {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}  to the case when the anti-log canonical divisor is almost strictly nef (cf.~{\hyperref[prop-aug-irrg-bc]{Proposition \ref*{prop-aug-irrg-bc}}}). 
+\begin{rmq}
+In the spirit of \cite[Section 4]{LOY19}, the key step to show {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}} is to find a $(K_X+\Delta)$-trivial section of the  maximal rationally connected fibration (MRC fibration for short), up to replacing $X$ by a quasi-\'etale cover, which is {\hyperref[p.solvableflatsection]{Proposition  \ref*{p.solvableflatsection}}}. 
+In general, the MRC fibration for a projective variety may not be holomorphic.
+However, by a recent joint work of Matsumura and the third author, it has been shown that, if $(X,\Delta)$ is a projective klt pair with the anti-log canonical divisor $-(K_X+\Delta)$ being nef, then up to replacing $X$ by its quasi-\'etale cover, there is a locally constant (holomorphic) fibration $f:X\to Y$ with respect to the pair $(X,\Delta)$ such that $K_Y\equiv 0$ (\cite[Theorem 1.1]{MW21}; cf.~\cite{Cao19,CH19,CCM19,Wang20}). 
+\end{rmq}
+
+
+
+\begin{proof}[Proof of {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}]
+First, we note that $X$ is uniruled (cf.~{\hyperref[prop_strict_uniruled]{Proposition \ref*{prop_strict_uniruled}}}). 
+After replacing $(X,\Delta)$ by a quasi-\'etale cover $(X',\Delta')$, our pair $(X',\Delta')$ is still klt with $-(K_{X'}+\Delta')$ being strictly nef (cf.~\cite[Proposition 5.20]{KM98}).
+Furthermore, if $X'$ is rationally connected, then so is $X$.
+Therefore, we are free to replace $X$ by its quasi-\'etale cover.
+
+By \cite[Theorem 1.1]{MW21}, with $(X,\Delta)$ replaced by a quasi-\'etale cover, the maximal rationally connected (MRC for short) fibration $f:(X,\Delta)\to Y$ of $X$ is a (holomorphic) locally constant fibration with respect to the pair $(X,\Delta)$ such that $Y$ has only klt singularities and the canonical divisor $K_Y\equiv 0$. 
+Then by taking a desingularization of $Y$ and considering the base change of $f$, from {\hyperref[t.structureantinef]{Theorem \ref*{t.structureantinef}}} and \cite[Theorem 1.1]{Tak03} we see that there is a $G$-linearized ample line bundle over $F$, and hence all the assumptions in {\hyperref[a.assumption]{Assumption \ref*{a.assumption}}} are satisfied.  
+
+%Besides, since $(X,\Delta)$ is a klt pair,  so is $(F,\Delta_F)$. Therefore, $F$ has rational singularities and hence $q(F)=0$ by considering a desingularization (which is still rationally connected); see \cite[Theorem 5.22]{KM98}. Then it follows from \cite[Proof of Lemma 2.7]{MW21} that  there exists an ample  divisor $A_F$ on $F$ which is $G$-linearized; in particular, all the assumptions in {\hyperref[a.assumption]{Assumption \ref*{a.assumption}}} are satisfied. Moreover, by {\hyperref[cor-lc-periodic]{Corollary  \ref*{cor-lc-periodic}}}, the fundamental group $G=\pi_1(Y)$ has a periodic point on $F$. 
+
+Suppose the contrary that $X$ is not rationally connected.
+Then $\dim Y>0$.
+By {\hyperref[p.solvableflatsection]{Proposition  \ref*{p.solvableflatsection}}}, up to replacing $X$ by a further \'etale cover, our $f$ admits a section $\sigma:Y\to X$ such that $\sigma^*(K_X+\Delta)\equiv 0$. 
+We pick a curve $C$ in $Y$. 
+Then $\sigma_\ast C\neq 0$. 
+Since $\sigma^\ast(K_X+\Delta)\equiv0$, it follows from the projection formula that
+\[
+-\sigma^\ast(K_X+\Delta)\cdot C=-(K_X+\Delta)\cdot\sigma_\ast C=0,
+\]
+which contradicts the strict nefness of $-(K_X+\Delta)$. 
+Hence, $X$ is rationally connected and the first part of {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}} follows. 
+
+Note that a rationally connected klt projective variety has the vanishing irregularity (cf.~\cite[Corollary 4.18]{Deb01} and \cite[Theorem 5.22]{KM98}). Thus, to show the augmented irregularity $q^\circ(X)$ vanishing, we only need to show every quasi-\'etale cover is rationally connected.
+However, this follows from the first part of {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}} and arguments in the beginning of our proof.
+\end{proof}
+
+In what follows, we slightly extends our  \hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}   
+to the following \hyperref[prop-aug-irrg-bc]{Proposition \ref*{prop-aug-irrg-bc}}  on the anti-log canonical divisor being almost strictly nef (cf.~\hyperref[defn-almost-sn]{Definition \ref*{defn-almost-sn}}).   
+
+
+
+%It is conjectured that if $L_X$ is almost strictly nef on a smooth projective variety $X$, then $K_X+tL_X$ is big for sufficiently large $t\gg 1$ (cf.~\cite[Conjecture 2.2]{CCP08} and \cite[Theorem 26]{Cha20}). 
+%When $L_X$ is the ant-log canonical divisor, we now describe the geometric property of such $X$ and give a partial answer to this conjecture  (cf.~\hyperref[cor-3fold-almost-big]{Corollary \ref*{cor-3fold-almost-big}}).
+
+\begin{prop}\label{prop-aug-irrg-bc}
+Let $(X,\Delta)$ be a projective klt pair with $-(K_X+\Delta)$ being almost strictly nef.
+Then, any quasi-\'etale cover of $X$ is rationally connected.
+In particular, the augmented irregularity $q^\circ(X)=0$.
+\end{prop}
+
+
+\begin{proof} 
+Let $\pi:(X,\Delta)\to (Z,\Delta_Z)$ be the projective birational morphism such that $K_X+\Delta=\pi^*(K_Z+\Delta_Z)$ and $-(K_Z+\Delta_Z)$ is strictly nef.
+Clearly, $(Z,\Delta_Z)$ is also a projective klt pair.
+Let $(X',\Delta':=\tau^*\Delta)\xrightarrow{\tau}(X,\Delta)$  be any quasi-\'etale cover. 
+Then $(X',\Delta')$ is a projective klt pair (cf.~\cite[Proposition 5.20]{KM98}) and $-(K_{X'}+\Delta')$ is nef.
+Taking the Stein factorization of $\pi\circ\tau$, we get the following commutative diagram
+\[\xymatrix{
+(X',\Delta')\ar[r]^{\pi'}\ar[d]_\tau&(Z',\Delta_{Z'})\ar[d]^{\tau_Z}\\
+(X,\Delta)\ar[r]_\pi&(Z,\Delta_Z)
+}
+\]
+where $\tau_Z$ is a finite morphism and $\pi'$ is birational.
+By the projection formula, we have $$K_{Z'}+\Delta_{Z'}:=\tau_Z^*(K_Z+\Delta_Z)=\pi'_*(K_{X'}+\Delta').$$
+Then $(Z',\Delta_{Z'})$ is also a projective klt pair with $-(K_{Z'}+\Delta_{Z'})$ being strictly nef.
+Applying \hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}} to the pair $(Z',\Delta_{Z'})$, we see that $Z'$ and hence $X'$ are rationally connected, which completes the proof of the proposition . 
+\end{proof}
+
+As a  consequence of
+{\hyperref[prop-aug-irrg-bc]{Proposition \ref*{prop-aug-irrg-bc}}}
+ and \cite[Proposition 7.8]{GKP16b}, we end up the first part of this section with  the following result on the finiteness of the algebraic fundamental group of the smooth locus when  $-(K_X+\Delta)$ is almost strictly nef.
+
+\begin{prop}\label{lem-finite-reg-algpi1}
+Let $(X,\Delta)$ be a projective klt pair with $-(K_X+\Delta)$ being almost strictly nef.
+Then the algebraic fundamental group $\pi_1^{\textup{alg}}(X_{\textup{reg}})$ of the smooth locus $X_{\textup{reg}}\subseteq X$ is finite.
+\end{prop}
+
+\begin{proof}
+Denote by $\mathcal{R}$ the set of  normal projective varieties $X$ such that there exists a $\mathbb{Q}$-Weil divisor $\Delta$ such that $(X,\Delta)$ is klt and the anti-log canonical divisor $-(K_X+\Delta)$ is almost strictly nef.
+Then it follows from {\hyperref[prop-aug-irrg-bc]{Proposition \ref*{prop-aug-irrg-bc}}} and its proof that any quasi-\'etale Galois cover $Y$ of $X$ still lies in $\mathcal{R}$.
+Moreover, since $X$ is rationally connected by {\hyperref[prop-aug-irrg-bc]{Proposition \ref*{prop-aug-irrg-bc}}},
+ and the algebraic fundamental group is a profinite completion of the topological fundamental group, we see that $\pi_1^\textup{alg}(X)$ is finite  (cf.~\cite{Tak03}).
+In particular, the conditions of \cite[Proposition 7.8]{GKP16b} are verified and thus $\pi_1^{\textup{alg}}(X_{\textup{reg}})$ is finite.
+\end{proof}
+
+\vskip 1\baselineskip
+
+
+In the second part of this section, we aim to show {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}} and {\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable}}}.
+In the view of {\hyperref[t.structureantinef]{Theorem \ref*{t.structureantinef}}}, 
+we already know that such $f$ (in {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}) is a locally constant fibration.  
+Thus, to prove {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}, it remains to show that the fibres of $f$ are rationally connected and $Y$ is a canonically polarized hyperbolic manifold. 
+Indeed, we shall prove that every irreducible subvariety $Z$ of $Y$ is of general type in the sense that every resolution $Z'\rightarrow Z$ is of general type.  
+
+Now, we want to apply {\hyperref[p.solvableflatsection]{Proposition  \ref*{p.solvableflatsection}}} to the situation of {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}.  
+First, the following lemma is an application of \cite[Theorem 1.1]{Yam10}, which reveals the relationships between fundamental groups and degeneracy of entire curves.
+
+\begin{lemme}[{\cite[Lemma 9.1]{LOY20}}]
+	\label{l.degenerencyentirecurve}
+	Let $Y$ be an irreducible projective variety. If there exists a representation $\rho:\pi_1(Y)\rightarrow \GL(r,\CC)$ such that its image $\Image(\rho)$ is not virtually solvable, then every holomorphic map $f:\CC\rightarrow Y$ is degenerate, i.e., $f(\CC)$ is not Zariski dense in $Y$.
+\end{lemme}
+
+The following theorem will be used in the proof of {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}. 
+Before giving the statement, let us introduce some necessary notion. Let $L$ be a nef $\QQ$-Cartier $\QQ$-Weil divisor on a normal projective variety. We define $\textbf{NT}(L)$ to be the Zariski closure of the union of curves $C$ in $X$ with $L$-degree $0$, i.e., $L\cdot C=0$.
+
+\begin{thm}
+	\label{t.generaltype}
+	Under {\hyperref[a.assumption]{Assumption \ref*{a.assumption}}}, if the subvariety $T:=\textrm{\bf NT}(-(K_{X/Y}+\Delta))$ does not dominate $Y$ and $-(K_{X/Y}+\Delta)$ is strictly nef, then $Y$ is of general type and there exists a linear representation $\chi:\pi_1(Y)\rightarrow \GL(r,\CC)$ whose image is not virtually solvable.
+\end{thm}
+
+\begin{proof}
+	Let $\chi:\pi_1(Y) \rightarrow \GL(r,\CC)$ be the linear representation given in  {\hyperref[a.assumption]{Assumption \ref*{a.assumption}}}.
+	
+	\bigskip
+	
+  \noindent
+	\textit{Step 1. Let $Z\subseteq Y$ be an irreducible subvariety of positive dimension passing through a very general point of $Y$, and let $Z'\rightarrow Z$ be an arbitrary resolution. Then the image of the induced composed map 
+		\[
+		\chi':\pi_1(Z')\rightarrow \pi_1(Y)\xrightarrow{\chi} \textup{GL}(r,\CC)
+		\]
+    is not virtually solvable.}
+
+    \bigskip
+     
+    Assume to the contrary that the image of $\chi'$ is virtually solvable. 
+    Since $T$ does not dominate $Y$ and $Z$ is very general, we may assume that $Z$ is not contained in the image of $T$ in $Y$. Let us denote by $f':X'\rightarrow Z'$ the locally constant fibration with respect to $(X',\Delta')$ induced by $\rho'$ and $f$. 
+    By {\hyperref[l.basechange]{Lemma \ref*{l.basechange}}}, we have
+    \[
+    g^*(K_{X/Y}+\Delta) = K_{X'/Z'}+\Delta',
+    \]
+    where $g$ is the induced morphism $X'\rightarrow X$. On the other hand, by {\hyperref[p.solvableflatsection]{Proposition \ref*{p.solvableflatsection}}}, after replacing $Z'$ by a finite \'etale cover if necessary, there exists a section $\sigma:Z'\rightarrow X'$ such that the pull-back $\sigma^*(K_{X'/Z'}+\Delta')$ is numerically trivial. Since $Z'\rightarrow Z$ is birational and $\dim(Z)>0$, there exists an irreducible curve $C'\subseteq Z'$ such that it is birational onto its image $C$ in $Z$ such that $C$ is not contained in the image of $T$. In particular, the induced morphism $C'\rightarrow \sigma(C')\rightarrow (g\circ \sigma)(C')$ is birational and $(g\circ \sigma)(C')$ is not contained in $T$. Then by projection formula we get
+    \[
+    0<-(K_{X/Y}+\Delta)\cdot (g\circ \sigma)(C') = -(K_{X'/Z'}+\Delta')\cdot \sigma(C)=0,
+    \]
+    which is a contradiction.
+    
+    \bigskip
+    
+    \noindent
+    \textit{Step 2. The base manifold $Y$ is of general type.}
+    
+    \bigskip
+    
+    Let $Y'\rightarrow Y$ be the finite \'etale cover of $Y$ given in the discussion before {\hyperref[t.basemfdShafarevichmap]{Theorem  \ref*{t.basemfdShafarevichmap}}} with the Shafarevich map 
+    $\text{sh}_{Y'}^K:Y'\dashrightarrow \text{Sh}^K(Y')$ corresponding to the representation $\chi$. 
+    Let $G_{Y'}$ be the image of $\pi_1(Y')$ under the composite map $\pi_1(Y')\to\pi_1(Y)\xrightarrow{\chi} \text{GL}(r,\mathbb{C})$ with $\overline{G_{Y'}}$ being its Zariski closure. 
+    To show that $Y$ is of general type, it is enough to show that $Y'$ is general. 
+    In particular, by {\hyperref[t.basemfdShafarevichmap]{Theorem  \ref*{t.basemfdShafarevichmap}}}, it remains to show that the Shafarevich map $\text{sh}_{Y'}^K$ is birational. 
+    Let $X'\rightarrow Y'$ be the locally constant fibration induced by $f$. 
+    By {\hyperref[l.basechange]{Lemma \ref*{l.basechange}}}, the relative anti-log canonical divisor $-(K_{X'/Y'}+\Delta')$ is nef and it is clear that the closed subvariety $T':=\textbf{NT}(-(K_{X'/Y'}+\Delta'))$ does not dominate $Y'$. Let $Z$ be a very general fibre of $\text{sh}_{Y'}^K$. Then $Z$ is normal as $X'$ is normal. Let $Z'\rightarrow Z$ be a resolution. Then by {\hyperref[defn-shafarevich]{Definition \ref*{defn-shafarevich}}} the image of the following composed map
+    \[
+    \pi_1(Z')\rightarrow \pi_1(Z)\rightarrow \pi_1(Y') \rightarrow \pi_1(Y)\xrightarrow{\chi} \overline{G_{Y'}} \rightarrow \overline{G_{Y'}}/\text{Rad}(\overline{G_{Y'}})
+    \]
+    is finite and hence the image of the following composed map
+    \[
+    \pi_1(Z')\rightarrow \pi_1(Z)\rightarrow \pi_1(Y') \rightarrow \pi_1(Y)\xrightarrow{\chi} \textup{GL}(r,\mathbb{C})
+    \]
+    is virtually solvable. Here, $\text{Rad}(\overline{G_{Y'}})$ denotes the solvable radical of $\overline{G_{Y'}}$.
+    Hence, by Step 1 above, we obtain $\dim(Z)=0$ and it follows that $\text{sh}_{Y'}^K$ is birational.
+\end{proof}
+
+%%%Theorem \ref{p.rationalconnectedness} is a consequence of Theorem \ref{t.generaltype} above and the recent work of Matsumura-Wang in \cite{MW21}.
+
+%%%\begin{proof}[Proof of Theorem \ref{p.rationalconnectedness}]
+%%	Since the relative log anti-canonical divisor $-(K_{X}+\Delta)$ is nef, according \cite[Theorem 1.1 and Corollary 1.2]{MW21}, there exists a finite quasi-\'etale cover $\mu:X'\rightarrow X$ such that the MRC fibration $f:X'\rightarrow Y'$ is holomorphic and the variety $Y$ has only canonical singularities with $K_{Y'}\sim 0$ (see also \cite[Theorem 1.5]{HP19}). 
+%%%	We  assume by contradiction that $Y'$ is positive-dimensional. 
+%%	Let $\Delta' $ be the divisor such that 
+%%	\[
+%%	K_{X'}+\Delta'=\mu^*(K_{X}+\Delta).
+%%	\]
+%%	As $\mu$ is a finite quasi-\'etale map, the pair $(X',\Delta')$ is again klt. Moreover, note that the relative log anti-canonical divisor
+%%	\[
+%%	-(K_{X'/Y'}+\Delta') = -(K_{X'}+\Delta') = -\mu^*(K_{Y}+\Delta)
+%%	\]
+%%	is strictly nef. Let $\eta:Y^{\textup{univ}}\rightarrow Y'$ be a resolution. Let $\widetilde{X}\rightarrow Y^{\textup{univ}}$ be the locally constant fibration induced by $f$. By {\hyperref[l.basechange]{Lemma \ref*{l.basechange}}}, the pair $(\widetilde{X},\widetilde{\Delta})$ is klt and we have
+%%	\[
+%%	K_{\widetilde{X}/Y^{\textup{univ}}}+\widetilde{\Delta} = \bar{\eta}^*(K_{X'/Y}+\Delta'),
+%%	\]
+%%	where $\bar{\eta}:\widetilde{X}\rightarrow X'$ is the induced morphism. Moreover, we note that the subvariety $T:=\textbf{NT}(-(K_{\widetilde{X}/Y^{\textup{univ}}}+\Delta))$ is contained in the exceptional locus of $\bar{\eta}$ whose image is contained in the exceptional locus of $\eta$. In particular, the variety $T$ does not dominate $Y^{\textup{univ}}$. Hence, by Theorem \ref{t.generaltype}, the smooth variety $Y^{\textup{univ}}$ is of general type. Nevertheless, as $Y$ has canonical singularities and the Kodaira dimension $Y$ is zero, it follows that the Kodaira dimension of $Y^{\textup{univ}}$ is also zero, which is a contradiction. 
+%%	Thus   $X'$ is rationally connected and so is $X$.
+%%\end{proof}
+
+Now we are in the position to prove {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}.
+
+\begin{proof}[Proof of {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}]
+	By {\hyperref[t.structureantinef]{Theorem \ref*{t.structureantinef}}}, it remains to show that $Y$ is a hyperbolic manifold with ample canonical divisor and the fibres of $f$ is rationally connected. 
+	Firstly note that $(F,\Delta_F)$ is a  projective klt pair with $-(K_F+\Delta_F)$ being strictly nef, where $F$ is a general fibre of $f$. 
+	Hence, the variety $F$ is rationally connected by {\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}}. Moreover, by {\hyperref[t.generaltype]{Theorem  \ref*{t.generaltype}}}, it is known that the canonical divisor $K_Y$ is big. 
+	Thus to show that $K_Y$ is ample, it is enough to show that $Y$ does not contain any rational curves, 
+	which shall be a direct consequence of the hyperbolicity of $Y$. 
+	Indeed, if $K_Y$ is not nef, then it follows from the cone theorem (cf.~\cite[Theorem 3.7]{KM98}) that $Y$ contains a rational curve; if $K_Y$ is nef (and big) but not ample, then it follows from the base-point-free theorem (cf.~\cite[Theorem 3.3]{KM98}) that $Y$ admits a birational holomorphic Kodaira fibration onto its canonical model $Y^{\text{can}}$ (with only canonical singularities), in which case, the exceptional locus of $Y\to Y^{\text{can}}$ is covered by rational curves (cf.~\cite[Proof of Proposition 1.3]{KM98}). 
+Thus, it is enough to show that $Y$ is hyperbolic.
+	
+	Let $h:\mathbb{C}\rightarrow Y$ be a holomorphic map and denote by $Z$ the Zariski closure of its image. Assume to the contrary that $\dim(Z)>0$. Then $f(\CC)$ is not degenerate in $Z$. Let $Z'$ be a resolution of $Z$ and let $X'\rightarrow Z'$ be the locally constant fibration induced by $f$. Then applying {\hyperref[t.generaltype]{Theorem  \ref*{t.generaltype}}}, we see that there exists a linear representation of $\pi_1(Z')$ whose image is not virtually solvable. 
+	On the other hand, note that the holomorphic map $h$ can be lifted to a holomorphic map $h':\CC\rightarrow Z'$. In particular, the image $h'(\CC)$ is dense in $Z'$, which contradicts {\hyperref[l.degenerencyentirecurve]{Lemma  \ref*{l.degenerencyentirecurve}}}. Hence, we have $\dim(Z)=0$; that is, $h$ is constant and consequently $Y$ is hyperbolic.
+\end{proof}
+
+\begin{rmq}
+	From the proof, one can easily derive the following result concerning   the geometry of $Y$: for an irreducible closed subvariety $Z\subseteq Y$ of positive dimension and with a resolution $Z'\rightarrow Z$, then $Z'$ is of general type and $\pi_1(Z')$ admits a linear representation whose image is not virtually solvable.
+\end{rmq}
+
+Let $X$ be a projective manifold. A \emph{foliation} on $X$ is a coherent subsheaf $\scrF$ of $T_X$ such that $\scrF$ is closed under the Lie bracket and the quotient $T_X/\scrF$ is torision free. The canonical divisor $K_{\scrF}$ of $\scrF$ is a Weil divisor on $X$ such that $\scrO_X(-K_{\scrF})\cong \det\scrF$. We call that $\scrF$ is \emph{regular} if the quotient $T_{X}/\scrF$ is locally free and $\scrF$ is \emph{algebraically integrable} if there exists a rational map $f:X\dashrightarrow Y$ such that $\scrF$ is induced by $f$.
+
+
+\begin{proof}[Proof of {\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable}}}]
+	Assume that either $\scrF$ is regular, or $\scrF$ has a compact leaf. By \cite[Theorem 1.1]{Ou21}, there exists a locally trivial fibration $f:X\rightarrow Y$ with rationally connected fibres such that there exists a foliation $\scrG$ on $Y$ with $K_{\scrG}\equiv 0$ and $\scrF=f^{-1}(\scrG)$. In particular, we have $K_{\scrF}\equiv K_{X/Y}$ and therefore $-K_{X/Y}$ is strictly nef. 
+	
+	For the statement (1), by {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}, the base manifold $Y$ is a canonically polarized projective manifold. In particular, the tangent bundle $T_Y$ is semi-stable with respect to $K_Y$ by the theorem of Aubin-Yau (\cite{Aub78,Yau78}). Observing that the slope of $T_Y$ with respect to $K_Y$ is strictly negative, we see that $\scrG$ is a fortiori the foliation in points and hence $\scrF$ is exactly the foliation induced by the fibration $f:X\rightarrow Y$.
+	
+	Next we assume that the fundamental group $\pi_1(X)$ is virtually solvable. Then the fundamental group $\pi_1(Y)=\pi_1(X)$ of $Y$ is virtually solvable since the fibres of $f$ are rationally connected. In particular, the image of every linear representation of $\pi_1(Y)$ is again virtually solvable, which contradicts {\hyperref[t.generaltype]{Theorem  \ref*{t.generaltype}}}.
+\end{proof}
+
+
+
+
+
+
+
+\begin{exa}
+	We collect some examples to show the sharpness of {\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable}}}.
+	\begin{enumerate}
+		\item[(1)] Let $\scrF\subseteq T_{\PP^n}$ be the foliation of rank $r$ defined by a linear projection $\PP^n\dashrightarrow \PP^{n-r}$. Then  $\det\scrF\cong \scrO_{\PP^n}(r)$ is ample. This shows that the regularity of $\scrF$ in {\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable}}}  cannot be dropped.
+		
+		\item[(2)] Let $X$ be an abelian variety and let $\scrF$ be a general linear foliation on $X$, that is, the translation of a general linear space. Then $-K_{\scrF}$ is numerically trivial and $\scrF$ is not algebraically integrable. 
+		This shows that we cannot replace strict nefness by nefness in {\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable} (1)}}.
+		
+		\item[(3)] Let $\scrF$ be the foliation induced by the fibration $X=\PP E\to C$, which is Mumford's example discussed after {\hyperref[t.AD]{Theorem  \ref*{t.AD}}}. Then $-K_{\scrF}$ is strictly nef. This shows that the assumption on the fundamental group of $X$ cannot be removed in {\hyperref[c.algebraicallyintegrable]{Corollary \ref*{c.algebraicallyintegrable} (2)}}.
+	\end{enumerate}
+\end{exa}
+
+\vskip 2\baselineskip

@@ -1,0 +1,306 @@
+\section{Periodic points of a special K\"ahler group}\label{sec-period}
+In this section, we study the periodic points of an automorphism group, as a linear quotient of some special K\"ahler group, with 
+the main results {\hyperref[prop-sol-fixed]{Proposition    \ref*{prop-sol-fixed}}} and {\hyperref[prop_fund_pp]{Proposition     \ref*{prop_fund_pp}}}.
+As an application, we apply {\hyperref[prop_fund_pp]{Proposition     \ref*{prop_fund_pp}}}  to the locally constant MRC fibration $f:X\to Y$ in \cite[Theorem 1.2]{MW21}, which plays a significant role to find a section of such $f$  (cf.~{\hyperref[cor-lc-periodic]{Corollary \ref*{cor-lc-periodic}}} and  {\hyperref[lemma_fixed-pt-subbundle]{Lemma   \ref*{lemma_fixed-pt-subbundle}}}). 
+We refer readers to \cite[Section 4]{LOY19} which considered the Albanese map onto the complex torus; however, the fundamental group of our $Y$ (as the object of the MRC fibration) here is neither abelian nor solvable.
+
+
+
+To begin with this section,  we briefly recall some basic facts about the Shafarevich map, which will be used in the proof of this and also later sections. 
+\begin{defn}[{\cite[Definition 3.5]{Kollar95}}]\label{defn-shafarevich}
+Let $Y$ be a normal variety and $H\lhd \pi_1(Y)$ a normal subgroup of the fundamental group of $Y$.
+A normal variety $\textup{Sh}^H(Y)$ and a rational map $\textup{sh}_Y^H:Y\dashrightarrow\textup{Sh}^H(Y)$ are called the \textit{$H$-Shafarevich variety} and the \textit{$H$-Shafarevich map} of $Y$ if
+\begin{enumerate}
+    \item[(1)] $\textup{sh}_Y^H$ has connected fibers, and
+    \item[(2)] there are countably many closed subvarieties $D_i\subseteq Y$ $(D_i\neq Y)$ such that for every closed, irreducible subvariety $Z\subseteq Y$ with $Z\not\subseteq\cup D_i$, we have 
+    $$\textup{sh}_Y^H(\widetilde{Z})=\textup{point}~~\textup{if and only if}~~\textup{im}[\pi_1(\widetilde{Z})\to\pi_1(X)]\textup{~has finite index in }H,$$
+where $\widetilde{Z}$ is the normalization of $Z$.
+\end{enumerate}
+\end{defn}
+
+The following proposition guarantees the existence of the Sharfarevich maps.
+\begin{prop}[{cf.~\cite[Theorem 3.6]{Kollar95}}]\label{prop-kol-sha}
+Let $X$ be a normal variety, and $H\lhd\pi_1(X)$ a normal subgroup. Then
+\begin{enumerate}
+\item[(1)]The $H$-Shafarevich map $\textup{sh}_X^H:X\dashrightarrow\textup{Sh}^H(X)$ exists.
+\item[(2)]For every choice of $\textup{Sh}^H(X)$ (within its birational equivalence class) there are open subsets $X_\circ\subseteq X$ and $W_\circ\subseteq\textup{Sh}^H(X)$ with the following properties:
+\begin{itemize}
+    \item $\textup{sh}_X^H:X_\circ\to W_\circ$ is everywhere defined on $X_\circ$.
+    \item Every fibre of $\textup{sh}_X^H|_{X_\circ}$ is closed in $X$.
+    \item $\textup{sh}_X^H|_{X_\circ}$ is a topologically locally trivial fibration.
+\end{itemize}
+\item[(3)] If $X$ is proper, then $\textup{sh}_X^H:X_\circ\to W_\circ$ is proper and the very general points of $X$ is contained in $X_\circ$ for a suitable choice of $\textup{Sh}^H(X)$ and $X_\circ$.
+\end{enumerate}
+\end{prop}
+
+Now, we apply {\hyperref[defn-shafarevich]{Definition   \ref*{defn-shafarevich}}}  and {\hyperref[prop-kol-sha]{Proposition  \ref*{prop-kol-sha}}} to our specific setting. 
+Let $Y$ be a normal projective variety and let $\chi:\pi_1(Y)\rightarrow \text{GL}(r,\mathbb{C})$ be a representation. 
+%By Selberg's lemma (\cite{Sel60}), every finitely generated linear group over $\CC$ is virtually torsion-free, and consequently there exists a finite \'etale cover 
+Let $\pi:Y'\rightarrow Y$ be a finite \'etale cover such that the algebraic Zariski closure $\overline{G_{Y'}}$ of the image $G_{Y'}:=\chi(\pi_*(\pi_1(Y')))$ of the following composed map
+\[
+\chi':\pi_1(Y') \xrightarrow{\pi_*} \pi_1(Y) \xrightarrow{\chi} \text{GL}(r,\CC)
+\]
+is connected. 
+Moreover, denote by $\text{Rad}(\overline{G_{Y'}})\lhd \overline{G_{Y'}}$ for the solvable radical of $\overline{G_{Y'}}$. 
+Then the quotient $\overline{G_{Y'}}/\text{Rad}(\overline{G_{Y'}})$ is torsion-free. 
+Denote by $K\lhd \pi_1(Y')$ the kernel of the map $\pi_1(Y')\rightarrow \overline{G_{Y'}}/\text{Rad}(\overline{G_{Y'}})$, which is normal in $\pi_1(Y')$.  
+Then it follows from {\hyperref[prop-kol-sha]{Proposition  \ref*{prop-kol-sha}}} that there exists a dominant almost holomorphic map (which is the $K$-Shafarevich map) $\text{sh}_{Y'}^K:Y'\dashrightarrow \text{Sh}^K(Y')$ to a smooth projective variety. 
+In other words, there exists a dense Zariski open subset $Y'_{\circ}\subset Y'$ such that the restriction $\text{sh}^K_{Y'}|_{Y'_{\circ}}$ is well-defined and proper. %This map $\text{sh}_{Y'}^K$ is called the \emph{$K$-Shafarevich map} of $Y'$ (cf.~\cite[Definition 3.5]{Kollar95}). In particular, we borrow the following result which sits in a more general setting:
+Take  a very general point $x\in Y'_{\circ}$ and let $Z$ be a subvariety through $x$, with normalisation $n:\widetilde{Z}\rightarrow Z$.   
+Then, the rational map $\text{sh}^K_{Y'}$ maps $Z$ to a point if and only if the composed map
+\[
+\pi_1(\widetilde{Z})\xrightarrow{n_*} \pi_1(Y') \rightarrow \overline{G_{Y'}}\rightarrow \overline{G_{Y'}}/\text{Rad}(\overline{G_{Y'}})
+\]
+has finite image (cf.~{\hyperref[defn-shafarevich]{Definition   \ref*{defn-shafarevich}}}).  
+We refer readers to \cite{CCE15} for more information on the Shafarviech maps and Shafarviech varieties. 
+
+The following theorem is crucial for our proof of {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}}.
+
+\begin{thm}[{\cite[Theorem 1]{CCE15}}]
+	\label{t.basemfdShafarevichmap}
+With the notation above, assume that $Y'$ has at worst klt singularities. Then the smooth projective variety $\text{Sh}^K(Y')$ is of general type.
+\end{thm}
+
+\begin{proof}
+	Let $\eta:\widetilde{Y}'\rightarrow Y'$ be a resolution. By \cite[Theorem 1.1]{Tak03}, the push-forward $\eta_*:\pi_1(\widetilde{Y}')\rightarrow \pi_1(Y')$ is an isomorphism. In particular, the composed map 
+	\[
+	\widetilde{Y}' \rightarrow Y' \dashrightarrow \text{Sh}^K(Y')
+	\]
+	is a Shafarevich map for $K\lhd \pi_1(\widetilde{Y}')$. Then the statement follows immediately from \cite[Th\'eor\`eme 1]{CCE15} and the discussion above.
+\end{proof}
+
+
+In the sequel of this section, we study the periodic point of certain groups acting on a projective varieties. By the Borel fixed point theorem, we generalize \cite[Theorem 4.1]{LOY19} to the solvable group case to get the first main result of this section.
+Compared with \cite[Theorem 4.1]{LOY19}, our argument is in the line of the theory of algebraic group.
+
+
+Let $\sigma:G\times F\to F$ be a group action of $G$ on a projective variety $F$.
+We say that $G$ has a \textit{fixed point} $y\in F$, if  $\sigma(g,y)=y$ for any $g\in G$.
+We say that $G$ has a \textit{periodic point} $y\in F$, if there exists a positive integer $m$ such that $\sigma(g^m,y)=y$ for any $g\in G$. 
+
+\begin{prop}\label{prop-sol-fixed}
+	Let $G$ be a group acting on a projective variety $F$ via a group homomorphism $\rho: G\to \textup{Aut}(F)$ to the automorphism group of $F$ such that the image $\rho(G)$ is virtually solvable and there is a $G$-linearized ample line bundle $L$ on $F$.
+	Then $G$ has a periodic point on $F$.	
+\end{prop}
+\begin{proof}
+	After replacing  $G$ by a finite index subgroup, we can assume that $\Gamma:=\rho(G)$ is solvable. By hypothesis, $\rho(G)$ is a subgroup of the linear algebraic group $\textup{Aut}_L(F)$.
+	Denote by $[\Gamma,\Gamma]$ the commutator subgroup of $\Gamma$.  
+	Recall that for an algebraic group $H$, its commutator group $[H,H]$ is a closed subgroup of $H$, hence also algebraic by \cite[Chapter I, \S 2.3 Proposition, pp.~58-59]{Bor69}.
+	Hence,  %$\overline{[\Gamma,\Gamma]}\subseteq [\overline{\Gamma},\overline{\Gamma}]$ and thus
+	we have $\overline{[\Gamma,\Gamma]}=[\overline{\Gamma},\overline{\Gamma}]$ by \cite[Chapter I, \S2.1(e), p.~57]{Bor69}.	
+	Inductively, the closure of the $p$-th derived group  $\overline{\Gamma^{(p)}}$ coincides with the $p$-th derived group $\overline{\Gamma}^{(p)}$ of $\overline{\Gamma}$.
+	
+	By the solvability of $\Gamma$,  the $p$-th derived group $\Gamma^{(p)}$ is trivial for some $p<\infty$ (i.e., the derived length of $\Gamma$ is finite).
+	Hence, $\overline{\Gamma}^{(p)}$ is also trivial for some $p<\infty$ and thus $\overline{\Gamma}$ is a solvable algebraic group.
+	With 
+	%$\overline{\Gamma}$ 
+	$G$ replaced by some subgroup of finite index if necessary, we can  assume that $\overline{\Gamma}$ is connected.
+	By Borel's fixed-point theorem (cf.~\cite[Theorem 10.4, p.~137]{Bor69}), the action of $\overline{\Gamma}$ on $F$ has a fixed point and our proposition is proved by considering the exact sequence $1\to\ker\to G\to G|_F\to 1$.
+\end{proof}
+
+
+In what follows, we recall the notion of {\it special varieties} in the sense of Campana. 
+Roughly speaking, a special variety is a compact complex variety in the Fujiki class $\mathcal{C}$ (i.e., bimeromorphic to a compact K\"ahler manifold) that admits no orbifold-theoretic (in the sense of F. Campana) meromorphic fibration onto a positive-dimensional variety of (orbifold) general type. For the precise definition, see \cite[Definition 2.1(2)]{Cam04}. 
+
+%we refer readers to \cite[\S 2]{Cam04} for the definition of \textit{special} (analytic) varieties in the sense of Campana. 
+Note that there are two fundamental examples of special varieties (\cite[Theorem 3.22, Theorem 5.1]{Cam04}) as indicated in the following lemma; in fact, every special variety is essentially built up from them (\cite[Example 2.3, \S 6.5]{Cam04}).
+
+\begin{lemme}\label{lem-kappa-special}
+Let $X$ be 
+a compact complex variety in the Fujiki class $\mathcal{C}$.
+%a compact K\"ahler manifold. 
+Then $X$ is special if one of the following holds:
+\begin{itemize}
+\item[\rm(1)] $X$ is rationally connected;
+\item[\rm(2)] The Kodaira dimension vanishes, i.e., $\kappa(X)=0$.	
+\end{itemize}
+\end{lemme}
+
+\begin{rmq}
+One should notice that the notion `rational connectedness' in \cite{Cam04} (cf. \cite[\S 3.3]{Cam04}) is usually called `rational chain connectedness' (cf. \cite[3.2 Definition]{Kollar96}), and this is why in \cite[Theorem 3.22]{Cam04} the smoothness of $X$ is required. In this article, we take the usual definition of `rational connectedness' (i.e., any two general points can be connected by a rational curve), and since this is by definition a bimeromorphic property for complex varieties, we do not need the smoothness condition in the lemma. Let us remark that `rational chain connectedness' is however not a bimeromorphic property, this is why the lemma does not hold in this generality; yet the two notions `rational connectedness' and `rational chain connectedness' coincide for varieties with dlt singularities by \cite[Corollary 1.5(2)]{HM07}.      
+\end{rmq}
+
+Besides, special varieties have the following property, known as the `weak speciality' (cf. \cite[\S 9]{Cam04}):
+%Besides, the following lemma is known to experts.
+\begin{lemme}[{cf.~\cite[Proposition 9.27]{Cam04}}]\label{lem-special-no-to-gt}
+Let $X$ be a special variety. 
+%lying in the Fujiki class $\mathcal{C}$ (i.e., a special variety bimeromorphic to a compact K\"ahler manifold). 
+Then any finite \'etale cover of $X$ can never dominate a positive dimensional variety of general type.
+\end{lemme}
+
+
+
+
+%The above property is also said to be \textit{weak speciality} (cf.~\cite[Section 9]{Cam04}).  
+In the sequel we will prove the main results of this section concerning the special K\"ahler groups. First recall that a group $G$ is said to be a \textit{K\"ahler group} if $G$ can be realized as the fundamental group of a compact K\"ahler manifold. 
+Further, a K\"ahler group $G$ is said to be \textit{special}, if $G$ can be realized as the fundamental group of a special compact K\"ahler manifold.
+
+Applying \cite{Tak03} to the resolution of some projective klt pair, we immediately have the following lemma.
+\begin{lemme}\label{lem-special-klt}
+Let $(X,\Delta)$ be a projective klt pair.
+If $X$ is special, then the fundamental group $\pi_1(X)$ is a special K\"ahler group.
+\end{lemme}
+
+
+\begin{prop}\label{prop-special-Kahler-abe}
+Any linear quotient of a special K\"ahler group is virtually abelian.
+\end{prop}
+
+%Before we prove {\hyperref[prop-special-Kahler-abe]{Proposition   \ref*{prop-special-Kahler-abe}}}, we refer readers to 
+
+
+
+%Now we come back to the proof of {\hyperref[prop-special-Kahler-abe]{Proposition   \ref*{prop-special-Kahler-abe}}}. 
+\begin{proof}%[Proof of {\hyperref[prop-special-Kahler-abe]{Proposition   \ref*{prop-special-Kahler-abe}}}]
+Let $X$ be a compact K\"ahler manifold and $G:=\pi_1(X)$ the fundamental group.
+Let $\chi:G\to \textup{GL}(r,\mathbb{C})$ be a linear representation.
+Let $G_X:=\chi(G)$ be the image and $\overline{G_X}$ its Zariski closure. 
+We will prove that $G_X$ is virtually abelian. To this end, we can freely replace $G$ (and thus $G_X$ and $\overline{G_X}$) by a finite index subgroup, and correspondingly replace $X$ by a finite \'etale cover, 
+%After replacing $X$ by a finite \'etale cover, 
+so that we may assume that $\overline{G_X}$ is a connected algebraic group.
+Denote by $\overline{R}$ the solvable radical of $\overline{G_X}$ and let $R:=\overline{R}\cap G_X$.
+Let $s:G_X\to G_X/R$ be its natural quotient.
+
+By \cite[Th\'eor\`eme 6.5 and its proof]{CCE15}, after replacing $X$ by a further  \'etale cover, there is a proper modification $X'\to X$ such that $X'$ dominates a variety  which is bimeromorphic to the total space of a smooth fibration $\textup{Sh}^{K_1}(X)\to W$ over the Shafarviech variety $\textup{Sh}^{K_2}(X)$ such that  $W$ is of general type, where $K_1$ is the kernel of $\chi$ and $K_2$ is the kernel of $s\circ\chi$. 
+Since $X$ is special, our $W$ has to be a single point (cf.~{\hyperref[lem-special-no-to-gt]{Lemma  \ref*{lem-special-no-to-gt}}}).
+This in turn implies that the Shafarviech variety $\textup{Sh}^{K_2}(X)$  is a single point and thus the image $s(G_X)=s\circ\chi(\pi_1(X))$ is finite.
+Hence, $G_X$ itself is virtually solvable (also cf.~\cite[Th\'eor\`eme 6.3]{CCE15}).
+Now, it follows from \cite[Corollaire 4.2]{CCE15} that $G_X$ is virtually abelian, which gives our proposition.
+\end{proof}
+
+
+
+The following corollary is an immediately consequence of {\hyperref[prop-special-Kahler-abe]{Proposition  \ref*{prop-special-Kahler-abe}}}. 
+%We refer readers to \cite[Section 11]{GGK19} for the linear representations of the fundamental group of a klt projective variety with the numerical trivial canonical divisor and the vanishing augmented irregularity.
+
+\begin{cor}\label{cor-virtually-abelian}
+Let $X$ be a normal projective variety with at worst klt singularities.
+Suppose that $X$ is special in the sense of Campana (this is the case when $\kappa(X)=0$; cf.~{\hyperref[lem-kappa-special]{Lemma  \ref*{lem-kappa-special} (2)}}).
+Then any linear quotient of $\pi_1(X)$ is virtually abelian.
+\end{cor}
+
+
+
+\begin{proof}
+By {\hyperref[lem-special-klt]{Lemma \ref*{lem-special-klt}}}, 
+$\pi_1(X)$ is a special K\"ahler group (cf.~\cite{Tak03}),
+noting that the specialness is a birational invariant. 
+Then our corollary follows from {\hyperref[prop-special-Kahler-abe]{Proposition  \ref*{prop-special-Kahler-abe}}}. 
+\end{proof}
+
+Now we are in the position to prove the second main result in this section.
+
+\begin{prop}\label{prop_fund_pp}
+Let $G$ be a special K\"ahler group.
+Suppose that  $G$ acts on a projective variety $F$ via a group homomorphism $\rho:G\to\Aut(F)$ to the automorphism group of $F$, such that there exists a $G$-linearized  ample line bundle $L$ on $F$  (cf. \cite[Defintion 3.2.3, Lemma 3.2.4]{Brion18}).
+Then $G$ has a periodic point on $F$.
+\end{prop}
+
+
+
+
+
+
+\begin{proof}
+	It follows directly from {\hyperref[prop-sol-fixed]{Proposition \ref*{prop-sol-fixed}}} and {\hyperref[prop-special-Kahler-abe]{Proposition \ref*{prop-special-Kahler-abe}}}.
+\end{proof}
+
+
+Note that the solvability of special K\"ahler groups has its own  interests (cf.~\cite[Conjecture 7.1]{Cam04}). Thus we may ask the following question.
+
+\begin{ques}\label{ques-kernel-sol}
+	Let $G$ be a special K\"ahler group.
+	Suppose that $G$ acts on a projective variety $F$ via a group homomorphism $G\to\Aut(F)$ such that there is a $G$-linearized  ample line bundle $L$ on $F$.
+	Can we give some descriptions on the kernel of $\rho: G\to G|_F$? 
+	Will $\ker\rho$ (and hence $G$) be virtually solvable?
+\end{ques}
+
+ 
+In our case, the solvability of $G$ follows from the solvability of $\ker\rho$ due to the exact sequence $1\to \ker\rho\to G\to G|_F\to 1$  (cf.~{\hyperref[prop-special-Kahler-abe]{Proposition  \ref*{prop-special-Kahler-abe}}}). 
+Moreover, {\hyperref[ques-kernel-sol]{Question   \ref*{ques-kernel-sol}}} has a negative answer if we don't assume
+the speciality.  
+For example, 
+it is known that the group given by the presentation
+$$\Gamma_g=\left<\alpha_1,\cdots,\alpha_g,\beta_1,\cdots,\beta_g:\prod_{i=1}^g[\alpha_i,\beta_i]=1\right>$$
+is K\"ahler.
+Indeed, it is the fundamental group of a compact Riemann surface of genus $g$.
+However, when $g>1$ the commutator subgroup $[\Gamma_g,\Gamma_g]$ is a free non-abelian group and hence $\Gamma_g$ is not virtually solvable. 
+%(cf.~https://arxiv.org/pdf/2101.05905.pdf, Theorem B)?
+
+%\begin{rmq}
+%Indeed, the existence of the ample $G$-invariant line bundle has its own interest. 
+%In this situation, $G|_F$ would be virtually contained in the identity component $\textup{Aut}_0(F)$ of $\textup{Aut}(F)$ by Fujiki and Lieberman (cf.~\cite{Fuj78} and \cite{Lie78}).
+%However, little things were know whether $G$ is solvable or not (cf.~Question \ref{ques-kernel-sol}).
+%\end{rmq}
+
+Applying {\hyperref[prop_fund_pp]{Proposition  \ref*{prop_fund_pp}}} to a locally constant fibration, we end up this section with the following corollary. % which will be used in the proof of {\hyperref[mainthm-section]{Theorem \ref*{mainthm-section}}}.
+\begin{cor}\label{cor-lc-periodic}
+Let $f:X\to Y$ be a locally constant fibration with a fibre $F$.
+Suppose that the irregularity $q(F)=0$ and $Y$ is special.
+Then the fundamental group $G:=\pi_1(Y)$ acts on $F$ and has a periodic point on it.
+\end{cor}
+
+
+\begin{proof}
+To apply {\hyperref[prop_fund_pp]{Proposition  \ref*{prop_fund_pp}}}, we only need to verify that there is a $G$-linearized ample line bundle $L$ on $F$ (cf.~\cite[Definition 2.6]{MW21}). 
+Since $f$ is locally constant, we have the following diagram
+\[
+\xymatrix{F\times Y^{\textup{univ}}\ar[r]\ar[d]&Y^{\text{univ}}\ar[d]\\
+X\ar[r]&Y}
+\]
+where $Y^{\textup{univ}}$ is the universal cover of $Y$ and $F\times Y^{\textup{univ}}\cong X\times_Y Y^{\textup{univ}}$ with the induced projection $\textup{pr}_1: F\times Y^{\textup{univ}}\to F$ and  $\textup{pr}_2: F\times Y^{\textup{univ}}\to Y^{\textup{univ}}$.
+Let us fix an $f$-ample divisor $A$ on $X$ and denote by $p_X: F\times Y^{\textup{univ}}\to X$ the natural projection.
+Applying \cite[Proof of Lemma 2.7]{MW21}, we see that there exists a line bundle $A_Y$ on $Y$ such that 
+$$p_X^*(A-f^*A_Y)\cong\textup{pr}_1^*A_F$$ 
+for some line bundle $A_F$ on $F$.
+Since $X\cong (F\times Y^{\textup{univ}})/G$, our $p_X^*(A-f^*A_Y)$ is $G$-linearized, and hence,  
+$$g^*p_X^*(A-f^*A_Y)\sim p_X^*(A-f^*A_Y)$$ 
+for any $g\in G$ (regarded as an automorphism of $F$); see \cite[Defintion 3.2.3, Lemma 3.2.4]{Brion18}.  
+Hence, $\textup{pr}_1^*A_F$ is also $G$-linearized.
+Moreover, since $G$ acts on $F\times Y^{\textup{univ}}$ via the diagonal, our $A_F$ is a $G$-linearized ample line bundle, noting that $A_F\cong A|_F$.
+\end{proof}
+
+
+
+
+\vskip 2\baselineskip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%{\color{blue} The following is a discussion on $G_1$, and can be removed finally.}
+%Let $X\to Y$ be a locally constant fibration. 
+%We denote by $G_1:=\{g\in G~|~g|_F=\text{id}\}$ and consider the following diagram:
+%\[
+%\xymatrix{F\times Y^{\textup{univ}}\ar[r]\ar[d]&Y^{\text{univ}}\ar[d]\\
+%F\times (Y^{\text{univ}}/G_1)\ar[r]\ar[d]&Y^{\text{univ}}/G_1\ar[d]\\
+%X\ar[r]&Y}
+%\]
+
+
+
+%From \cite[Theorem 6.5]{CCE15}, we know that:
+%Let $Y$ be a compact K\"ahler manifold and $\rho:\pi_1(Y)\to \textup{GL}_N(\mathbb{C})$ a linear representation of its fundamental group.
+%Then after replacing $Y$ by a finite \'etale cover, the Shafarevich manifold $\textup{Sh}_\rho(Z)$ associated with $\rho$ is (bimeromorphic to) a compact K\"ahler manifold $Z$ which is the total space of a smooth torus fibration over a manifold of general type.
+%$$Y\xrightarrow{\textup{sh}_\rho}Z:=\textup{Sh}_\rho(Y)\xrightarrow{s_\rho}S_\rho(Y)$$
+%The manifold $Z$ is bimeromorphic to the Shafarevich manifold of $Y$, obtained from $Y$ by contracting the submanifolds, the fundamental groups of which lie in the kernel of $\rho$.
+%The torus fibration (i.e., the submersion $Z\to S_\rho(Y)$) has the tori fibre being the maximal manifolds, on the fundamental groups of which, $\rho$ has an abelian image in $\textup{GL}_N(\mathbb{C})$.
+%Note that $\rho$ factors as $\pi_1(Y)\to\pi_1(Z)\to \rho(\pi_1(Y))$ (cf.~\cite[Section 2]{CCE15}).
+

@@ -1,0 +1,336 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{MOSC{\etalchar{+}}15}
+
+\bibitem[AD14]{AraujoDruel2014}
+Carolina Araujo and St\'{e}phane Druel.
+\newblock On codimension 1 del {P}ezzo foliations on varieties with mild
+  singularities.
+\newblock {\em Math. Ann.}, 360(3-4):769--798, 2014.
+
+\bibitem[ADK08]{AraujoDruelKovacs2008}
+Carolina Araujo, St{\'e}phane Druel, and S{\'a}ndor~J. Kov{\'a}cs.
+\newblock Cohomological characterizations of projective spaces and
+  hyperquadrics.
+\newblock {\em Invent. Math.}, 174(2):233--253, 2008.
+
+\bibitem[AKP08]{AproduKebekusPeternell2008}
+Marian Aprodu, Stefan Kebekus, and Thomas Peternell.
+\newblock Galois coverings and endomorphisms of projective varieties.
+\newblock {\em Math. Z.}, 260(2):431--449, 2008.
+
+\bibitem[Ara06]{Araujo2006}
+Carolina Araujo.
+\newblock Rational curves of minimal degree and characterizations of projective
+  spaces.
+\newblock {\em Math. Ann.}, 335(4):937--951, 2006.
+
+\bibitem[AW01]{AndreattaWisniewski2001}
+Marco Andreatta and Jaros{\l}aw~A. Wi{\'s}niewski.
+\newblock On manifolds whose tangent bundle contains an ample subbundle.
+\newblock {\em Invent. Math.}, 146(1):209--217, 2001.
+
+\bibitem[BDPP13]{BoucksomDemaillyPuaunPeternell2013}
+S{\'e}bastien Boucksom, Jean-Pierre Demailly, Mihai P{\u a}un, and Thomas
+  Peternell.
+\newblock The pseudo-effective cone of a compact {K}\"ahler manifold and
+  varieties of negative {K}odaira dimension.
+\newblock {\em J. Algebraic Geom.}, 22(2):201--248, 2013.
+
+\bibitem[BKT13]{BrunebarbeKlinglerTotaro2013}
+Yohan Brunebarbe, Bruno Klingler, and Burt Totaro.
+\newblock Symmetric differentials and the fundamental group.
+\newblock {\em Duke Math. J.}, 162(14):2797--2813, 2013.
+
+\bibitem[BS94]{BandoSiu1994}
+Shigetoshi Bando and Yum-Tong Siu.
+\newblock Stable sheaves and {E}instein-{H}ermitian metrics.
+\newblock In {\em Geometry and analysis on complex manifolds}, pages 39--50.
+  World Sci. Publ., River Edge, NJ, 1994.
+
+\bibitem[CMSB02]{ChoMiyaokaShepherd-Barron2002}
+Koji Cho, Yoichi Miyaoka, and Nicholas~I. Shepherd-Barron.
+\newblock Characterizations of projective space and applications to complex
+  symplectic manifolds.
+\newblock In {\em Higher dimensional birational geometry ({K}yoto, 1997)},
+  volume~35 of {\em Adv. Stud. Pure Math.}, pages 1--88. Math. Soc. Japan,
+  Tokyo, 2002.
+
+\bibitem[CP91]{CampanaPeternell1991}
+Fr{\'e}d{\'e}ric Campana and Thomas Peternell.
+\newblock Projective manifolds whose tangent bundles are numerically effective.
+\newblock {\em Math. Ann.}, 289(1):169--187, 1991.
+
+\bibitem[CP93]{CampanaPeternell1993}
+Fr\'{e}d\'{e}ric Campana and Thomas Peternell.
+\newblock {$4$}-folds with numerically effective tangent bundles and second
+  {B}etti numbers greater than one.
+\newblock {\em Manuscripta Math.}, 79(3-4):225--238, 1993.
+
+\bibitem[CP98]{CampanaPeternell1998}
+Fr{\'e}d{\'e}ric Campana and Thomas Peternell.
+\newblock Rational curves and ampleness properties of the tangent bundle of
+  algebraic varieties.
+\newblock {\em Manuscripta Math.}, 97(1):59--74, 1998.
+
+\bibitem[Den18]{Deng2018}
+Ya~Deng.
+\newblock A note on the simpson correspondence for semistable higgs bundles.
+\newblock {\em Pure Appl. Math. Q.}, to appear, 2018.
+
+\bibitem[Don85]{Donaldson1985}
+Simon~Kirwan Donaldson.
+\newblock Anti self-dual {Y}ang-{M}ills connections over complex algebraic
+  surfaces and stable vector bundles.
+\newblock {\em Proc. London Math. Soc. (3)}, 50(1):1--26, 1985.
+
+\bibitem[DPS94]{DemaillyPeternellSchneider1994}
+Jean-Pierre Demailly, Thomas Peternell, and Michael Schneider.
+\newblock Compact complex manifolds with numerically effective tangent bundles.
+\newblock {\em J. Algebraic Geom.}, 3(2):295--345, 1994.
+
+\bibitem[DPS01]{DemaillyPeternellSchneider2001}
+Jean-Pierre Demailly, Thomas Peternell, and Michael Schneider.
+\newblock Pseudo-effective line bundles on compact {K}\"ahler manifolds.
+\newblock {\em Internat. J. Math.}, 12(6):689--741, 2001.
+
+\bibitem[Dru04]{Druel2004}
+St{\'e}phane Druel.
+\newblock Caract\'erisation de l'espace projectif.
+\newblock {\em Manuscripta Math.}, 115(1):19--30, 2004.
+
+\bibitem[Ele85]{Elencwajg1985}
+Georges Elencwajg.
+\newblock Brauer group of fibrations and symmetric products of curves.
+\newblock {\em Proc. Amer. Math. Soc.}, 94(4):597--602, 1985.
+
+\bibitem[Fuj87]{Fujita1987}
+Takao Fujita.
+\newblock On polarized manifolds whose adjoint bundles are not semipositive.
+\newblock In {\em Algebraic geometry, {S}endai, 1985}, volume~10 of {\em Adv.
+  Stud. Pure Math.}, pages 167--178. North-Holland, Amsterdam, 1987.
+
+\bibitem[GKP16]{GrebKebekusPeternell2016b}
+Daniel Greb, Stefan Kebekus, and Thomas Peternell.
+\newblock \'{E}tale fundamental groups of {K}awamata log terminal spaces, flat
+  sheaves, and quotients of abelian varieties.
+\newblock {\em Duke Math. J.}, 165(10):1965--2004, 2016.
+
+\bibitem[Gro61]{Grothendieck1961}
+Alexander Grothendieck.
+\newblock \'{E}l\'ements de g\'eom\'etrie alg\'ebrique. {II}. \'{E}tude globale
+  \'el\'ementaire de quelques classes de morphismes.
+\newblock {\em Inst. Hautes \'Etudes Sci. Publ. Math.}, (8):222, 1961.
+
+\bibitem[Har70]{Hartshorne1970}
+Robin Hartshorne.
+\newblock {\em Ample subvarieties of algebraic varieties}.
+\newblock Lecture Notes in Mathematics, Vol. 156. Springer-Verlag, Berlin-New
+  York, 1970.
+\newblock Notes written in collaboration with C. Musili.
+
+\bibitem[Har77]{Hartshorne1977}
+Robin Hartshorne.
+\newblock {\em Algebraic geometry}.
+\newblock Springer-Verlag, New York-Heidelberg, 1977.
+\newblock Graduate Texts in Mathematics, No. 52.
+
+\bibitem[HN13]{HoeringNovelli2013}
+Andreas H{\"o}ring and Carla Novelli.
+\newblock Mori contractions of maximal length.
+\newblock {\em Publ. Res. Inst. Math. Sci.}, 49(1):215--228, 2013.
+
+\bibitem[HP19]{HoeringPeternell2019}
+Andreas H\"{o}ring and Thomas Peternell.
+\newblock Algebraic integrability of foliations with numerically trivial
+  canonical bundle.
+\newblock {\em Invent. Math.}, 216(2):395--419, 2019.
+
+\bibitem[Hwa06]{Hwang2006}
+Jun-Muk Hwang.
+\newblock Rigidity of rational homogeneous spaces.
+\newblock In {\em International {C}ongress of {M}athematicians. {V}ol. {II}},
+  pages 613--626. Eur. Math. Soc., Z\"urich, 2006.
+
+\bibitem[Kan17]{Kanemitsu2017}
+Akihiro Kanemitsu.
+\newblock Fano 5-folds with nef tangent bundles.
+\newblock {\em Math. Res. Lett.}, 24(5):1453--1475, 2017.
+
+\bibitem[Keb02]{Kebekus2002}
+Stefan Kebekus.
+\newblock Families of singular rational curves.
+\newblock {\em J. Algebraic Geom.}, 11(2):245--256, 2002.
+
+\bibitem[KM98]{KollarMori1998}
+J{\'a}nos Koll{\'a}r and Shigefumi Mori.
+\newblock {\em Birational geometry of algebraic varieties}, volume 134 of {\em
+  Cambridge Tracts in Mathematics}.
+\newblock Cambridge University Press, Cambridge, 1998.
+
+\bibitem[Kob14]{Kobayashi2014}
+Shoshichi Kobayashi.
+\newblock {\em Differential geometry of complex vector bundles}.
+\newblock Princeton Legacy Library. Princeton University Press, Princeton, NJ,
+  2014.
+\newblock Reprint of the 1987 edition [ MR0909698].
+
+\bibitem[Kol96]{Kollar1996}
+J{\'a}nos Koll{\'a}r.
+\newblock {\em Rational curves on algebraic varieties}, volume~32 of {\em
+  Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge. A Series of
+  Modern Surveys in Mathematics [Results in Mathematics and Related Areas. 3rd
+  Series. A Series of Modern Surveys in Mathematics]}.
+\newblock Springer-Verlag, Berlin, 1996.
+
+\bibitem[Kol11]{Kollar2011}
+J\'{a}nos Koll\'{a}r.
+\newblock Simultaneous normalization and algebra husks.
+\newblock {\em Asian J. Math.}, 15(3):437--449, 2011.
+
+\bibitem[Laz04a]{Lazarsfeld2004}
+Robert Lazarsfeld.
+\newblock {\em Positivity in algebraic geometry. {I}}, volume~48 of {\em
+  Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge. A Series of
+  Modern Surveys in Mathematics [Results in Mathematics and Related Areas. 3rd
+  Series. A Series of Modern Surveys in Mathematics]}.
+\newblock Springer-Verlag, Berlin, 2004.
+\newblock Classical setting: line bundles and linear series.
+
+\bibitem[Laz04b]{Lazarsfeld2004a}
+Robert Lazarsfeld.
+\newblock {\em Positivity in algebraic geometry. {II}}, volume~49 of {\em
+  Ergebnisse der Mathematik und ihrer Grenzgebiete. 3. Folge. A Series of
+  Modern Surveys in Mathematics [Results in Mathematics and Related Areas. 3rd
+  Series. A Series of Modern Surveys in Mathematics]}.
+\newblock Springer-Verlag, Berlin, 2004.
+\newblock Positivity for vector bundles, and multiplier ideals.
+
+\bibitem[Li17]{Li2017}
+Qifeng Li.
+\newblock Smooth projective horospherical varieties with nef tangent bundles.
+\newblock {\em Indiana Univ. Math. J.}, 66(6):1879--1893, 2017.
+
+\bibitem[Liu19]{Liu2019}
+Jie Liu.
+\newblock Characterization of projective spaces and $\mathbb{P}^{r}$ -bundles
+  as ample divisors.
+\newblock {\em Nagoya Math. J.}, 233:155--169, 2019.
+
+\bibitem[LOY19]{LiOuYang2019}
+Duo Li, Wenhao Ou, and Xiaokui Yang.
+\newblock On projective varieties with strictly nef tangent bundles.
+\newblock {\em J. Math. Pures Appl. (9)}, 128:140--151, 2019.
+
+\bibitem[LPT18]{LorayPereiraTouzet2018}
+Frank Loray, Jorge~Vit\'{o}rio Pereira, and Fr\'{e}d\'{e}ric Touzet.
+\newblock Singular foliations with trivial canonical class.
+\newblock {\em Invent. Math.}, 213(3):1327--1380, 2018.
+
+\bibitem[Mok88]{Mok1988}
+Ngaiming Mok.
+\newblock The uniformization theorem for compact {K}\"ahler manifolds of
+  nonnegative holomorphic bisectional curvature.
+\newblock {\em J. Differential Geom.}, 27(2):179--214, 1988.
+
+\bibitem[Mok02]{Mok2002}
+Ngaiming Mok.
+\newblock On {F}ano manifolds with nef tangent bundles admitting 1-dimensional
+  varieties of minimal rational tangents.
+\newblock {\em Trans. Amer. Math. Soc.}, 354(7):2639--2658, 2002.
+
+\bibitem[Mor79]{Mori1979}
+Shigefumi Mori.
+\newblock Projective manifolds with ample tangent bundles.
+\newblock {\em Ann. of Math. (2)}, 110(3):593--606, 1979.
+
+\bibitem[MOSC{\etalchar{+}}15]{MunozOcchettaSolaCondeWatanabeEtAl2015}
+Roberto Mu{\~n}oz, Gianluca Occhetta, Luis~Eduardo Sol{\'a}~Conde, Kiwamu
+  Watanabe, and Jaros{\l}aw~A. Wi{\'s}niewski.
+\newblock A survey on the {C}ampana-{P}eternell conjecture.
+\newblock {\em Rend. Istit. Mat. Univ. Trieste}, 47:127--185, 2015.
+
+\bibitem[MR84]{MehtaRamanathan1984}
+Vikram~Bhagvandas Mehta and Annamalai Ramanathan.
+\newblock Restriction of stable sheaves and representations of the fundamental
+  group.
+\newblock {\em Invent. Math.}, 77(1):163--172, 1984.
+
+\bibitem[MR82]{MehtaRamanathan1981/82}
+Vikram~Bhagvandas Mehta and Annamalai Ramanathan.
+\newblock Semistable sheaves on projective varieties and their restriction to
+  curves.
+\newblock {\em Math. Ann.}, 258(3):213--224, 1981/82.
+
+\bibitem[Nak04]{Nakayama2004}
+Noboru Nakayama.
+\newblock {\em Zariski-decomposition and abundance}, volume~14 of {\em MSJ
+  Memoirs}.
+\newblock Mathematical Society of Japan, Tokyo, 2004.
+
+\bibitem[NS65]{NarasimhanSeshadri1965}
+Mudumbai~S. Narasimhan and Conjeeveram~S. Seshadri.
+\newblock Stable and unitary vector bundles on a compact {R}iemann surface.
+\newblock {\em Ann. of Math. (2)}, 82:540--567, 1965.
+
+\bibitem[Pan13]{Pandharipande2013}
+Rahul~Vijay Pandharipande.
+\newblock Convex rationally connected varieties.
+\newblock {\em Proc. Amer. Math. Soc.}, 141(5):1539--1543, 2013.
+
+\bibitem[Pet94]{Peternell1994}
+Thomas Peternell.
+\newblock Minimal varieties with trivial canonical classes. {I}.
+\newblock {\em Math. Z.}, 217(3):377--405, 1994.
+
+\bibitem[Pet96]{Peternell1996}
+Thomas Peternell.
+\newblock Manifolds of semi-positive curvature.
+\newblock In {\em Transcendental methods in algebraic geometry ({C}etraro,
+  1994)}, volume 1646 of {\em Lecture Notes in Math.}, pages 98--142. Springer,
+  Berlin, 1996.
+
+\bibitem[PT13]{PereiraTouzet2013}
+Jorge~Vit\'{o}rio Pereira and Fr\'{e}d\'{e}ric Touzet.
+\newblock Foliations with vanishing {C}hern classes.
+\newblock {\em Bull. Braz. Math. Soc. (N.S.)}, 44(4):731--754, 2013.
+
+\bibitem[Sim92]{Simpson1992}
+Carlos~T. Simpson.
+\newblock Higgs bundles and local systems.
+\newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (75):5--95, 1992.
+
+\bibitem[Sub89]{Subramanian1989}
+Swaminathan Subramanian.
+\newblock Mumford's example and a general construction.
+\newblock {\em Proc. Indian Acad. Sci. Math. Sci.}, 99(3):197--208, 1989.
+
+\bibitem[SY80]{SiuYau1980}
+Yum~Tong Siu and Shing~Tung Yau.
+\newblock Compact {K}\"ahler manifolds of positive bisectional curvature.
+\newblock {\em Invent. Math.}, 59(2):189--204, 1980.
+
+\bibitem[UY86]{UhlenbeckYau1986}
+Karen~Keskulla Uhlenbeck and Shing-Tung Yau.
+\newblock On the existence of {H}ermitian-{Y}ang-{M}ills connections in stable
+  vector bundles.
+\newblock volume~39, pages S257--S293. 1986.
+\newblock Frontiers of the mathematical sciences: 1985 (New York, 1985).
+
+\bibitem[Wah83]{Wahl1983}
+Jonathan~M. Wahl.
+\newblock A cohomological characterization of {${\bf P}^{n}$}.
+\newblock {\em Invent. Math.}, 72(2):315--322, 1983.
+
+\bibitem[Wat14]{Watanabe2014}
+Kiwamu Watanabe.
+\newblock Fano 5-folds with nef tangent bundles and {P}icard numbers greater
+  than one.
+\newblock {\em Math. Z.}, 276(1-2):39--49, 2014.
+
+\bibitem[Yam10]{Yamanoi2010}
+Katsutoshi Yamanoi.
+\newblock On fundamental groups of algebraic varieties and value distribution
+  theory.
+\newblock {\em Ann. Inst. Fourier (Grenoble)}, 60(2):551--563, 2010.
+
+\end{thebibliography}

@@ -1,0 +1,320 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{MOSC{\etalchar{+}}15}
+
+\bibitem[ADK08]{AraujoDruelKovacs2008}
+Carolina Araujo, St{\'e}phane Druel, and S{\'a}ndor~J. Kov{\'a}cs.
+\newblock Cohomological characterizations of projective spaces and
+  hyperquadrics.
+\newblock {\em Invent. Math.}, 174(2):233--253, 2008.
+
+\bibitem[AKP08]{AproduKebekusPeternell2008}
+Marian Aprodu, Stefan Kebekus, and Thomas Peternell.
+\newblock Galois coverings and endomorphisms of projective varieties.
+\newblock {\em Math. Z.}, 260(2):431--449, 2008.
+
+\bibitem[Ara06]{Araujo2006}
+Carolina Araujo.
+\newblock Rational curves of minimal degree and characterizations of projective
+  spaces.
+\newblock {\em Math. Ann.}, 335(4):937--951, 2006.
+
+\bibitem[AW01]{AndreattaWisniewski2001}
+Marco Andreatta and Jaros{\l}aw~A. Wi{\'s}niewski.
+\newblock On manifolds whose tangent bundle contains an ample subbundle.
+\newblock {\em Invent. Math.}, 146(1):209--217, 2001.
+
+\bibitem[BC16]{BirkarChen2016}
+Caucher Birkar and Yifei Chen.
+\newblock Images of manifolds with semi-ample anti-canonical divisor.
+\newblock {\em J. Algebraic Geom.}, 25(2):273--287, 2016.
+
+\bibitem[BHN19]{Biswas2019}
+Indranil Biswas, Krishna Hanumanthu, and Donihakkalu~S. Nagaraj.
+\newblock Positivity of vector bundles on homogeneous varieties.
+\newblock {\em ArXiv preprint}, 1904.09310, 2019.
+
+\bibitem[Cao16]{Cao2016}
+Junyan Cao.
+\newblock Albanese maps of projective manifolds with nef anticanonical bundles.
+\newblock {\em ArXiv preprint}, 1612.05921, 2016.
+
+\bibitem[CCP08]{CampanaChenPeternell2008}
+Fr\'{e}d\'{e}ric Campana, Jungkai~A. Chen, and Thomas Peternell.
+\newblock Strictly nef divisors.
+\newblock {\em Math. Ann.}, 342(3):565--585, 2008.
+
+\bibitem[CCP19]{CampanaCaoPaun2019}
+Fr{\'e}d{\'e}ric Campana, Junyan Cao, and Mihai P{\u{a}}un.
+\newblock Subharmonicity of direct images and applications.
+\newblock {\em arXiv preprint arXiv:1906.11317}, 2019.
+
+\bibitem[CH19]{CaoHoering2019}
+Junyan Cao and Andreas H{\"o}ring.
+\newblock A decomposition theorem for projective manifolds with nef
+  anticanonical bundle.
+\newblock {\em Journal of Algebraic Geometry}, 28(3):567--597, 2019.
+
+\bibitem[Cha20]{Chaudhuri2020}
+Priyankur Chaudhuri.
+\newblock Strictly nef divisors and some remarks on a conjecture of serrano.
+\newblock {\em ArXiv preprint}, 2008.05009, 2020.
+
+\bibitem[CMSB02]{ChoMiyaokaShepherd-Barron2002}
+Koji Cho, Yoichi Miyaoka, and Nicholas~I. Shepherd-Barron.
+\newblock Characterizations of projective space and applications to complex
+  symplectic manifolds.
+\newblock In {\em Higher dimensional birational geometry ({K}yoto, 1997)},
+  volume~35 of {\em Adv. Stud. Pure Math.}, pages 1--88. Math. Soc. Japan,
+  Tokyo, 2002.
+
+\bibitem[CP91]{CampanaPeternell1991}
+Fr{\'e}d{\'e}ric Campana and Thomas Peternell.
+\newblock Projective manifolds whose tangent bundles are numerically effective.
+\newblock {\em Math. Ann.}, 289(1):169--187, 1991.
+
+\bibitem[CP98]{CampanaPeternell1998}
+Fr{\'e}d{\'e}ric Campana and Thomas Peternell.
+\newblock Rational curves and ampleness properties of the tangent bundle of
+  algebraic varieties.
+\newblock {\em Manuscripta Math.}, 97(1):59--74, 1998.
+
+\bibitem[DH17]{DedieuHoering2017}
+Thomas Dedieu and Andreas H{\"o}ring.
+\newblock Numerical characterisation of quadrics.
+\newblock {\em Algebr. Geom.}, 4(1):120--135, 2017.
+
+\bibitem[DPS94]{DemaillyPeternellSchneider1994}
+Jean-Pierre Demailly, Thomas Peternell, and Michael Schneider.
+\newblock Compact complex manifolds with numerically effective tangent bundles.
+\newblock {\em J. Algebraic Geom.}, 3(2):295--345, 1994.
+
+\bibitem[DPS01]{DemaillyPeternellSchneider2001}
+Jean-Pierre Demailly, Thomas Peternell, and Michael Schneider.
+\newblock Pseudo-effective line bundles on compact {K}\"ahler manifolds.
+\newblock {\em Internat. J. Math.}, 12(6):689--741, 2001.
+
+\bibitem[Dru04]{Druel2004}
+St{\'e}phane Druel.
+\newblock Caract\'erisation de l'espace projectif.
+\newblock {\em Manuscripta Math.}, 115(1):19--30, 2004.
+
+\bibitem[FLW17]{FengLiuWan2017}
+Huitao Feng, Kefeng Liu, and Xueyuan Wan.
+\newblock Compact {K}\"{a}hler manifolds with positive orthogonal bisectional
+  curvature.
+\newblock {\em Math. Res. Lett.}, 24(3):767--780, 2017.
+
+\bibitem[Gac19]{Gachet2019}
+Cécile Gachet.
+\newblock Positivité du fibré tangent et de ses puissances extérieures.
+\newblock Master's thesis, Paris 6, 2019.
+
+\bibitem[Gra62]{Grauert1962}
+Hans Grauert.
+\newblock \"{U}ber {M}odifikationen und exzeptionelle analytische {M}engen.
+\newblock {\em Math. Ann.}, 146:331--368, 1962.
+
+\bibitem[Gri65]{Griffiths1965}
+Phillip~A. Griffiths.
+\newblock Hermitian differential geometry and the theory of positive and ample
+  holomorphic vector bundles.
+\newblock {\em J. Math. Mech.}, 14:117--140, 1965.
+
+\bibitem[Gri69]{Griffiths1969}
+Phillip~A. Griffiths.
+\newblock Hermitian differential geometry, {C}hern classes, and positive vector
+  bundles.
+\newblock In {\em Global {A}nalysis ({P}apers in {H}onor of {K}. {K}odaira)},
+  pages 185--251. Univ. Tokyo Press, Tokyo, 1969.
+
+\bibitem[Har66]{Hartshorne1966}
+Robin Hartshorne.
+\newblock Ample vector bundles.
+\newblock {\em Inst. Hautes \'{E}tudes Sci. Publ. Math.}, (29):63--94, 1966.
+
+\bibitem[Har70]{Hartshorne1970}
+Robin Hartshorne.
+\newblock {\em Ample subvarieties of algebraic varieties}.
+\newblock Lecture Notes in Mathematics, Vol. 156. Springer-Verlag, Berlin-New
+  York, 1970.
+\newblock Notes written in collaboration with C. Musili.
+
+\bibitem[HMP10]{Hering2010}
+Milena Hering, Mircea Musta\c{t}\u{a}, and Sam Payne.
+\newblock Positivity properties of toric vector bundles.
+\newblock {\em Ann. Inst. Fourier (Grenoble)}, 60(2):607--640, 2010.
+
+\bibitem[Hwa06]{Hwang2006}
+Jun-Muk Hwang.
+\newblock Rigidity of rational homogeneous spaces.
+\newblock In {\em International {C}ongress of {M}athematicians. {V}ol. {II}},
+  pages 613--626. Eur. Math. Soc., Z\"urich, 2006.
+
+\bibitem[KMM92]{KollarMiyaokaMori1992}
+J{\'a}nos Koll{\'a}r, Yoichi Miyaoka, and Shigefumi Mori.
+\newblock Rational connectedness and boundedness of {F}ano manifolds.
+\newblock {\em J. Differential Geom.}, 36(3):765--779, 1992.
+
+\bibitem[KO73]{KobayashiOchiai1973}
+Shoshichi Kobayashi and Takushiro Ochiai.
+\newblock Characterizations of complex projective spaces and hyperquadrics.
+\newblock {\em J. Math. Kyoto Univ.}, 13:31--47, 1973.
+
+\bibitem[Laz04a]{Lazarsfeld2004}
+Robert Lazarsfeld.
+\newblock {\em Positivity in algebraic geometry. {I}. Classical setting: line
+  bundles and linear series}, volume~48 of {\em Ergebnisse der Mathematik und
+  ihrer Grenzgebiete. 3. Folge. A Series of Modern Surveys in Mathematics
+  [Results in Mathematics and Related Areas. 3rd Series. A Series of Modern
+  Surveys in Mathematics]}.
+\newblock Springer-Verlag, Berlin, 2004.
+
+\bibitem[Laz04b]{Lazarsfeld2004a}
+Robert Lazarsfeld.
+\newblock {\em Positivity in algebraic geometry II: Positivity for vector
+  bundles, and multiplier ideals.}, volume~49 of {\em Ergebnisse der Mathematik
+  und ihrer Grenzgebiete. 3. Folge. A Series of Modern Surveys in Mathematics
+  [Results in Mathematics and Related Areas. 3rd Series. A Series of Modern
+  Surveys in Mathematics]}.
+\newblock Springer-Verlag, Berlin, 2004.
+
+\bibitem[Li18]{Li2018}
+Ping Li.
+\newblock The spectral rigidity of complex projective spaces, revisited.
+\newblock {\em Math. Z.}, 290(3-4):1115--1143, 2018.
+
+\bibitem[Liu19]{Liu2019}
+Jie Liu.
+\newblock Characterization of projective spaces and $\mathbb{P}^{r}$ -bundles
+  as ample divisors.
+\newblock {\em Nagoya Math. J.}, 233:155--169, 2019.
+
+\bibitem[LOY19]{LiOuYang2019}
+Duo Li, Wenhao Ou, and Xiaokui Yang.
+\newblock On projective varieties with strictly nef tangent bundles.
+\newblock {\em J. Math. Pures Appl. (9)}, 128:140--151, 2019.
+
+\bibitem[LOY20]{LiuOuYang2020}
+Jie Liu, Wenhao Ou, and Xiaokui Yang.
+\newblock Projective manifolds whose tangent bundle contains a strictly nef
+  subsheaf.
+\newblock {\em ArXiv preprint}, 2004.08507, 2020.
+
+\bibitem[LOY21]{LiuOuYang2}
+Jie Liu, Wenhao Ou, and Xiaokui Yang.
+\newblock Projective manifolds with a strictly nef pair.
+\newblock {\em preprint}, 2021.
+
+\bibitem[LP20a]{LazicPeternell2020}
+Vladimir Lazi\'{c} and Thomas Peternell.
+\newblock On {G}eneralised {A}bundance, {I}.
+\newblock {\em Publ. Res. Inst. Math. Sci.}, 56(2):353--389, 2020.
+
+\bibitem[LP20b]{LazicPeternell2020a}
+Vladimir Lazi\'{c} and Thomas Peternell.
+\newblock On {G}eneralised {A}bundance, {II}.
+\newblock {\em Peking Math. J.}, 3(1):1--46, 2020.
+
+\bibitem[LR94]{LanteriRondena1994}
+Antonio Lanteri and Barbara Rondena.
+\newblock Numerically positive divisors on algebraic surfaces.
+\newblock {\em Geom. Dedicata}, 53(2):145--154, 1994.
+
+\bibitem[Mae93]{Maeda1993}
+Hidetoshi Maeda.
+\newblock A criterion for a smooth surface to be {D}el {P}ezzo.
+\newblock {\em Math. Proc. Cambridge Philos. Soc.}, 113(1):1--3, 1993.
+
+\bibitem[Mok88]{Mok1988}
+Ngaiming Mok.
+\newblock The uniformization theorem for compact {K}\"ahler manifolds of
+  nonnegative holomorphic bisectional curvature.
+\newblock {\em J. Differential Geom.}, 27(2):179--214, 1988.
+
+\bibitem[Mor79]{Mori1979}
+Shigefumi Mori.
+\newblock Projective manifolds with ample tangent bundles.
+\newblock {\em Ann. of Math. (2)}, 110(3):593--606, 1979.
+
+\bibitem[MOSC{\etalchar{+}}15]{MunozOcchettaSolaCondeWatanabeEtAl2015}
+Roberto Mu{\~n}oz, Gianluca Occhetta, Luis~Eduardo Sol{\'a}~Conde, Kiwamu
+  Watanabe, and Jaros{\l}aw~A. Wi{\'s}niewski.
+\newblock A survey on the {C}ampana-{P}eternell conjecture.
+\newblock {\em Rend. Istit. Mat. Univ. Trieste}, 47:127--185, 2015.
+
+\bibitem[Mou97]{Mourougane1997}
+Christophe Mourougane.
+\newblock Images directes de fibr\'es en droites adjoints.
+\newblock {\em Publ. Res. Inst. Math. Sci.}, 33(6):893--916, 1997.
+
+\bibitem[Pet90]{Peternell1990}
+Thomas Peternell.
+\newblock A characterization of {${\bf P}_n$} by vector bundles.
+\newblock {\em Math. Z.}, 205(3):487--490, 1990.
+
+\bibitem[Pet96]{Peternell1996}
+Thomas Peternell.
+\newblock Manifolds of semi-positive curvature.
+\newblock In {\em Transcendental methods in algebraic geometry ({C}etraro,
+  1994)}, volume 1646 of {\em Lecture Notes in Math.}, pages 98--142. Springer,
+  Berlin, 1996.
+
+\bibitem[SB95]{ShepherdBarron1995}
+N.~I. Shepherd-Barron.
+\newblock Infinite generation for rings of symmetric tensors.
+\newblock {\em Math. Res. Lett.}, 2(2):125--128, 1995.
+
+\bibitem[Ser95]{Serrano1995}
+Fernando Serrano.
+\newblock Strictly nef divisors and {F}ano threefolds.
+\newblock {\em J. Reine Angew. Math.}, 464:187--206, 1995.
+
+\bibitem[Sub89]{Subramanian1989}
+Swaminathan Subramanian.
+\newblock Mumford's example and a general construction.
+\newblock {\em Proc. Indian Acad. Sci. Math. Sci.}, 99(3):197--208, 1989.
+
+\bibitem[SY80]{SiuYau1980}
+Yum~Tong Siu and Shing~Tung Yau.
+\newblock Compact {K}\"ahler manifolds of positive bisectional curvature.
+\newblock {\em Invent. Math.}, 59(2):189--204, 1980.
+
+\bibitem[Tos17]{Tosatti2017}
+Valentino Tosatti.
+\newblock Uniqueness of {$\Bbb{C}\Bbb{P}^n$}.
+\newblock {\em Expo. Math.}, 35(1):1--12, 2017.
+
+\bibitem[Ueh00]{Uehara2000}
+Hokuto Uehara.
+\newblock On the canonical threefolds with strictly nef anticanonical divisors.
+\newblock {\em J. Reine Angew. Math.}, 522:81--91, 2000.
+
+\bibitem[UY86]{UhlenbeckYau1986}
+Karen~Keskulla Uhlenbeck and Shing-Tung Yau.
+\newblock On the existence of {H}ermitian-{Y}ang-{M}ills connections in stable
+  vector bundles.
+\newblock volume~39, pages S257--S293. 1986.
+\newblock Frontiers of the mathematical sciences: 1985 (New York, 1985).
+
+\bibitem[Wah83]{Wahl1983}
+Jonathan~M. Wahl.
+\newblock A cohomological characterization of {${\bf P}^{n}$}.
+\newblock {\em Invent. Math.}, 72(2):315--322, 1983.
+
+\bibitem[Yan17]{Yang2017}
+Xiaokui Yang.
+\newblock Big vector bundles and complex manifolds with semi-positive tangent
+  bundles.
+\newblock {\em Math. Ann.}, 367(1-2):251--282, 2017.
+
+\bibitem[Yan19]{Yang2019}
+Xiaokui Yang.
+\newblock A partial converse to the {A}ndreotti-{G}rauert theorem.
+\newblock {\em Compos. Math.}, 155(1):89--99, 2019.
+
+\bibitem[Yau74]{Yau1974}
+Shing~Tung Yau.
+\newblock On the curvature of compact {H}ermitian manifolds.
+\newblock {\em Invent. Math.}, 25:213--239, 1974.
+
+\end{thebibliography}

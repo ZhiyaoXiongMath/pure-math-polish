@@ -1,0 +1,601 @@
+{
+  "schema_version": 2,
+  "name": "Xiaokui Yang paper sources",
+  "expected_papers": 20,
+  "source_policy": "Fixed source snapshot. File hashes refer to the original distributed bytes. No claim of current ranking or blanket redistribution rights.",
+  "papers": [
+    {
+      "id": "2606.30121v1",
+      "title": "Iterative construction of Hermitian-Einstein metrics on stable bundles",
+      "authors": [
+        "Fan, Jiaxuan",
+        "Xiong, Zhiyao",
+        "Yang, Xiaokui",
+        "Yau, Shing-Tung"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2606.30121v1",
+      "source_url": "https://arxiv.org/src/2606.30121v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/01_2606.30121v1/_v5_Iteration.tex",
+      "tex_files": [
+        "papers/01_2606.30121v1/_v5_Iteration.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/01_2606.30121v1/00README.json",
+          "bytes": 222,
+          "sha256": "95b3deafc4c13eb3d39eb0e59cd919beb2da56ab9e7d32b9e5ea72ae696d88d0"
+        },
+        {
+          "path": "papers/01_2606.30121v1/_v5_Iteration.tex",
+          "bytes": 49354,
+          "sha256": "d6261e6dc0c9805f9a6ac7e83cd2aa0246ad9bcfea3b684ca804f9aa194fb579"
+        }
+      ]
+    },
+    {
+      "id": "2606.21073v1",
+      "title": "The prescribed Hermitian-Yang-Mills flow II",
+      "authors": [
+        "Xiong, Zhiyao",
+        "Yang, Xiaokui",
+        "Yau, Shing-Tung"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2606.21073v1",
+      "source_url": "https://arxiv.org/src/2606.21073v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/02_2606.21073v1/_v7__Flow_two.tex",
+      "tex_files": [
+        "papers/02_2606.21073v1/_v7__Flow_two.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/02_2606.21073v1/00README.json",
+          "bytes": 222,
+          "sha256": "771cb66a66bf4ee7b2033dcd61b2058832cef37edcdfe5146bafa7e41b65e7bc"
+        },
+        {
+          "path": "papers/02_2606.21073v1/_v7__Flow_two.tex",
+          "bytes": 94424,
+          "sha256": "7e30a6a180756a89c0841f1c3f2483d084097fdbaa794ee79978ec7d8c829546"
+        }
+      ]
+    },
+    {
+      "id": "2606.21062v2",
+      "title": "The prescribed Hermitian-Yang-Mills flow I",
+      "authors": [
+        "Xiong, Zhiyao",
+        "Yang, Xaokui",
+        "Yau, Shing-Tung"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2606.21062v2",
+      "source_url": "https://arxiv.org/src/2606.21062v2",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/03_2606.21062v2/_v10_Flow_one.tex",
+      "tex_files": [
+        "papers/03_2606.21062v2/_v10_Flow_one.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/03_2606.21062v2/00README.json",
+          "bytes": 221,
+          "sha256": "0af97bb2c7c4f2670d30cf16e0cbd99833041006f68cc75ea438514bbe7d58ab"
+        },
+        {
+          "path": "papers/03_2606.21062v2/_v10_Flow_one.tex",
+          "bytes": 130389,
+          "sha256": "6c8788416044798c5ab9d928f1e56e9f85c02f49b128fe93fb7b1ad393e460bb"
+        }
+      ]
+    },
+    {
+      "id": "2606.15102v1",
+      "title": "Existence of twisted Hermitian-Einstein metrics on unstable vector bundles",
+      "authors": [
+        "Wang, Mingwei",
+        "Yang, Xiaokui",
+        "Yau, Shing-Tung"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2606.15102v1",
+      "source_url": "https://arxiv.org/src/2606.15102v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/04_2606.15102v1/_v5_unstable.tex",
+      "tex_files": [
+        "papers/04_2606.15102v1/_v5_unstable.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/04_2606.15102v1/00README.json",
+          "bytes": 221,
+          "sha256": "e8947f97c50d702807c360fb6c5008ffa1e628c106c7552bd05653b6f0955888"
+        },
+        {
+          "path": "papers/04_2606.15102v1/_v5_unstable.tex",
+          "bytes": 91558,
+          "sha256": "e2ec518785da6c318b7d23d5e2e74d0325b0147f2d28d58aed5d9713022aa757"
+        }
+      ]
+    },
+    {
+      "id": "2604.02679v2",
+      "title": "Existence of Hermitian metrics with prescribed Hermitian-Yang-Mills tensors II",
+      "authors": [
+        "Fan, Jiaxuan",
+        "Wang, Mingwei",
+        "Yang, Xiaokui",
+        "Yau, Shing-Tung"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2604.02679v2",
+      "source_url": "https://arxiv.org/src/2604.02679v2",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/05_2604.02679v2/_v5_Higgs.tex",
+      "tex_files": [
+        "papers/05_2604.02679v2/_v5_Higgs.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/05_2604.02679v2/00README.json",
+          "bytes": 218,
+          "sha256": "1a99d8fafa73247c25626d648d828d4b51585946beb22b04454601b2c62f7cb8"
+        },
+        {
+          "path": "papers/05_2604.02679v2/_v5_Higgs.tex",
+          "bytes": 100684,
+          "sha256": "734d6e8418425185abf19eadd6a84149d44e544a9f8a29e1eed7f6962f07b94a"
+        }
+      ]
+    },
+    {
+      "id": "2603.10611v4",
+      "title": "Existence of Hermitian metrics with prescribed Hermitian-Yang-Mills tensors I",
+      "authors": [
+        "Wang, Mingwei",
+        "Yang, Xiaokui",
+        "Yau, Shing-Tung"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2603.10611v4",
+      "source_url": "https://arxiv.org/src/2603.10611v4",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/06_2603.10611v4/_v6_CYUY.tex",
+      "tex_files": [
+        "papers/06_2603.10611v4/_v6_CYUY.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/06_2603.10611v4/00README.json",
+          "bytes": 217,
+          "sha256": "ace68f44d838b199d4bb95a35da1c272548c8078ebf0519e3637dc3acb2b9433"
+        },
+        {
+          "path": "papers/06_2603.10611v4/_v6_CYUY.tex",
+          "bytes": 107377,
+          "sha256": "c48e14e1bf2d44f3aef7cf08857f7712f1387a46a761643afb09b93aa09f87fe"
+        }
+      ]
+    },
+    {
+      "id": "2510.01548v1",
+      "title": "Laplacian comparison theorems on complete K\\\"ahler manifolds and applications",
+      "authors": [
+        "Fang, Jiaxuan",
+        "Xiong, Zhiyao",
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2510.01548v1",
+      "source_url": "https://arxiv.org/src/2510.01548v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/07_2510.01548v1/_250904_comparison.tex",
+      "tex_files": [
+        "papers/07_2510.01548v1/_250904_comparison.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/07_2510.01548v1/00README.json",
+          "bytes": 227,
+          "sha256": "620a3d8b9e601f61803cf7a5d04055c86fafe1516c9d37d71867cf37e74769c6"
+        },
+        {
+          "path": "papers/07_2510.01548v1/_250904_comparison.tex",
+          "bytes": 71910,
+          "sha256": "10f206e61751ac578eb97da47a2e60bf25cb701c535ce36d9ce7325c2e5a580e"
+        }
+      ]
+    },
+    {
+      "id": "2509.00468v1",
+      "title": "Weitzenb\\\"ock-Bochner-Kodaira formulas with quadratic curvature terms",
+      "authors": [
+        "Wang, Mingwei",
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2509.00468v1",
+      "source_url": "https://arxiv.org/src/2509.00468v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/08_2509.00468v1/_0824_Vanishing_theorems.tex",
+      "tex_files": [
+        "papers/08_2509.00468v1/_0824_Vanishing_theorems.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/08_2509.00468v1/00README.json",
+          "bytes": 226,
+          "sha256": "140e7f9d865029270c39facad290fbf835a4733c3e7c65a9346ce87b524dc511"
+        },
+        {
+          "path": "papers/08_2509.00468v1/_0824_Vanishing_theorems.tex",
+          "bytes": 107150,
+          "sha256": "6da4a37a0e4c32efc2d46917ed5cb73bac611cf6f0296a4cd686bed6dede7616"
+        }
+      ]
+    },
+    {
+      "id": "2508.11171v1",
+      "title": "Chern number identities on compact complex surfaces and applications",
+      "authors": [
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2508.11171v1",
+      "source_url": "https://arxiv.org/src/2508.11171v1",
+      "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "main": "papers/09_2508.11171v1/_20250811_Chern_number_identities_on_compact_complex_surfaces_and_applications.tex",
+      "tex_files": [
+        "papers/09_2508.11171v1/_20250811_Chern_number_identities_on_compact_complex_surfaces_and_applications.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/09_2508.11171v1/00README.json",
+          "bytes": 280,
+          "sha256": "8d2d51e565a7dd40c480bd3326e2f0b9857a8d7901222f97488413cd5c83caff"
+        },
+        {
+          "path": "papers/09_2508.11171v1/_20250811_Chern_number_identities_on_compact_complex_surfaces_and_applications.tex",
+          "bytes": 90898,
+          "sha256": "50a68b246478b64ba96f722d443fe2a443a5d0e2a109bd90689711d7747fd9d8"
+        }
+      ]
+    },
+    {
+      "id": "2507.15002v1",
+      "title": "Comparison theorems in Hermitian geometry I",
+      "authors": [
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2507.15002v1",
+      "source_url": "https://arxiv.org/src/2507.15002v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/10_2507.15002v1/_250721__Comparison_theorems_on_Hermitian_manifolds.tex",
+      "tex_files": [
+        "papers/10_2507.15002v1/_250721__Comparison_theorems_on_Hermitian_manifolds.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/10_2507.15002v1/00README.json",
+          "bytes": 253,
+          "sha256": "6450233b88b54640a930dcabda6be605d25e288304ee04e30be0a20456be3233"
+        },
+        {
+          "path": "papers/10_2507.15002v1/_250721__Comparison_theorems_on_Hermitian_manifolds.tex",
+          "bytes": 71680,
+          "sha256": "2390e55932e1d04a418de17d1c3153ea56626e44eba7e99b49e7362d9befb098"
+        }
+      ]
+    },
+    {
+      "id": "2507.09203v1",
+      "title": "First eigenvalue estimates on complete K\\\"ahler manifolds",
+      "authors": [
+        "Wang, Mingwei",
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2507.09203v1",
+      "source_url": "https://arxiv.org/src/2507.09203v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/11_2507.09203v1/_250712__First_eigenvalue_estimate_of_positive_holomorphic_sectional_curvature.tex",
+      "tex_files": [
+        "papers/11_2507.09203v1/_250712__First_eigenvalue_estimate_of_positive_holomorphic_sectional_curvature.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/11_2507.09203v1/00README.json",
+          "bytes": 280,
+          "sha256": "be32f297e2886bb8634312a6a4d47981f11b6c2a27b0224db2728996aaa0931f"
+        },
+        {
+          "path": "papers/11_2507.09203v1/_250712__First_eigenvalue_estimate_of_positive_holomorphic_sectional_curvature.tex",
+          "bytes": 56995,
+          "sha256": "34ca95dd973c70d81bcdab772fcfd3cf298ba2dcc60a28a567c2eb2fafdeb12a"
+        }
+      ]
+    },
+    {
+      "id": "2505.15415v1",
+      "title": "Conformal extremal metrics and constant scalar curvature",
+      "authors": [
+        "Yang, Xiaokui",
+        "Zhang, Kaijie"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2505.15415v1",
+      "source_url": "https://arxiv.org/src/2505.15415v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/12_2505.15415v1/main.tex",
+      "tex_files": [
+        "papers/12_2505.15415v1/main.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/12_2505.15415v1/main.tex",
+          "bytes": 49000,
+          "sha256": "1bb8fd524281c123f924765a7248f6a3e8da5d5101bfb59b30cdc4b63b2b37be"
+        }
+      ]
+    },
+    {
+      "id": "2412.02553v2",
+      "title": "RC-positivity, Schwarz's lemma and comparison theorems",
+      "authors": [
+        "Xiong, Zhiyao",
+        "Yang, Xiaokui",
+        "Yau, Shing-Tung"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2412.02553v2",
+      "source_url": "https://arxiv.org/src/2412.02553v2",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/13_2412.02553v2/main.tex",
+      "tex_files": [
+        "papers/13_2412.02553v2/main.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/13_2412.02553v2/main.tex",
+          "bytes": 84957,
+          "sha256": "31591ad9819d661affab5e556386d9309bdec202981ef8024cbe84f9ff7011ac"
+        }
+      ]
+    },
+    {
+      "id": "2408.02080v1",
+      "title": "Conjugate radius, volume comparison and rigidity",
+      "authors": [
+        "Xiong, Zhiyao",
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2408.02080v1",
+      "source_url": "https://arxiv.org/src/2408.02080v1",
+      "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "main": "papers/14_2408.02080v1/_v1_Conjugate_radius_volume_comparison_and_rigidity.tex",
+      "tex_files": [
+        "papers/14_2408.02080v1/_v1_Conjugate_radius_volume_comparison_and_rigidity.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/14_2408.02080v1/_v1_Conjugate_radius_volume_comparison_and_rigidity.tex",
+          "bytes": 76482,
+          "sha256": "1a24b6a678e5463ffb60308db7418eaa6bfc082d0cfc2cf119fba93881a967ba"
+        },
+        {
+          "path": "papers/14_2408.02080v1/variation.jpg",
+          "bytes": 474804,
+          "sha256": "20a3c0e3d3ae16a573a0cc6e6df3f7fe4a986bcc17583a29d7612a279df82224"
+        }
+      ]
+    },
+    {
+      "id": "2407.05660v1",
+      "title": "Manifolds with non-positive second Chern-Ricci curvature",
+      "authors": [
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2407.05660v1",
+      "source_url": "https://arxiv.org/src/2407.05660v1",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/",
+      "main": "papers/15_2407.05660v1/main.tex",
+      "tex_files": [
+        "papers/15_2407.05660v1/main.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/15_2407.05660v1/main.tex",
+          "bytes": 54691,
+          "sha256": "99d1bff7b6b043c1dc4e41832cfc3f47775cb2d813e9d60f93af5d79d2a41932"
+        }
+      ]
+    },
+    {
+      "id": "2312.16068v1",
+      "title": "New curvature characterizations for spherical space forms and complex projective spaces",
+      "authors": [
+        "Yang, Xiaokui",
+        "Zhang, Liangdi"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2312.16068v1",
+      "source_url": "https://arxiv.org/src/2312.16068v1",
+      "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "main": "papers/16_2312.16068v1/main.tex",
+      "tex_files": [
+        "papers/16_2312.16068v1/main.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/16_2312.16068v1/main.tex",
+          "bytes": 61587,
+          "sha256": "a8af222a65a777d7ce57ed8d85ab0ee0ba6807f7113692196c4a37e24c1c7fb2"
+        }
+      ]
+    },
+    {
+      "id": "2111.05234v1",
+      "title": "Algebraic fibre spaces with strictly nef relative anti-log canonical divisor",
+      "authors": [
+        "Liu, Jie",
+        "Ou, Wenhao",
+        "Wang, Juanyong",
+        "Yang, Xiaokui",
+        "Zhong, Guolei"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2111.05234v1",
+      "source_url": "https://arxiv.org/src/2111.05234v1",
+      "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "main": "papers/17_2111.05234v1/21Oct2021.tex",
+      "tex_files": [
+        "papers/17_2111.05234v1/21Oct2021.tex",
+        "papers/17_2111.05234v1/Abstract.tex",
+        "papers/17_2111.05234v1/appendix.tex",
+        "papers/17_2111.05234v1/Introduction.tex",
+        "papers/17_2111.05234v1/Preliminary.tex",
+        "papers/17_2111.05234v1/sec-fun-gp-periodic-pts-Liu-20211103.tex",
+        "papers/17_2111.05234v1/sec-pf-ample-dim3.tex",
+        "papers/17_2111.05234v1/sec-pf-thmabc.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/17_2111.05234v1/21Oct2021.bbl",
+          "bytes": 11651,
+          "sha256": "a283f5cb20772cd02fe78f1088ceef4904f0a09f96dd7d80fc1fe49b086984ee"
+        },
+        {
+          "path": "papers/17_2111.05234v1/21Oct2021.tex",
+          "bytes": 4317,
+          "sha256": "ef267b66a3b8cce320d1d3da9925fac77888ca7f3d5bc4114eccea2b1ffeffd3"
+        },
+        {
+          "path": "papers/17_2111.05234v1/Abstract.tex",
+          "bytes": 696,
+          "sha256": "cd15813dacbd936a8e9eca2127ef478a2e915eb861a64eb91581b639cd76a727"
+        },
+        {
+          "path": "papers/17_2111.05234v1/appendix.tex",
+          "bytes": 77878,
+          "sha256": "093c099ba4e233ae3c1c3ebb453816f8d811cba35cac04859a3acc4946f0e34b"
+        },
+        {
+          "path": "papers/17_2111.05234v1/Article-eng.cls",
+          "bytes": 8476,
+          "sha256": "b986f1dd0415d9dc9d8dd7e10fee484e9d005f028089a5ec9b37be0fc8efb7da"
+        },
+        {
+          "path": "papers/17_2111.05234v1/Introduction.tex",
+          "bytes": 9134,
+          "sha256": "a96acec634c9a104bb7de3f80d618fb6f7126dc55adb28010b2be026813dc01f"
+        },
+        {
+          "path": "papers/17_2111.05234v1/Preliminary.tex",
+          "bytes": 11198,
+          "sha256": "dfe92a219f09e989bba673741209b03dc99955f9ab4e2776d8cde90d7d8fddb8"
+        },
+        {
+          "path": "papers/17_2111.05234v1/sec-fun-gp-periodic-pts-Liu-20211103.tex",
+          "bytes": 20953,
+          "sha256": "e9865b9b95ec306e35bc29c205271a3d4de6adda2cf3c55aa6750b6c629d8eff"
+        },
+        {
+          "path": "papers/17_2111.05234v1/sec-pf-ample-dim3.tex",
+          "bytes": 30887,
+          "sha256": "7ff83ce605e41dafc40ce24b196bf1f1f9da6c461f2c2190dddcd58174e3db4e"
+        },
+        {
+          "path": "papers/17_2111.05234v1/sec-pf-thmabc.tex",
+          "bytes": 34497,
+          "sha256": "59d32bd5d3014d70f0ae7b137b0726b442cc50f79345551c690b75176616a484"
+        }
+      ]
+    },
+    {
+      "id": "2009.01052v1",
+      "title": "Strictly nef vector bundles and characterizations of $\\mathbb{P}^n$",
+      "authors": [
+        "Liu, Jie",
+        "Ou, Wenhao",
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2009.01052v1",
+      "source_url": "https://arxiv.org/src/2009.01052v1",
+      "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "main": "papers/18_2009.01052v1/strcitlynef.tex",
+      "tex_files": [
+        "papers/18_2009.01052v1/strcitlynef.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/18_2009.01052v1/strcitlynef.bbl",
+          "bytes": 12144,
+          "sha256": "3f0ec88d6a90024b9ef4605ca3b17c890d7968f640381402606d7dd5e8298c9e"
+        },
+        {
+          "path": "papers/18_2009.01052v1/strcitlynef.bib",
+          "bytes": 63905,
+          "sha256": "be5c7e15245af4c36eab309b8de8e16d36d79cf7b13508c4eee843f16f56576c"
+        },
+        {
+          "path": "papers/18_2009.01052v1/strcitlynef.tex",
+          "bytes": 41911,
+          "sha256": "5cb725e8ab63c58cddd1769ab88ac50577c1a66a30b9f6bc2a6a55c3dc3712f9"
+        }
+      ]
+    },
+    {
+      "id": "2006.13884v1",
+      "title": "Compact K\\\"ahler manifolds with quasi-positive second Chern-Ricci curvature",
+      "authors": [
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2006.13884v1",
+      "source_url": "https://arxiv.org/src/2006.13884v1",
+      "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "main": "papers/19_2006.13884v1/RC2.tex",
+      "tex_files": [
+        "papers/19_2006.13884v1/RC2.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/19_2006.13884v1/RC2.bbl",
+          "bytes": 14397,
+          "sha256": "3fc06cfae6244ffa085587e6ffe359e3254d9e065c591a3b904bb6ade1b76d40"
+        },
+        {
+          "path": "papers/19_2006.13884v1/RC2.bib",
+          "bytes": 357744,
+          "sha256": "88f65b9dd7fdb89c902de0877083aa35d973e889b705846dd40dff53bbb70b6d"
+        },
+        {
+          "path": "papers/19_2006.13884v1/RC2.tex",
+          "bytes": 37865,
+          "sha256": "cb81c771101f6a4b893ec32655e13858a4bf920205e22ab1ead4f6a0ae9bee53"
+        }
+      ]
+    },
+    {
+      "id": "2004.08507v1",
+      "title": "Projective manifolds whose tangent bundle contains a strictly nef subsheaf",
+      "authors": [
+        "Liu, Jie",
+        "Ou, Wenhao",
+        "Yang, Xiaokui"
+      ],
+      "abstract_url": "https://arxiv.org/abs/2004.08507v1",
+      "source_url": "https://arxiv.org/src/2004.08507v1",
+      "license_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "main": "papers/20_2004.08507v1/strcitlynef.tex",
+      "tex_files": [
+        "papers/20_2004.08507v1/strcitlynef.tex"
+      ],
+      "files": [
+        {
+          "path": "papers/20_2004.08507v1/strcitlynef.bbl",
+          "bytes": 13203,
+          "sha256": "4f033c83a53673ed1fbe0e907190c26a8fde29cb04fc4450657805fa6803013d"
+        },
+        {
+          "path": "papers/20_2004.08507v1/strcitlynef.bib",
+          "bytes": 45557,
+          "sha256": "e2962554ec2864dcbb9438539c23ad110814a74967bdd59078f1d577f5a31f70"
+        },
+        {
+          "path": "papers/20_2004.08507v1/strcitlynef.tex",
+          "bytes": 174732,
+          "sha256": "ea8546825750e1a6249506098fcaa056f244fffd458e2c101a887d4ed745881b"
+        }
+      ]
+    }
+  ]
+}

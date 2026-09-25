@@ -1,0 +1,873 @@
+\documentclass[english,reqno]{amsart}
+
+
+%standard packages
+%------------------------------
+%The following three packages are all included in amsart
+\usepackage{amsmath}
+\usepackage{amssymb} %to produce blackboard bold characters(\supsetneq)
+%\usepackage{amsthm} %to define theorem-like structures
+%-------------------------------
+\usepackage{enumitem} %lay­out of the three ba­sic list en­vi­ron­ments
+\usepackage{mathtools} %an extension package to amsmath + loading amsmath
+\usepackage[table]{xcolor} %color of tables
+\usepackage[all]{xy} %xymatrix commutative diagram
+\usepackage{tikz} %pictures
+\usepackage{tikz-cd}%implies
+%\usepackage{geometry} %define page dimensions
+\usepackage{indentfirst} %Indent first paragraph
+\usepackage{babel} %lan­guages
+\usepackage{setspace} %set­ting the spac­ing be­tween lines
+
+%setting of hyperlinks
+\usepackage[colorlinks,linkcolor=red,anchorcolor=green,citecolor=blue]{hyperref} %color of hyperlinks
+\hypersetup{linktocpage = true} %color of hyperlinks of TOC
+
+%special packages and notations (rarely used)
+\usepackage{rotating} %Rotate an image, table or paragraph
+\def\no{n{\raisebox{0.2ex}{\textsuperscript{o}}}} %numbering
+
+
+%various tables and their settings
+\usepackage{ytableau} %young tableau
+\usepackage{longtable} %long table
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}} %define dimension for long stable
+
+
+
+
+
+%setting of fonts
+\usepackage{mathpazo}
+\usepackage{mathrsfs}
+\DeclareFontFamily{OMS}{rsfs}{\skewchar\font'60}
+\DeclareFontShape{OMS}{rsfs}{m}{n}{<-5>rsfs5 <5-7>rsfs7 <7->rsfs10 }{}
+\DeclareSymbolFont{rsfs}{OMS}{rsfs}{m}{n}
+\DeclareSymbolFontAlphabet{\scr}{rsfs}
+\DeclareSymbolFontAlphabet{\scr}{rsfs}
+
+% a beautiful font (with XeLatex)
+\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[no-math]{fontspec}
+%\setromanfont[Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+
+%pagestyle
+\pagestyle{plain}%header empty; the footer contains the page number.
+%\geometry{left=1.5cm,right=1.5cm,top=1.5cm,bottom=1cm} %dimension of pages
+%\renewcommand{\baselinestretch}{1.2} %line spacing
+%\setlength{\parindent}{0in} %indent
+\sloppy %avoiding overfulls
+
+
+%mathcal letters
+\newcommand\cA{{\mathcal A}}
+\newcommand\cB{{\mathcal B}}
+\newcommand\cC{{\mathcal C}}
+\newcommand\cD{{\mathcal D}}
+\newcommand\cE{{\mathcal E}}
+\newcommand\cF{{\mathcal F}}
+\newcommand\cG{{\mathcal G}}
+\newcommand\cH{{\mathcal H}}
+\newcommand\cI{{\mathcal I}}
+\newcommand\cK{{\mathcal K}}
+\newcommand\cL{{\mathcal L}}
+\newcommand\cN{{\mathcal N}}
+\newcommand\cM{{\mathcal M}}
+\newcommand\cO{{\mathcal O}}
+\newcommand\cP{{\mathcal P}}
+\newcommand\cQ{{\mathcal Q}}
+\newcommand\cR{{\mathcal R}}
+\newcommand\cS{{\mathcal S}}
+\newcommand\cT{{\mathcal T}}
+\newcommand\cU{{\mathcal U}}
+\newcommand\cV{{\mathcal V}}
+\newcommand\cW{{\mathcal W}}
+\newcommand\cX{{\mathcal X}}
+
+%mathbb letters
+\newcommand\bbB{{\mathbb B}}
+\newcommand\bbC{{\mathbb C}}
+\newcommand\bbF{{\mathbb F}}
+\newcommand\bbK{{\mathbb K}}
+\newcommand\bbN{{\mathbb N}}
+\newcommand\bbP{{\mathbb P}}
+\newcommand\bbQ{{\mathbb Q}}
+\newcommand\bbR{{\mathbb R}}
+\newcommand\bbS{{\mathbb S}}
+\newcommand\bbZ{{\mathbb Z}}
+
+%mathscr letters
+\newcommand\sA{{\mathscr A}}
+\newcommand\sB{{\mathscr B}}
+\newcommand\sD{{\mathscr D}}
+\newcommand\sE{{\mathscr E}}
+\newcommand\sF{{\mathscr F}}
+\newcommand\sG{{\mathscr G}}
+\newcommand\sI{{\mathscr I}}
+\newcommand\sL{{\mathscr L}}
+\newcommand\sM{{\mathscr M}}
+\newcommand\sN{{\mathscr N}}
+\newcommand\sO{{\mathscr O}}
+\newcommand\sQ{{\mathscr Q}}
+\newcommand\sT{{\mathscr T}}
+\newcommand\sV{{\mathscr V}}
+\newcommand\sH{{\mathscr H}}
+
+
+%Special Abb.
+\newcommand{\id}{{\rm id}}
+\newcommand{\rk}{{\rm rk}}
+\newcommand{\codim}{{\rm codim}}
+\newcommand{\Cl}{{\rm Cl}}
+\newcommand{\im}{{\rm im}}
+\newcommand{\Bs}{{\rm Bs}}
+\newcommand{\locus}{\rm locus}
+\newcommand{\Sec}{\rm Sec}
+\newcommand{\defect}{\rm def}
+\newcommand{\Aut}{\rm Aut}
+\newcommand{\Ext}{\rm Ext}
+\newcommand{\Lag}{\rm Lag}
+\newcommand{\Gr}{\rm{Gr}}
+\newcommand{\Br}{{\rm Br}}
+
+
+
+%Objects in math
+\DeclareMathOperator*{\bs}{Bs}
+\DeclareMathOperator*{\Irr}{Irr}
+\DeclareMathOperator*{\Sym}{Sym}
+\DeclareMathOperator*{\pic}{Pic}
+\DeclareMathOperator*{\reg}{reg}
+\DeclareMathOperator*{\Sing}{Sing}
+\DeclareMathOperator*{\Pic0}{Pic^0}
+\DeclareMathOperator*{\Nm}{Nm}
+\DeclareMathOperator*{\red}{red}
+\DeclareMathOperator*{\num}{num}
+\DeclareMathOperator*{\norm}{norm}
+\DeclareMathOperator*{\nons}{nons}
+\DeclareMathOperator*{\lin}{lin}
+\DeclareMathOperator*{\supp}{Supp}
+\DeclareMathOperator*{\NS}{NS}
+\DeclareMathOperator*{\Exc}{Exc}
+\DeclareMathOperator*{\PGL}{PGL}
+
+%Moduli spaces and objects attacted
+\newcommand{\NEX}{\overline{\mbox{NE}}(X)}
+\newcommand{\NAX}{\overline{\mbox{NA}}(X)}
+\newcommand{\NE}[1]{\ensuremath{\overline{\mbox{NE}}(#1)}}
+\newcommand{\NA}[1]{\ensuremath{\overline{\mbox{NA}}(#1)}}
+\newcommand{\chow}[1]{\ensuremath{\mathcal{C}(#1)}}
+\newcommand{\chown}[1]{\ensuremath{\mathcal{C}_n(#1)}}
+\newcommand{\douady}[1]{\ensuremath{\mathcal{D}(#1)}}
+\newcommand{\Chow}[1]{\ensuremath{\mbox{\rm Chow}(#1)}}
+\newcommand{\Hilb}[1]{\ensuremath{\mbox{\rm Hilb}(#1)}}
+\newcommand{\Univ}{\ensuremath{\mathcal{U}}}
+\newcommand{\RC}[1]{\ensuremath{\mbox{\rm RatCurves}^n(#1)}}
+
+%sheaves operators
+\newcommand\Ctwo{\ensuremath{C^{(2)}}}
+\newcommand{\Proj}[1]{\ensuremath{\mbox{\rm Proj}(#1)}}
+\newcommand{\Hombir}[2]{\ensuremath{\mbox{$\rm{Hom}_1$}(#1,#2)}}
+\newcommand{\cHom}[2]{\ensuremath{\mathcal{H}om_{\mathcal{O}_X}(#1,#2)}}
+\newcommand{\sHom}[2]{\ensuremath{\mathscr{H}om_{\mathscr{O}_X}(#1,#2)}}
+\newcommand{\cExt}{{\mathcal Ext}}
+\newcommand{\cTor}{{\mathcal Tor}}
+\newcommand{\defeq}{{\vcentcolon=}}
+
+%math operators
+\newcommand\bp{{\bar\partial}}
+
+%Morphisms
+\newcommand{\meom}[3]{\ensuremath{#1\colon #2\dashrightarrow #3}}
+\newcommand{\morp}[3]{\ensuremath{#1\colon #2\rightarrow #3}}
+
+%Theorem type newenviroment
+% Theorem type environments
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{problem}[thm]{Problem}
+
+\theoremstyle{definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{convention}[thm]{Convention}
+
+
+
+%itemize&enumerate-->nonindent
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+
+%numbering of lists
+\renewcommand{\labelenumi}{(\arabic{enumi})} %numbering of enumerate
+\renewcommand{\labelenumii}{(\theenumi.\arabic{enumii})} %subenumerate
+\numberwithin{equation}{section} %numbering of equations
+\renewcommand\thesubsection{\thesection.\Alph{subsection}} %subsection
+
+%depth of TOC
+\setcounter{tocdepth}{1} %include till subsections in TOC
+
+%quotient
+%\newcommand{\bigslant}[2]{{\raisebox{.2em}{$#1$}\left/\raisebox{-.2em}{$#2$}\right.}}
+
+\makeatletter
+
+\ifnum\@ptsize=0 \addtolength{\hoffset}{-0.3cm} \fi \ifnum\@ptsize=2 \addtolength{\hoffset}{0.5cm} \fi
+
+
+%informations of paper
+\title{Strictly nef vector bundles and characterizations of $\bbP^n$}
+\date{\today}
+
+\subjclass[2010]{14H30,14J40,14J60,32Q57}
+\keywords{strictly nef, ample, hyperbolicity}
+
+\author{Jie Liu}
+
+\address{Jie Liu, Morningside Center of Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China}
+\email{jliu@amss.ac.cn}
+
+\author{Wenhao Ou}
+
+\address{Wenhao Ou, Institute of Mathematics, Academy of Mathematics and Systems Science, Chinese Academy of Sciences, Beijing, 100190, China}
+\email{wenhaoou@amss.ac.cn}
+
+\author{Xiaokui Yang}
+
+\address{Xiaokui Yang, Department of Mathematics and Yau Mathematical Sciences Center, Tsinghua University, Beijing, 100084, China}
+\email{xkyang@mail.tsinghua.edu.cn}
+
+\begin{document}
+
+\begin{abstract}  In this note, we give a brief exposition on the differences and similarities between strictly nef and ample vector bundles, with particular focus on the circle of  problems surrounding the geometry of projective manifolds  with strictly nef bundles.
+\end{abstract}
+
+
+\maketitle
+
+\tableofcontents
+
+\vspace{-0.2cm}
+
+\section{Introduction}
+
+
+
+Let $X$ be a complex projective manifold. A line bundle $L$ over $X$ is said to be \emph{strictly nef} if   $$L\cdot
+C>0$$ for each irreducible curve $C\subset X$.  This notion is also called "numerically positive" in literatures (e.g. \cite{Hartshorne1970}).  The Nakai-Moishezon-Kleiman criterion asserts that  $L$ is ample if and only if
+$$ L^{\dim Y}\cdot Y>0 $$ for every positive-dimensional irreducible subvariety $Y$ in $X$.  Hence, ample line bundles are strictly nef. In 1960s, Mumford constructed a number of  strictly nef but non-ample line bundles over  ruled surfaces (e.g. \cite{Hartshorne1970}), and they are  tautological line bundles of stable vector bundles of degree zero over smooth curves of genus $g\geq 2$. By using the terminology of Harshorne (\cite{Hartshorne1966}), a vector bundle $E\rightarrow X$ is called strictly nef (resp. ample) if its tautological line bundle $\sO_{\bbP(E)}(1)$ is strictly nef (resp. ample). One can see immediately that the strictly nef vector bundles constructed by Mumford are actually \emph{Hermitian-flat}. Therefore, some functorial properties for ample bundles (\cite{Hartshorne1966}) are not valid for strictly nef bundles. In this note, we give a brief exposition on the differences and similarities between strict nefness and ampleness, and survey some recent progress on understanding the geometry of projective manifolds endowed with some strictly nef bundles.
+
+Starting in the mid 1960’s, several mathematicians--notably Grauert, Griffiths  and Hartshorne (\cite{Grauert1962, Griffiths1965, Griffiths1969,Hartshorne1966})--undertook the task
+of generalizing to vector bundles the theory of positivity for line bundles. One
+of the goals was to extend to the higher rank setting as many as possible of the
+beautiful cohomological and topological properties enjoyed by ample divisors. In the past  half-century, a number of  fundamental results have been established. For this rich topic,  we refer to the books \cite{Lazarsfeld2004,Lazarsfeld2004a} of Lazarsfeld and the references therein.
+
+
+\subsection{Abstract strictly nef vector bundles.} Let's recall a criterion for
+ strictly nef vector bundles (see \cite[Proposition 2.1]{LiOuYang2019})  which is analogous to the Barton-Kleiman criterion for nef vector bundles (e.g. \cite[Proposition ~6.1.18]{Lazarsfeld2004a}). This criterion will be used frequently in the sequel.
+
+ \begin{prop}\label{cri0} Let $E$ be a vector bundle over a projective manifold $X$. Then the following conditions are equivalent.
+    \begin{enumerate}
+        \item[(1)] $E$ is  strictly nef.
+
+        \item[(2)] For any    smooth projective curve $C$ with a  finite morphism $\nu:C\rightarrow X$,  and for any line bundle quotient $\nu^*(E)\to L$, one has $$ \deg L>0.  $$
+
+    \end{enumerate}
+
+ \end{prop}
+
+ \noindent Recall that for an ample line bundle $L$, one has the Kodaira vanishing theorem
+ $$H^i(X,L^*)=0\ \  \text{for\ }\  i<\dim X.$$
+ For an ample vector bundle $E$ with rank $r\geq 2$, one can only deduce $$H^0(X,E^*)=0$$ and the higher cohomology groups $H^i(X,E^*)$ ($i\geq 1$) may not  vanish.
+ By using Proposition \ref{cri0}, we obtain a similar vanishing theorem  for strictly nef vector bundles.
+
+
+ \begin{thm} Let $E$ be a strictly nef vector bundle over a projective manifold $X$. Then $$H^0(X,E^*)=0.$$
+ \end{thm}
+
+
+\noindent It worths to point out that for a strictly nef vector bundle $E$ with rank $r\geq 2$, the cohomology group $H^0(X,\mathrm{Sym}^{\otimes k} E^*)$ may not vanish for $k\geq 2$, which is significantly different from properties of ample vector bundles. Indeed, the strict nefness is not closed under tensor product, symmetric product or exterior product of vector bundles. These will be discussed in Section \ref{basic}.\\
+
+
+ It is well-known that vector bundles over $\bbP^1$ split into direct sums of line bundles. By using Proposition \ref{cri0} again, one deduces that strictly nef vector bundles over $\bbP^1$ are  ample. In \cite[Theorem~3.1]{LiOuYang2019}, the following result is obtained.
+ \begin{cor} If $E$ is a strictly nef vector bundle over an elliptic curve $C$, then $E$ is ample.
+ \end{cor}
+ \noindent  As we mentioned before, over smooth curves of genus $g\geq 2$,  there are strictly nef vector bundles  which are Hermitian-flat.  There also exist strictly nef but non-ample  bundles on some rational surfaces (\cite{LanteriRondena1994, Chaudhuri2020}).  It is still a challenge to investigate  strictly nef vector bundles over higher dimensional projective manifolds.
+ We propose the following conjecture, which is also the first step to understand such bundles.
+
+ \begin{conj}\label{LOYconjecture1} Let $E$ be a strictly nef vector bundle over a projective manifold $X$.   If $-K_X$ is nef, then $\det E$ is ample.
+ \end{conj}
+
+ \noindent Although this conjecture is shown to be a consequence of the "\emph{generalized abundance conjecture}" (e.g. \cite{LazicPeternell2020,LazicPeternell2020a}), we still expect some other straightforward solutions. Indeed, we get  a partial answer to it.
+
+ \begin{thm} Let $E$ be a strictly nef vector bundle over a projective manifold $X$.   If $-K_X$ is nef and big, then $\det E$ is ample.
+ \end{thm}
+\noindent  We  refer to \cite{Hering2010,Biswas2019} for more details on positivity of equivariant vector bundles.
+
+
+
+\subsection{The geometry of projective manifolds endow with strictly nef bundles.} Since the seminal works of Mori   and Siu-Yau
+(\cite{Mori1979}, \cite{SiuYau1980}) on characterizations of projective spaces, it becomes apparent that the
+positivity
+of the tangent bundle of a complex projective manifold
+carries important geometric information. In the past
+decades,  many remarkable generalizations  have been
+established, and for instances, Mok's uniformization theorem on compact K\"ahler manifold
+with semipositive holomorphic bisectional curvature (\cite{Mok1988}) and  fundamental works of Campana,
+Demailly, Peternell and Schneider (\cite{CampanaPeternell1991},
+\cite{DemaillyPeternellSchneider1994}, \cite{Peternell1996})  on the
+structure of projective manifolds with nef tangent bundles. For this comprehensive topic, we refer to \cite{Yau1974,Mori1979, SiuYau1980,Mok1988,CampanaPeternell1991,DemaillyPeternellSchneider1994,Peternell1996,DemaillyPeternellSchneider2001,MunozOcchettaSolaCondeWatanabeEtAl2015,Cao2016,LiOuYang2019,CaoHoering2019,CaoHoering2019,CampanaCaoPaun2019} and the references therein. \\
+
+
+
+
+As we pointed out before,  strict nefness is a notion of positivity weaker than ampleness.   Even though there are significant differences between them, we still expect that  the strict nefness could play similar roles as ampleness in many  situations. The following result is obtained in \cite[Theorem~1.4]{LiOuYang2019} which extends Mori's Theorem.
+\begin{thm} Let $X$ be a projective manifold. If $T_X$ is strictly nef, then $X$ is isomorphic to a projective space.
+\end{thm}
+
+\noindent Therefore, $T_X$ is ample if and only if it is strictly nef.  However, this is not valid for cotangent bundles. Indeed, Shepherd-Barron proved in  \cite{ShepherdBarron1995} that there exists a projective surface whose cotangent bundle is strictly nef but not ample (see e.g. Example \ref{cotangentbundle}).\\
+
+
+Let's consider manifolds with strictly nef canonical or anti-canonical bundles. Campana and Peternell proposed in
+\cite[Problem~11.4]{CampanaPeternell1991} the following conjecture, which is still a major problem along this line.
+
+\begin{conj} \label{CampanaPeternellConjecture1} Let $X$ be a  projective
+    manifold. If $K_X^{-1}$ is strictly nef, then $X$
+    is  Fano.
+\end{conj}
+
+\noindent This conjecture has been verified for projective manifolds of dimension $2$ in \cite{Maeda1993} and dimension $3$ in \cite{Serrano1995} (see also \cite{Uehara2000} and the references therein).
+Recently, some progress has been achieved in \cite[Theorem~1.2]{LiOuYang2019}.
+
+\begin{thm}\label{LOYrationallyconnected1}  If $K^{-1}_X$ is strictly nef, then $X$ is rationally connected.
+\end{thm}
+
+\noindent  Indeed, we show in \cite{LiuOuYang2} that if $(X,\Delta)$ is a projective simple normal crossing pair and $-(K_X+\Delta)$ is strictly nef, then $X$ is rationally connected. 
+
+The following dual version of Conjecture \ref{CampanaPeternellConjecture1} is actually a consequence of the abundance conjecture.
+
+\begin{conj} If $K_X$ is strictly nef, then $K_X$ is ample.
+    \end{conj}
+
+
+\noindent  As analogous to the Fujita conjecture, Serrano proposed in \cite{Serrano1995} the following conjecture, which is a generalization of Conjecture \ref{CampanaPeternellConjecture1}.
+
+
+
+\begin{conj}\label{Serranoconjecture1} Let $X$ be a projective manifold. If $L$ is a strictly nef line bundle, then $K_X\otimes L^{\otimes m}$ is ample for  $m\geq \dim X+2$.
+\end{conj}
+
+
+\noindent This conjecture has been solved for projective surfaces in \cite{Serrano1995}. For the progress on projective threefolds and higher dimensional manifolds, we refer to \cite[Theorem~0.4]{CampanaChenPeternell2008} and the references therein.\\
+
+
+It is also known that the existence of "positive" subsheaves of the
+tangent bundle can also characterize  the
+ambient manifold. For instance,  Andreatta and Wi\'sniewski obtained in \cite[Theorem]{AndreattaWisniewski2001}
+the following characterization of projective spaces:
+\begin{thm}
+    \label{thm:Andreatta-Wisniewski1}
+    Let $X$ be a projective manifold. If the tangent bundle $T_X$ contains a locally free ample subsheaf $\sF$, then $X$ is isomorphic to a projective space.
+\end{thm}
+
+
+\noindent When $\sF$ is a line bundle, this result is proved by
+Wahl in \cite{Wahl1983}, and in \cite{CampanaPeternell1998}, Campana and
+Peternell established the cases $r\geqslant n-2$. It is also shown that the assumption on the  local freeness can be
+dropped (\cite{AproduKebekusPeternell2008,Liu2019}). On the other hand, according to Mumford's construction (see Example \ref{Mumfordexample}), Theorem \ref{thm:Andreatta-Wisniewski1}
+does not hold  if the subsheaf $\sF$ is  assumed to be strictly nef. Indeed, we  obtained in \cite[Theorem~1.3]{LiuOuYang2020} the following  result, which is an extension of
+Theorem \ref{thm:Andreatta-Wisniewski1}.
+
+\begin{thm} \label{thm:main-theorem1}
+	
+	Let $X$ be a   projective manifold. Assume that the tangent bundle $T_X$ contains a locally free strictly nef subsheaf $\sF$ of rank $r$.
+	Then $X$ admits a $\bbP^d$-bundle structure $\varphi\colon X\rightarrow T$ for some integer $d\geq r$.
+	Furthermore, if $T$ is not a single point, then it is a hyperbolic projective manifold of general type.
+\end{thm}
+
+
+\noindent Recall that  a single point is also considered to be hyperbolic in the sense that every holomorphic map from $\bbC$ to it is  constant. We expect a stronger geometric positivity on the cotangent bundle of the base $Y$ in Theorem \ref{thm:main-theorem1} when $\dim Y>0$.  
+As an application of Theorem \ref{thm:main-theorem1}, we obtain in \cite[Theorem~1.4]{LiuOuYang2020} a characterization  of projective spaces.
+
+\begin{thm}
+	\label{thm:simply-connected-Pn}  Let $X$ be an $n$-dimensional  complex projective manifold such that $T_X$ contains a locally free strictly nef subsheaf $\sF$.
+	If $\pi_1(X)$ is virtually solvable, then $X$ is isomorphic to  $\bbP^n$, and $\sF$ is isomorphic to either $T_{\bbP^n}$ or $\sO_{\bbP^n}(1)^{\oplus r}$.
+\end{thm}
+
+
+\noindent There are many other characterizations of projective spaces, and we refer to \cite{KobayashiOchiai1973,Peternell1990,CampanaPeternell1998,Druel2004,Hwang2006,Araujo2006,AraujoDruelKovacs2008, Yang2017,Tosatti2017,FengLiuWan2017,Li2018} and the references therein.\\
+
+
+
+
+
+\noindent{\bf Acknowledgements.} % We would like to thank Professors Ya Deng, St\'ephane Druel, Baohua Fu, Andreas H\"oring, Thomas Peternell and Zhiyu Tian for inspiring discussions and useful communications. We would also like to thank Professor
+%Shing-Tung Yau for his valuable help, support and guidance.
+ The first-named author is supported by China Postdoctoral Science Foundation (2019M650873).
+
+
+
+
+\vskip 2\baselineskip
+
+
+\section{Basic properties and examples}\label{basic}
+
+In this section, we investigate basic properties of strictly nef bundles and discuss some examples. As we mentioned before, Mumford
+constructed a strictly nef vector bundle which is  not ample  (see \cite[Chapter I, Example 10.6]{Hartshorne1970}). We shall describe this example in details. Let $E$ be a rank $2$ vector bundle over a smooth curve $C$ of genus $g\geq 2$,   $X=\bbP(E)$ be the projectivized bundle  and $\pi:\bbP(E)\rightarrow C$ be the projection. Let
+$\sO_E(1)$ be the tautological line bundle of $\bbP(E)$ and $D$ be
+the corresponding divisor over $X$.
+
+\begin{lemma}\cite[Chapter I, Proposition~ 10.8]{Hartshorne1970}\label{examplelemma} For any $m>0$, there is a one-to-one
+correspondence between \begin{enumerate}
+\item effective curves $Y$ on $X$, having no fibers as components,
+of degree $m$ over $C$; and
+
+\item sub-line bundles $L$ of $\mathrm{Sym}^{\otimes m} E$. \end{enumerate} Moreover, under this
+correspondence, one has \begin{equation} D\cdot Y=
+m\deg(E)-\deg(L)\label{examplekey}.\end{equation}\end{lemma}
+
+
+
+\noindent For any effective curve $Y$ on
+$X$, we denote by $m(Y)$ the degree of $Y$ over $C$. Then there
+is an exact sequence
+$$  0\rightarrow Pic(C)\stackrel{\pi}{\rightarrow}Pic(X)\stackrel{m}{\rightarrow}\bbZ\rightarrow0.$$
+It follows that the the divisors on $X$, modulo numerical
+equivalence, form a free abelian group of rank $2$, generated by $D$
+and $F$ where $F$ is any fiber of $\bbP(E)$.
+ %It is easy to see that
+%$$ D^2=\deg(E),\ \ D\cdot F=1,  F^2=0.$$
+
+
+
+\begin{lemma}\cite[Chapter I, Theorem~ 10.5]{Hartshorne1970}  Let $C$ be a smooth curve of genus $g\geq  2$. \begin{enumerate}
+\item    If $E$ is a stable vector bundle,  then every symmetric power $\mathrm{Sym}^{\otimes k}E$ is   semi-stable.
+
+    \item  For any $r>0$ and $d\in \bbZ$, there exists a stable vector bundle with rank $r$ and degree $d$ such that all symmetric powers $\mathrm{Sym}^{\otimes k} E$ are stable.
+\end{enumerate}
+\end{lemma}
+
+
+
+\begin{thm}\cite[Chapter I, Example~ 10.6]{Hartshorne1970} Let $E$ be a rank $2$ vector bundle over a smooth curve of genus $g\geq 2$. If $\deg(E)=0$ and  all symmetric powers $ \mathrm{Sym}^{\otimes k} E$ are stable, then $E$ is a strictly nef vector bundle, i.e. $\sO_E(1)$ is a strictly nef line bundle.  Moreover $E$ is not ample.
+    \end{thm}
+\begin{proof}
+Let $Y$ be an arbitrary irreducible curve on $X$. If $Y$
+is a fiber, then $D\cdot Y=1$. If $Y$ is an irreducible curve of
+degree $m>0$ over $C$, then by Lemma \ref{examplelemma}, $Y$ is
+corresponding to a subline bundle $L$ of $\mathrm{Sym}^{\otimes m}E$. Note that since
+$\mathrm{Sym}^{\otimes m} E$ are stable and of degree zero for all $m\geq 1$, we have
+$$\deg(L)<\frac{\deg\left(\mathrm{Sym}^{\otimes m}E\right)}{\mathrm{rank}\left(\mathrm{Sym}^{\otimes m}E\right)}=0.$$
+ Therefore, by
+formula (\ref{examplekey}) $$ D\cdot
+Y=m\deg(E)-\deg(L)=-\deg(L)>0.$$ Hence, the line bundle $\sO_E(1)$
+of the divisor $D$ is strictly nef, i.e. $E$ is a  strictly nef vector bundle. Since $\deg (E)=0$, $E$ can not be ample.
+\end{proof}
+
+
+\begin{cor} Let $E$ be a  vector bundle over a smooth curve $C$. If $E$ is stable and $\deg(E)=0$, then $E$ admits a Hermitian-flat metric.
+    \end{cor}
+\begin{proof}
+Since $E$ is stable over $C$, there exists a
+Hermitian-Einstein metric $h$ on $E$ (e.g. \cite{UhlenbeckYau1986}), i.e. $
+g^{-1}\cdot R_{\alpha\bar \beta}= c\cdot h_{\alpha\bar \beta}$
+for some constant $c$ where $g$ is a smooth metric on  $C$. Since
+ $\deg(E)=0$, we deduce $c=0$, i.e. $(E,)$ is Hermitian-flat.
+\end{proof}
+
+
+
+
+\noindent We summarize Mumford's example as following.
+\begin{example}\label{Mumfordexample} Let $C$ be a smooth curve of genus $g\geq 2$. There exists a rank $2$ vector bundle $E\rightarrow C$ satisfying the following properties:
+    \begin{enumerate}
+        \item $\deg(E)=0$;
+        \item $\mathrm{Sym}^{\otimes k} E$ are stable for all $k\geq 1$;
+        \item $E$ is strictly nef but not ample; $E^*$ is strictly nef but not ample;
+        \item $E$ admits a Hermitian-flat metric.
+\item
+Let $X=\bbP(E)$, $\pi:X\rightarrow C$ be the projection and $\sO_{\bbP(E)}(1)$ be the tautological line bundle. Then $T_{X/C}=K^{-1}_{X/C}\cong \sO_{\bbP(E)}(2)\otimes \pi^*\det E^*$ is strictly nef.
+    \end{enumerate}
+\end{example}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Although the strict nefness is not closed under tensor products and wedge products,  we still have the following   properties by using the Barton-Kleiman type criterion (Proposition \ref{cri0}).
+
+
+
+
+\begin{prop}\label{basicproperties} Let $E$ and $F$ be two
+vector bundles on a projective manifold $X$.
+\begin{enumerate}
+\item $E$ is a  strictly nef vector bundle if and only if for every smooth  curve
+$C$ and for any non-constant morphism $f: C\rightarrow X$,    $f^*E$ is strictly nef.
+
+
+
+\item If $E$ is  strictly nef, then any non-zero quotient bundle $Q$ of $E$ is  strictly nef.
+
+\item $E\oplus F$  is  strictly nef if and only if both $E$ and $F$ are
+strictly nef.
+
+
+
+\item If the symmetric power $\mathrm{Sym}^{\otimes k} E$ is  strictly nef for some $k\geq 1$, then $E$ is  strictly nef.
+
+\item Let  $f:Y\rightarrow X$ be  a  finite morphism such that  $Y$ is a  smooth projective variety. If $E$ is strictly nef, then so  is $f^*E$.
+
+\item Let  $f:Y\rightarrow X$ be  a  surjective morphism such that  $Y$ is a  smooth projective variety. If $f^*E$ is strictly nef, then  $E$ is  strictly nef.
+
+%\item If $E$ is strictly nef, then $h^0(X,E^*\otimes L)=0$  for any numerically trivial line bundle $L$.
+\end{enumerate}\end{prop}
+
+
+
+\begin{example} Let $E$ be the strictly nef vector bundle  in Example \ref{Mumfordexample}.
+    \begin{enumerate}
+        \item  $\Lambda^2E=\det E$ is numerically trivial and it is not strictly nef;
+        \item the tensor product $E\otimes E^*$ is not strictly nef since $H^0(C,E\otimes E^*)\cong \bbC$;
+
+        \item  $ E\oplus E^*$ is strictly nef, but  $\mathrm{Sym}^{\otimes 2}(E\oplus E^*)$ is not strictly nef. % Indeed, we have
+      %  $$\mathrm{Sym}^{\otimes 2}(E\oplus E^*)=(E\otimes E^*)\oplus \mathrm{Sym}^{\otimes 2}E\oplus \mathrm{Sym}^{\otimes 2}E^*.$$
+        %Since the direct summand $E\otimes E^*$ is not strictly nef, $\mathrm{Sym}^{\otimes 2}(E\oplus E^*)$ is not strictly nef, thanks to Proposition \ref{basicproperties} .
+    \end{enumerate}
+
+
+\end{example}
+
+\noindent The following result is well-known and it will be used frequently in the sequel.
+\begin{lemma}\label{strictlynefandsemiample} If $L$ is a strictly nef and semi-ample line bundle, then it is ample.
+\end{lemma}
+
+\begin{proof} Since $L$ is semi-ample, $mL$ is globally generated for some large  $m$. Let  $\phi_m : X \rightarrow Y$ be
+    the morphism defined by $|mL|$. Since $L$ is strictly nef,  it is easy to see that $\phi_m$ is finite  and so $L$ is ample.
+\end{proof}
+
+
+\begin{cor} Let $L$ be a strictly nef line bundle. Then $H^0(X,L^*)=0$. Moreover, for any line bundle $F$, there exists a postive integer $m_0=m_0(L,F)$ such that for $m\geqslant  m_0$
+    \begin{equation}H^0(X,(L^*)^{\otimes m}\otimes F)=0.\label{formalvanishing}\end{equation}
+\end{cor}
+\begin{proof} Suppose $H^0(X,L^*)\neq 0$, then $L^*$ is effective. Since $L$ is nef, we deduce that $L$ is trivial and this is a contradiction. Hence $H^0(X,L^*)=0$ and $L^*$ is not pseudo-effective. By \cite{Yang2019}, the vanishing theorem (\ref{formalvanishing}) holds.
+\end{proof}
+
+
+
+
+\noindent Recall that for an ample line bundle $L$, one has the Kodaira vanishing theorem.
+For an ample vector bundle E, one can only deduce $H^0(X,E^*)=0$ and the higher cohomology groups $H^i(X,E^*)$ ($i\geqslant  1$) may not vanish. For instance, when $X=\bbP^n$ with $n\geqslant  2$ and $E=T\bbP^n$, one has
+$$H^1(X,E^*)\cong H^{1,1}(X,\bbC)\cong \bbC\neq 0.$$
+For strictly nef vector bundles, we have a similar vanishing theorem.
+\begin{thm} Let $E$ be a strictly nef vector bundle over a projective manifold $X$. Then $$H^0(X,E^*)=0.$$
+\end{thm}
+\begin{proof} Suppose $\sigma \in H^0(X,E^*)$ is a nonzero section. Then by \cite[Proposition~1.16]{DemaillyPeternellSchneider1994}, $\sigma$ does not vanish anywhere. This section gives a trivial subbundle of $E^*$ and so a trivial quotient bundle of the strictly nef vector bundle $E$. This contradicts to (2) of Proposition \ref{basicproperties}.
+\end{proof}
+
+
+\noindent Note that the  vanishing theorem in (\ref{formalvanishing}) does not hold for higher rank vector bundles. Indeed, let $E$ be the strictly nef vector bundle in Example \ref{Mumfordexample}, $X=\bbP(E)$ and $\pi:X\rightarrow C$ be the projection. Let $ F=K^{\otimes m}_C$ for some sufficiently large $m$. Then
+$$H^0(C, \mathrm{Sym}^{\otimes k}E^*\otimes F)\neq 0$$
+for all $k>0$.
+
+\begin{remark} For a strictly nef vector bundle $E$ with rank $r\geqslant  2$, in general,  $H^0(X,\mathrm{Sym}^{\otimes k} E^*)=0$ dos not hold for $k\geqslant  2$.
+
+\end{remark}
+
+
+
+We give more examples on strictly nef vector bundle over higher
+dimensional projective manifolds (see
+\cite[Section~5]{LiuOuYang2020} for details). A line bundle $L$ over
+a projective variety $X$ of dimension $n$ is called \emph{$k$-
+strictly nef} if
+$$L^{\dim Y}\cdot Y>0$$
+for every irreducible subvariety $Y$ in $X$ with $0<\dim Y\leq k$.
+Hence, $1$-strictly nef is exactly strictly nef, and an $n$-strictly
+nef line bundle is ample.
+\begin{thm}\cite[Lemma 3.2 and Theorem 6.1]{Subramanian1989}\label{Subramanian}
+    Let $C$ be a smooth curve of genus $g\geqslant 2$. Then for any $r\geqslant 2$, there exists a Hermitian flat vector bundle $E$ of rank $r$ such that the tautological line bundle $\sO_{\bbP(E)}(1)$ is $(r-1)$-strictly nef. In particular, $E$ is strictly nef.
+\end{thm}
+
+\noindent  Fix  a smooth  curve $C$ of genus $g \geqslant 2$. Let  $r\geqslant 2$ and  $E$  be a vector bundle of rank $r$ provided in Theorem \ref{Subramanian}.
+
+\begin{example}
+    \label{example:subbundles}
+    Let $X=\bbP(E)$. Then we have the following relative Euler exact sequence
+    \[0\rightarrow \sO_X\rightarrow p^*E^*\otimes\sO_{\bbP(E)}(1)\rightarrow T_{X/C}\rightarrow 0,\]
+    where $p\colon X=\bbP(E)\rightarrow C$ is the natural projection.
+    It is shown in \cite[Example~5.9]{LiuOuYang2020} that $ p^*E^*\otimes \sO_{\bbP(E)}(1)$ is strictly nef.
+\end{example}
+
+\begin{example}
+    We consider the following extension of vector bundles
+    \[0\rightarrow Q\rightarrow G\rightarrow E^*\rightarrow 0,\]
+    where $Q$ is a nef vector bundle of positive rank.    Since $E^*$ is Hermitian flat, it is numerically flat. In particular, $E^*$ is nef and so is $G$ (\cite[Proposition 1.15]{DemaillyPeternellSchneider1994}).
+    Let $X=\bbP(G)$ and  $p: X= \bbP(G)\rightarrow C$ the natural projection. Then we have the following relative Euler sequence
+    \[0\rightarrow \sO_X\rightarrow p^*G^*\otimes\sO_{\bbP(G)}(1)\rightarrow T_{X/C}\rightarrow 0.\]
+    Since $E$ is a subbundle of $G^*$, it follows that
+    $ p^*E\otimes \sO_{\bbP(G)}(1)$ is a subbundle of $p^*G^*\otimes \sO_{\bbP(G)}(1)$.
+    We proved in \cite[Example~5.10]{LiuOuYang2020} that  $ p^*E\otimes \sO_{\bbP(G)}(1)$ is strictly nef and  the restriction of $F$ to fibers of $p$ is isomorphic to $\sO_{\bbP^d}(1)^{\oplus r}$. In particular,  $F$ is not a subbundle of $T_{X/C}$.
+\end{example}
+
+
+
+
+
+
+
+
+
+
+
+
+\vskip 2\baselineskip
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Strictly nef vector bundles}
+
+ In this section, we consider strictly nef vector bundles over  higher dimensional projective manifolds.
+
+
+
+
+\begin{thm} Let $E$ be a strictly nef vector bundle over a projective manifold $X$.   If $-K_X$ is nef and big, then $\det E$ is ample.
+\end{thm}
+
+\begin{proof} If $E$ is a strictly nef line bundle, then $E-K_X$ is  nef and big. By
+    Kawamata-Reid-Shokurov base point free theorem, $E$ is semi-ample. Thanks to Lemma \ref{strictlynefandsemiample}, $E$ is ample.
+    If $E$ has rank
+     $r\geqslant 2$,   we consider the projective bundle $Y=\bbP(E)$.  Let  $\sO_E(1)$ be the tautological line bundle of the projection $\pi:Y\rightarrow X$. By the projection
+    formula, we have $$ -K_Y=\sO_E(r)\otimes \pi^*(-K_X)\otimes \pi^*(\det
+    E^*).$$
+     For any $m>0$, the line bundle $L=\sO_E(m)\otimes \pi^*(\det
+    E)$ is strictly nef. Since $$ L-K_Y=\sO_E(m+r)\otimes \pi^*(-K_X),$$
+    we deduce $L-K_Y$ is strictly nef. On the other hand, $L-K_Y$ is big. Indeed,
+    since both $\sO_{E}(1)$ and $-K_X$ are nef, the top intersection number \begin{eqnarray*}  (L-K_Y)^{n+
+        r-1}&=&(\sO_E(m+r)\otimes \pi^*(-K_X))^{n+r-1}\\
+    &\geq &\left(\sO_{E}(m+r)\right)^{r-1} \cdot
+    \left(\pi^*(-K_X)\right)^{n}>0. \end{eqnarray*}
+    Therefore, by the base
+    point free theorem again, $L$ is semi-ample and so $L$ is ample. By the positivity of direct image sheaves (\cite{Mourougane1997}), we deduce that $\pi_*(K_{Y/X}\otimes L^{\otimes k})$ is ample for $k$ large enough.
+    By using the projection formula, one can see that  the ample vector bundle $\pi_*(K_{Y/X}\otimes L^{\otimes k})$ is of the form  $\mathrm{Sym}^{\otimes k_0}E\otimes (\det E)^{\otimes k_1}$  where  $k_0$ and $k_1$ are some positive integers. In particular, $\det E$ is
+    ample.
+    \end{proof}
+
+
+
+\noindent More generally, we propose the following conjecture.
+
+\begin{conj}\label{LOYconjecture} Let $E$ be a strictly nef vector bundle over a projective manifold $X$.   If $-K_X$ is nef, then $\det E$ is ample.
+\end{conj}
+
+
+
+\noindent  It is known that every strictly nef line bundle over an abelian variety is ample (\cite[Proposition~1.4]{Serrano1995}), and Chaudhuri proved in \cite{Chaudhuri2020} that every strictly nef homogeneous bundle
+on a complex flag variety is ample. We observe that Conjecture \ref{LOYconjecture} can be implied by Serrano's Conjecture \ref{Serranoconjecture1}.
+
+
+
+
+
+
+
+\begin{prop}\label{SerranoconjectureimpliesLOYconjecture} Conjecture \ref{Serranoconjecture1} implies Conjecture \ref{LOYconjecture}.
+\end{prop}
+\begin{proof} Suppose  Conjecture \ref{Serranoconjecture1} is valid. Let $Y=\bbP(E)$, $L=\sO_{\bbP(E)}(1)$ and $\pi:Y\rightarrow X$ be the projection. For large $m$, $K_Y\otimes L^{\otimes m}$ is ample. Since $-K_X$ is nef,  $K_{Y/X}\otimes L^{\otimes m}$ is ample. We know $\det \pi_*\left(K_{Y/X}\otimes\left(K_{Y/X}\otimes L^{\otimes m}\right)\right)$ is  ample and so is $\det E$.
+\end{proof}
+
+
+
+ The following result is proved in \cite[Section~3]{LiOuYang2019}.
+\begin{prop}\label{flat} Let $E$  be a strictly nef vector bundle
+    over a projective manifold $X$. If either of the following holds
+    \begin{enumerate}
+        \item the Kodaira dimension $\kappa (X)$ satisfies $0 \leqslant \kappa (X)<\dim X$,
+
+        \item $-K_X$ is pseudo-effective,
+    \end{enumerate}  then  $\det E$ is not numerically trivial.
+\end{prop}
+
+
+
+
+
+
+\vskip 2\baselineskip
+
+
+
+
+\section{Geometry of projective manifold with strictly nef bundles}
+
+In this section, we describe the geometry related to strictly nef  and ample bundles.  As we mentioned before,     the following result is obtained  in \cite[Theorem~1.3]{LiOuYang2019}:
+\begin{thm} Let $X$ be a projective manifold. If $T_X$ is strictly nef, then $X$ is isomorphic to a projective space.
+    \end{thm}
+
+
+
+\noindent Moreover,
+a characterization of quadrics is  established in \cite[Theorem~1.5]{LiOuYang2019}, which is analogous to classical results   of  Cho-Miyaoka-Shepherd-Barron (\cite{ChoMiyaokaShepherd-Barron2002}) and Dedieu-Hoering (\cite{DedieuHoering2017}).
+\begin{thm}
+    Let $X$ be a  projective manifold of
+    dimension $n\geq 3$. Suppose that $\bigwedge^2T_X$ is strictly nef,
+    then $X$ is isomorphic to $\mathbb P^n$ or a quadric $\mathbb Q^n$.
+\end{thm}
+
+\noindent Gachet studied in \cite{Gachet2019}  the case when $\Lambda^3 T_X$ is strictly nef.  We have established that the tangent bundle    $T_X$ is
+strictly nef if and only if  it is ample.  However, it is not valid for cotangent bundles.
+\begin{example}\label{cotangentbundle} Let $X$ be a bidisk quotient, $\Delta\times\Delta/\Gamma$, with $\Gamma$ an irreducible torsion-free cocompact lattice. Let $E=T_X^*$ and $L$ be its tautological line bundle.   It is proved in \cite{ShepherdBarron1995} that $L$ is strictly nef and big, but it is not semi-ample.
+\end{example}
+
+
+\noindent  We propose the following problem which is analogous to the class result of Kobayashi that projective manifolds with ample cotangent bundle are hyperbolic.
+
+\begin{problem} Let $X$ be a projective manifold. If $T_X^*$ is strictly nef,  is $X$ hyperbolic?
+\end{problem}
+
+
+  Let's consider manifolds with strictly nef canonical or anti-canonical bundles by recalling the Conjecture \ref{CampanaPeternellConjecture1} of Campana and Peternell.
+
+\begin{conj} \label{CampanaPeternellConjecture} Let $X$ be a    projective
+    manifold. If $K_X^{-1}$ is strictly nef, then $X$
+    is  Fano.
+\end{conj}
+
+
+\noindent  Recently,  some evidences  are  established in \cite[Theorem~1.2]{LiOuYang2019}.
+
+\begin{thm}\label{LOYrationallyconnected} Let $X$ be a projective manifold.  If $\Lambda^rT_X$ is strictly nef, then $X$ is rationally connected. In particular, if $K^{-1}_X$ is strictly nef, then $X$ is rationally connected.
+    \end{thm}
+
+
+
+
+
+\noindent Let $f:X\rightarrow Y$ be a smooth morphism between two projective manifolds. It is well-known that if $K^{-1}_X$ is ample, then so is $K^{-1}_Y$ (\cite{KollarMiyaokaMori1992}, see also \cite{BirkarChen2016} for semi-ampleness).  It is natural to propose the following conjecture.
+\begin{conj}\label{directimage} Let $f:X\rightarrow Y$ be a smooth morphism between two projective manifolds. If $K^{-1}_X$ is strictly nef, then so is $K^{-1}_Y$.
+\end{conj}
+
+\noindent  Indeed, this conjecture can be regarded as a consequence of Conjecture \ref{CampanaPeternellConjecture}.  Thanks  to Theorem \ref{LOYrationallyconnected}, one obtains   a partial answer to Conjecture \ref{directimage}.
+
+\begin{cor}Let $f:X\rightarrow Y$ be a smooth morphism between two projective manifolds. If $K^{-1}_X$ is strictly nef, then $Y$ is rationally connected.
+\end{cor}
+
+
+\begin{example} Let $f:X\rightarrow Y$ be a smooth morphism between two projective manifolds. It is well-known that $K^{-1}_{X/Y}$ can not be ample (\cite{KollarMiyaokaMori1992}). However, it can be strictly nef.
+\end{example}
+
+
+
+
+\noindent We also propose the following general conjecture concerning strictly nef bundles.
+
+\begin{conj}Let $X$ be a projective manifold. \begin{enumerate} \item If $\Lambda^r T_X$ is strictly nef for some $r>0$, then $K^{-1}_X$ is ample;
+        \item       If $\Lambda^r T^*_X$ is strictly nef  for some $r>0$, then $K_X$ is ample.
+
+    \end{enumerate}
+\end{conj}
+\noindent When $T^*_X$ is strictly nef, it is of particular interest  and it is also related to the Kobayashi-Lang conjecture on hyperbolicity.\\
+
+
+
+
+
+
+
+
+
+Let's consider the geometry of projective manifolds whose tangent bundle contains a "positive" subsheaf. Recall that,  Andreatta and Wi\'sniewski obtained in \cite[Theorem]{AndreattaWisniewski2001}
+the following characterization of projective spaces.
+\begin{thm}
+    \label{thm:Andreatta-Wisniewski}
+    Let $X$ be an $n$-dimensional   projective manifold.
+    Assume that the tangent bundle $T_X$ contains a locally free ample subsheaf $\sF$ of rank $r$. Then $X\cong  \bbP^n$ and either $\sF\cong  T_{\bbP^n}$  or $\sF\cong \sO_{\bbP^n}(1)^{\oplus r}$.
+\end{thm}
+
+
+\noindent  According to Example \ref{Mumfordexample},    Theorem \ref{thm:Andreatta-Wisniewski}
+does not hold  if the subsheaf $\sF$ is  assumed to be strictly nef. Indeed, we  obtained in \cite[Theorem~1.3]{LiuOuYang2020} the following structure theorem for projective
+manifolds whose tangent bundle contains a strictly nef subsheaf.
+
+\begin{thm}
+    \label{thm:main-theorem}
+    Let $X$ be a  projective manifold. Assume that the tangent bundle $T_X$ contains a locally free strictly nef subsheaf $\sF$ of rank $r$.
+    Then $X$ admits a $\bbP^d$-bundle structure $\varphi: X\rightarrow T$ for some $d\geq r$.
+    Moreover,
+    $T$ is a hyperbolic projective manifold.
+\end{thm}
+
+
+ \noindent  Actually,  we  obtained in \cite[Theorem~8.1]{LiuOuYang2020}  a  concrete description on the
+ structure of the subsheaf $\sF$ and it is exactly one of the following:
+ \begin{enumerate}
+    \item $\sF\cong  T_{X/T}$ and $X$ is isomorphic to a flat projective bundle over
+    $T$;
+    \item $\sF$ is a numerically projectively flat vector bundle and its restriction  on every fiber of $\varphi$ is  isomorphic to  $\sO_{\bbP^d}(1)^{\oplus r}$.
+ \end{enumerate}
+
+
+
+
+ \noindent   When $\dim T=0$, we obtained in \cite[Theorem~1.4]{LiuOuYang2020} a new characterization of projective spaces.
+\begin{cor}
+    \label{simply-connected-Pn}  Let $X$ be an $n$-dimensional  projective manifold such that $T_X$ contains a locally free strictly nef subsheaf $\sF$.
+    If $\pi_1(X)$ is virtually abelian, then $X$ is isomorphic to  $\bbP^n$, and $\sF$ is isomorphic to either $T_{\bbP^n}$ or $\sO_{\bbP^n}(1)^{\oplus r}$.
+\end{cor}
+
+
+
+
+\noindent  When $\dim T>0$, we established in \cite[Corollary~1.5]{LiuOuYang2020} the  existence of non-zero symmetric differentials.
+
+\begin{cor}
+    \label{cor:existence-symmetric-forms}
+    Let $X$ be a projective manifold whose tangent bundle contains a  locally free strictly nef subsheaf. If $X$ is not isomorphic to a projective space, then $X$ has a non-zero symmetric differential, i.e. $H^0(X,\Sym^i\Omega_X)\not=0$ for some $i>0$.
+\end{cor}
+
+
+
+
+
+
+\def\cprime{$'$} %newcommand of prime over letters
+\renewcommand\refname{Reference}
+\bibliographystyle{alpha}
+\bibliography{strcitlynef}
+
+\end{document}

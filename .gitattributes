@@ -1,0 +1,2 @@
+# Keep checksummed source and distribution bytes unchanged across platforms.
+* -text

@@ -1,0 +1,143 @@
+\section{Introduction}
+\label{sec_intro}
+%\addcontentsline{toc}{section}{Introduction}
+
+In this paper, we work over the field  $\mathbb{C}$ of complex numbers. 
+Let $X$ be a projective variety.  
+Recall that a $\QQ$-Cartier divisor $L$ over $X$ is said to be \emph{strictly nef} (resp. \emph{nef}) if  $L\cdot C>0$ (resp. $L\cdot C\geqslant 0$) for every (complete) curve $C$ on $X$. 
+It is clear that ample divisors are always strictly nef, but strictly nef divisors are not necessarily ample (e.g. \cite[Example 10.6]{Har70}). It is still a challenge to
+investigate the relationship between these two concepts.  As a major problem along this line,  Campana and Peternell conjectured
+in \cite{CP91} that the  strict nefness and ampleness are equivalent for the anti-canonical divisor $-K_X$ of a smooth projective variety $X$.
+In the 1990s, this conjecture was intensively studied in lower dimensions and has been confirmed in dimension $\leqslant 3$ (cf.~\cite{Mae93} and \cite{Ser95}).
+The singular version of this conjecture has also been proved for threefolds with at worst canonical singularities in \cite[Theorem 3.9]{Ueh00}. For more results motivated by the Campana-Peternell conjecture, we  refer the readers to \cite{CCP08, LOY19, LOY20, LOY21}   and the references therein.\\
+
+In this paper, we  study the geometric structures of a projective klt pair $(X,\Delta)$ admitting a fibration $X\to Y$ with strictly nef  relative anti-log canonical divisor $-(K_{X/Y}+\Delta)$. 
+First, we propose the following question, which is the singular version of Campana and Peternell's conjecture:
+
+
+%, i.e., $X$ is a normal projective variety, $\Delta$ is an effective $\mathbb{Q}$-divisor such that $K_X+\Delta$ %is $\mathbb{Q}$-Cartier, and $(X,\Delta)$ has only klt singularities. 
+
+\begin{conj}\label{main-conj-singular-ample}
+Let $(X,\Delta)$ be a projective klt pair.
+If $-(K_X+\Delta)$ is strictly nef, 
+then $-(K_X+\Delta)$ is  ample.
+\end{conj}
+
+\noindent 
+Recently, Li, the second author and the fourth author proved in \cite{LOY19} that  smooth projective varieties with strictly nef   anti-canonical divisors  are rationally connected (\cite[Theorems 1.2 and 1.3]{LOY19}). By the well-known result of Campana and  Koll\'ar-Mori-Miyaoka (\cite{Cam92,KoMM92}),  this provides important evidences for an affirmative answer to the Campana and Peternell conjecture, i.e.,  the smooth case of {\hyperref[main-conj-singular-ample]{Conjecture \ref*{main-conj-singular-ample}}} in all dimensions.
+As motivated by  \cite[Theorem 1.3]{LOY19}, we consider a particular case of {\hyperref[main-conj-singular-ample]{Conjecture \ref*{main-conj-singular-ample}}} in the singular pair setting (cf.~\cite{Zhang06}). 
+
+\begin{conj}\label{main-conj-singular}
+Let $(X,\Delta)$ be a projective klt pair.
+If $-(K_X+\Delta)$ is strictly nef, 
+then $X$ is  rationally connected.
+\end{conj}
+
+
+\noindent Before  giving  an affirmative answer of {\hyperref[main-conj-singular]{Conjecture \ref*{main-conj-singular}}}, we recall that the augmented irregularity $q^\circ(X)$ of a normal projective variety $X$ is defined as the maximum of the irregularities $q(\widetilde{X}):=\dimcoh^1(\widetilde{X},\scrO_{\widetilde{X}})$, where $\widetilde{X}\to X$ runs over the (finite) quasi-\'etale covers of $X$ (cf.~\cite[Definition 2.6]{NZ10}). The first main result of this paper is:
+%Further, we shall give a positive answer to  {\hyperref[main-conj-singular-ample]{Question \ref*{main-conj-singular-ample}}} in dimension three.
+
+\begin{mainthm}
+\label{mainthm-RC}
+Let $X$ be a normal projective variety. Suppose that there is an effective $\QQ$-divisor $\Delta$ on $X$ such that the pair $(X,\Delta)$ is klt and that $-(K_X+\Delta)$ is strictly nef. Then $X$ is rationally connected.
+In particular, the augmented irregularity $q^\circ(X)=0$.
+\end{mainthm}
+
+
+
+
+
+
+In the following, we  study the relative case of the above setting by considering a fibration $f:X\rightarrow Y$  between projective manifolds.  
+ Miyaoka proved in \cite[Theorem 2]{Miy93} that, the relative anti-canonical divisor $-K_{X/Y}$ is never ample if $f$ is  smooth and $Y$ is not a single point. 
+In the past few decades, many generalizations have been established  by dropping the smoothness of $X$ and $f$ (e.g.  \cite{Zhang96}, \cite{ADK08}, \cite{AD13}). A remarkable one 
+ is the following result in \cite[Theorem 5.1]{AD13} established by  Araujo and Druel :
+
+\begin{thm}[Araujo-Druel]\label{t.AD}
+Let $X$ be a normal projective variety and let $f:X\rightarrow C$ be a fibration onto a smooth projective curve $C$.
+Assume that there exists an effective $\mathbb{Q}$-Weil divisor $\Delta$ on $X$ such that $K_{X}+\Delta$ is $\mathbb{Q}$-Cartier.
+	\begin{enumerate}
+		\item[\rm(1)] If $(X,\Delta)$ is log canonical over the generic point of $C$, then $-(K_{X/C}+\Delta)$ is not ample.
+		
+		\item[\rm(2)] If $(X,\Delta)$ is klt over the generic point of $C$, then $-(K_{X/C}+\Delta)$ is not nef and big.
+	\end{enumerate}
+\end{thm}
+
+
+\noindent One may wonder whether $-K_{X/Y}$ can be strictly nef in the relative setting.  Indeed, there is  an example constructed by  Mumford.  Let $C$ be a smooth  curve of genus at least two. 
+There exists a vector bundle $E$ of rank two over $C$ such that the first Chern class $c_1(E)=0$ and the tautological bundle $\scrO_{\PP E}(1)$ of the projectivization $X\coloneqq \PP E$ is strictly nef. It is easy to see that $-K_{X/C}$ is strictly nef.
+The second main result in this paper is to investigate the geometric structures for such fibrations.
+More precisely, we obtain:
+
+\begin{mainthm}\label{t.mainthm}
+	Let $f:X\rightarrow Y$ be a fibration from a normal projective variety $X$ onto a smooth projective variety $Y$. Suppose that there exists an effective $\QQ$-Weil divisor $\Delta$ on $X$ such that $(X,\Delta)$ is a klt pair and $-(K_{X/Y}+\Delta)$ is strictly nef. 
+	Then $f$ is a locally constant fibration with rationally connected fibres and $Y$ is a canonically polarized hyperbolic projective manifold.
+\end{mainthm}
+
+Recall that, a projective manifold $Y$ is said to be \textit{canonically polarized} if its canonical divisor $K_Y$ is ample and to be \textit{hyperbolic} if any holomorphic map $\mathbb{C}\to Y$ from the complex line $\mathbb{C}$ is constant. 
+As an application of {\hyperref[t.mainthm]{Theorem \ref*{t.mainthm}}} and techniques developed in \cite{Ou21} (see also \cite[Theorem 1.1]{Druel17}), we obtain characterizations of the geometric structures of regular foliations on projective manifolds with strictly nef anti-canonical divisor. 
+
+\begin{maincor}
+	\label{c.algebraicallyintegrable}
+	Let $\scrF$ be a foliation on a projective manifold $X$. Assume that either $\scrF$ is regular, or $\scrF$ has a compact leaf. 
+	
+	\begin{enumerate}
+		\item[\rm(1)] If $-K_{\scrF}$ is strictly nef, then there exists a locally constant fibration $f:X\rightarrow Y$ with rationally connected fibres over a canonically polarized hyperbolic projective manifold $Y$ such that $\scrF$ is induced by $f$. In particular, $\scrF$ is algebraically integrable.
+		
+		\item[\rm(2)] If the fundamental group $\pi_1(X)$ is virtually solvable (i.e., a finite index subgroup of $\pi_1(X)$ is solvable), then $-K_{\scrF}$ cannot be strictly nef.
+	\end{enumerate}	
+\end{maincor}
+
+
+
+
+
+
+
+
+%{\hyperref[mainthm-RC]{Theorem \ref*{mainthm-RC}}} $\sim$ {\hyperref[mainthm-ample-3klt]{Theorem \ref*{mainthm-ample-3klt}}} below are our main results of this paper.
+
+
+
+
+Finally, we show that {\hyperref[main-conj-singular-ample]{Conjecture \ref*{main-conj-singular-ample}}} holds when $\dim X=3$, which extends results in  \cite[Theorem 3.9]{Ser95} and \cite[Main Theorem]{Ueh00} (see also \cite[Conjecure 1.2]{HL20}).
+
+\begin{mainthm}
+\label{mainthm-ample-3klt}
+Let $X$ be a normal projective threefold. If there is an effective $\QQ$-divisor $\Delta$ on $X$ such that the pair $(X,\Delta)$ is klt and that $-(K_X+\Delta)$ is strictly nef, then $-(K_X+\Delta)$ is ample.
+\end{mainthm}
+
+
+
+\noindent 
+To  end up this section, we propose a singular version of Serrano's conjecture (\cite{Ser95}), which has an affirmative answer when $\dim X\leqslant 2$ (cf.~\cite[Corollary 1.8]{HL20}). 
+\begin{ques}\label{main-conj-singular-arbitrary}
+Let $(X,\Delta)$ be a projective klt pair, and $L$ be a strictly nef $\mathbb{Q}$-divisor on $X$.
+Is $K_X+\Delta+tL$  ample for sufficiently large $t\gg 1$?
+\end{ques}
+
+
+%Indeed,
+%\begin{prop}[{\cite[Corollary 1.8]{HL20}; see {\hyperref[prop_Q-Goren_surface]{Proposition \ref*{prop_Q-Goren_surface}}}   for a further extension}]\label{main_thm_surface}
+%Let $(X,\Delta)$ be a projective klt surface.
+%Suppose $L_X$ is a strictly nef Cartier divisor on $X$.
+%Then $K_X+\Delta+tL_X$ is ample for every real number $t>3$.
+%\end{prop}
+
+\paragraph{\textbf{Acknowledgement}}
+J. Liu is supported by the NSFC grants No. 11688101 and No. 12001521. 
+J. Wang is supported by the National Natural Science Foundation of China project `Geometry, analysis, and computation on manifolds'.
+X. Yang is supported by the NSFC grant 12171262.
+G. Zhong is supported by a President's Scholarship of NUS.
+
+
+\vskip 2\baselineskip
+
+
+
+
+
+
+
+
+

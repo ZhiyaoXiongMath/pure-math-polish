@@ -1,0 +1,1332 @@
+
+
+\documentclass[12pt, reqno]{amsart}
+\usepackage{pifont}
+\usepackage{mathrsfs}
+\usepackage{geometry}
+\usepackage{titletoc}
+%\usepackage{mathpazo}
+%\usepackage{fouriernc}
+\usepackage{stix2}
+%\usepackage{fouriernc}
+%standard packages
+%\usepackage{times}
+%\usepackage[theoremfont]{newtxtext}
+
+
+%\usepackage{nicefrac}
+
+%------------------------------
+%The following three packages are all included in amsart
+\usepackage{amsmath}
+\usepackage{amssymb} %to produce blackboard bold characters(\supsetneq)
+%\usepackage{amsthm} %to define theorem-like structures
+%-------------------------------
+\usepackage{enumitem} %lay­out of the three ba­sic list en­vi­ron­ments
+\usepackage{mathtools} %an extension package to amsmath + loading amsmath
+\usepackage[table]{xcolor} %color of tables
+\usepackage[all]{xy} %xymatrix commutative diagram
+\usepackage{tikz} %pictures
+\usepackage{tikz-cd}%implies
+%\usepackage{geometry} %define page dimensions
+\usepackage{indentfirst} %Indent first paragraph
+\usepackage{babel} %lan­guages
+\usepackage{setspace} %set­ting the spac­ing be­tween lines
+
+%setting of hyperlinks
+\usepackage[colorlinks,linkcolor=red,anchorcolor=green,citecolor=blue]{hyperref} %color of hyperlinks
+\hypersetup{linktocpage = true} %color of hyperlinks of TOC
+
+%special packages and notations (rarely used)
+\usepackage{rotating} %Rotate an image, table or paragraph
+\def\no{n{\raisebox{0.2ex}{\textsuperscript{o}}}} %numbering
+
+
+%various tables and their settings
+\usepackage{ytableau} %young tableau
+\usepackage{longtable} %long table
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}} %define dimension for long stable
+
+\geometry{a4paper,top=1.25in,bottom=1.1in}
+%\geometry{a4paper,scale=0.8}
+\setlength{\textheight}{8.7in}
+\setlength{\textwidth}{5.9 in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+\setlength{\footskip}{0.45in}
+\setlength{\headsep}{0.25in}
+
+
+
+
+
+%\usepackage{unicode-math}\setmathfont{STIX2Math.otf}
+\usepackage{fancyhdr}
+
+
+% a beautiful font (with XeLatex)
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[no-math]{fontspec}
+%\setromanfont[Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+
+%pagestyle
+\pagestyle{plain}%header empty; the footer contains the page number.
+%\geometry{left=1.5cm,right=1.5cm,top=1.5cm,bottom=1cm} %dimension of pages
+\renewcommand{\baselinestretch}{1.10} %line spacing
+%\setlength{\parindent}{0in} %indent
+\sloppy %avoiding overfulls
+
+
+%mathcal letters
+\newcommand\cA{{\mathcal A}}
+\newcommand\cB{{\mathcal B}}
+\newcommand\cC{{\mathcal C}}
+\newcommand\cD{{\mathcal D}}
+\newcommand\cE{{\mathcal E}}
+\newcommand\cF{{\mathcal F}}
+\newcommand\cG{{\mathcal G}}
+\newcommand\cH{{\mathcal H}}
+\newcommand\cI{{\mathcal I}}
+\newcommand\cK{{\mathcal K}}
+\newcommand\cL{{\mathcal L}}
+\newcommand\cN{{\mathcal N}}
+\newcommand\cM{{\mathcal M}}
+\newcommand\cO{{\mathcal O}}
+\newcommand\cP{{\mathcal P}}
+\newcommand\cQ{{\mathcal Q}}
+\newcommand\cR{{\mathcal R}}
+\newcommand\cS{{\mathcal S}}
+\newcommand\cT{{\mathcal T}}
+\newcommand\cU{{\mathcal U}}
+\newcommand\cV{{\mathcal V}}
+\newcommand\cW{{\mathcal W}}
+\newcommand\cX{{\mathcal X}}
+
+%mathbb letters
+%\newcommand\bbB{{\mathbb B}}
+%\newcommand\bbC{{\mathbb C}}
+\newcommand\bbF{{\mathbb F}}
+\newcommand\bbK{{\mathbb K}}
+\newcommand\bbN{{\mathbb N}}
+\newcommand\bbP{{\mathbb P}}
+\newcommand\bbQ{{\mathbb Q}}
+\newcommand\bbR{{\mathbb R}}
+\newcommand\bbS{{\mathbb S}}
+\newcommand\bbZ{{\mathbb Z}}
+
+%mathscr letters
+\newcommand\sA{{\mathscr A}}
+\newcommand\sB{{\mathscr B}}
+\newcommand\sD{{\mathscr D}}
+\newcommand\sE{{\mathscr E}}
+\newcommand\sF{{\mathscr F}}
+\newcommand\sG{{\mathscr G}}
+\newcommand\sI{{\mathscr I}}
+\newcommand\sL{{\mathscr L}}
+\newcommand\sM{{\mathscr M}}
+\newcommand\sN{{\mathscr N}}
+\newcommand\sO{{\mathscr O}}
+\newcommand\sQ{{\mathscr Q}}
+\newcommand\sT{{\mathscr T}}
+\newcommand\sW{{\mathscr W}}
+\newcommand\sH{{\mathscr H}}
+
+
+%Special Abb.
+\newcommand{\id}{{\rm id}}
+\newcommand{\rk}{{\rm rk}}
+\newcommand{\codim}{{\rm codim}}
+\newcommand{\Cl}{{\rm Cl}}
+\newcommand{\im}{{\rm im}}
+\newcommand{\Bs}{{\rm Bs}}
+\newcommand{\locus}{\rm locus}
+\newcommand{\Sec}{\rm Sec}
+\newcommand{\defect}{\rm def}
+\newcommand{\Aut}{\rm Aut}
+\newcommand{\Ext}{\rm Ext}
+\newcommand{\Lag}{\rm Lag}
+\newcommand{\Gr}{\rm{Gr}}
+\newcommand{\Br}{{\rm Br}}
+
+
+
+%Objects in math
+\DeclareMathOperator*{\bs}{Bs}
+\DeclareMathOperator*{\Irr}{Irr}
+\DeclareMathOperator*{\Sym}{Sym}
+\DeclareMathOperator*{\pic}{Pic}
+\DeclareMathOperator*{\reg}{reg}
+\DeclareMathOperator*{\Sing}{Sing}
+\DeclareMathOperator*{\Pic0}{Pic^0}
+\DeclareMathOperator*{\Nm}{Nm}
+\DeclareMathOperator*{\red}{red}
+\DeclareMathOperator*{\num}{num}
+\DeclareMathOperator*{\norm}{norm}
+\DeclareMathOperator*{\nons}{nons}
+\DeclareMathOperator*{\lin}{lin}
+\DeclareMathOperator*{\supp}{Supp}
+\DeclareMathOperator*{\NS}{NS}
+\DeclareMathOperator*{\Exc}{Exc}
+\DeclareMathOperator*{\PGL}{PGL}
+
+%Moduli spaces and objects attacted
+\newcommand{\NEX}{\overline{\mbox{NE}}(X)}
+\newcommand{\NAX}{\overline{\mbox{NA}}(X)}
+\newcommand{\NE}[1]{\ensuremath{\overline{\mbox{NE}}(#1)}}
+\newcommand{\NA}[1]{\ensuremath{\overline{\mbox{NA}}(#1)}}
+\newcommand{\chow}[1]{\ensuremath{\mathcal{C}(#1)}}
+\newcommand{\chown}[1]{\ensuremath{\mathcal{C}_n(#1)}}
+\newcommand{\douady}[1]{\ensuremath{\mathcal{D}(#1)}}
+\newcommand{\Chow}[1]{\ensuremath{\mbox{\rm Chow}(#1)}}
+\newcommand{\Hilb}[1]{\ensuremath{\mbox{\rm Hilb}(#1)}}
+\newcommand{\Univ}{\ensuremath{\mathcal{U}}}
+\newcommand{\RC}[1]{\ensuremath{\mbox{\rm RatCurves}^n(#1)}}
+
+%sheaves operators
+\newcommand\Ctwo{\ensuremath{C^{(2)}}}
+\newcommand{\Proj}[1]{\ensuremath{\mbox{\rm Proj}(#1)}}
+\newcommand{\Hombir}[2]{\ensuremath{\mbox{$\rm{Hom}_1$}(#1,#2)}}
+\newcommand{\cHom}[2]{\ensuremath{\mathcal{H}om_{\mathcal{O}_X}(#1,#2)}}
+\newcommand{\sHom}[2]{\ensuremath{\mathscr{H}om_{\mathscr{O}_X}(#1,#2)}}
+\newcommand{\cExt}{{\mathcal Ext}}
+\newcommand{\cTor}{{\mathcal Tor}}
+\newcommand{\defeq}{{\vcentcolon=}}
+
+%math operators
+\newcommand\bp{{\bar\partial}}
+
+%Morphisms
+\newcommand{\meom}[3]{\ensuremath{#1\colon #2\dashrightarrow #3}}
+\newcommand{\morp}[3]{\ensuremath{#1\colon #2\rightarrow #3}}
+
+%Theorem type newenviroment
+% Theorem type environments
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{conjecture}[thm]{Conjecture}
+\newtheorem{question}[thm]{Question}
+\newtheorem{problem}[thm]{Problem}
+
+\theoremstyle{definition}
+\newtheorem{example}[thm]{Example}
+\newtheorem{remark}[thm]{Remark}
+\newtheorem{notation}[thm]{Notation}
+\newtheorem{convention}[thm]{Convention}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\newcommand{\btheorem}{\begin{thm}}
+    \newcommand{\etheorem}{\end{thm}}
+\newcommand{\bproposition}{\begin{prop}}
+    \newcommand{\eproposition}{\end{prop}}
+\newcommand{\bdefinition}{\begin{defn}}
+    \newcommand{\edefinition}{\end{defn}}
+\newcommand{\bcorollary}{\begin{cor}}
+    \newcommand{\ecorollary}{\end{cor}}
+\newcommand{\bproof}{\begin{proof}}
+    \newcommand{\eproof}{\end{proof}}
+\newcommand{\bremark}{\begin{remark}}
+    \newcommand{\eremark}{\end{remark}}
+\newcommand{\eexample}{\end{example}}
+\newcommand{\bexample}{\begin{example}}
+
+\newcommand{\elemma}{\end{lemma}}
+\newcommand{\blemma}{\begin{lemma}}
+
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\sq}{\sqrt{-1}}
+\newcommand{\suml}{\sum\limits}
+\newcommand{\p}{\partial}
+\newcommand{\ord}{ord}
+\newcommand{\Div}{ Div}
+
+\renewcommand{\bar}{\overline}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\pa}{\partial}
+\renewcommand{\phi}{\varphi}
+\newcommand{\OO}{\mathcal O}
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\ee}{\end{eqnarray*}}
+\newcommand{\be}{\begin{eqnarray*}}
+\renewcommand{\red}{\textcolor[rgb]{1.00,0.00,0.00}}
+\newcommand{\yel}{\textcolor[rgb]{0.00,0.00,1.00}}
+
+\newcommand{\bd}{\begin{enumerate}}
+    \newcommand{\ed}{\end{enumerate}}
+\newcommand{\ul}{\underline}
+\renewcommand{\hat}{\widehat}
+\renewcommand{\tilde}{\widetilde}
+\newcommand{\ch}{{ ch}}
+\newcommand{\qtq}[1]{\quad\mbox{#1}\quad}
+\renewcommand{\bp}{\bar{\partial}}
+\newcommand{\Om}{\Omega}
+\newcommand{\td}{ Td}
+\newcommand{\ind}{Ind}
+\newcommand{\ds}{\oplus}
+\newcommand{\bds}{\bigoplus}
+\newcommand{\ts}{\otimes}
+\newcommand{\bts}{\bigotimes}
+\newcommand{\diag}{ diag}
+\newcommand{\st}{\stackrel}
+
+\newcommand{\T}{{\mathbb T}}
+%\newcommand{\U}{{\mathbb U}}
+\newcommand{\V}{{\mathbb V}}
+\newcommand{\W}{{\mathbb W}}
+\renewcommand{\S}{{\mathbb S}}
+\newcommand{\Y}{{\mathbb Y}}
+\newcommand{\Z}{{\mathbb Z}}
+\renewcommand{\>}{\rightarrow}
+
+
+%mathfrak
+\newcommand{\ssA}{{\mathfrak A}}
+\newcommand{\ssB}{{\mathfrak B}}
+\newcommand{\ssC}{{\mathfrak C}}
+\newcommand{\ssD}{{\mathfrak D}}
+\newcommand{\ssE}{{\mathfrak E}}
+\newcommand{\ssF}{{\mathfrak F}}
+\newcommand{\ssg}{{\mathfrak g}}
+\newcommand{\ssH}{{\mathfrak H}}
+\newcommand{\ssI}{{\mathfrak I}}
+\newcommand{\ssJ}{{\mathfrak J}}
+\newcommand{\ssK}{{\mathfrak K}}
+\newcommand{\ssL}{{\mathfrak L}}
+\newcommand{\ssM}{{\mathfrak M}}
+\newcommand{\ssN}{{\mathfrak N}}
+\newcommand{\ssO}{{\mathfrak O}}
+\newcommand{\ssP}{{\mathfrak P}}
+\newcommand{\ssQ}{{\mathfrak Q}}
+\newcommand{\ssR}{{\mathfrak R}}
+\newcommand{\ssS}{{\mathfrak S}}
+\newcommand{\ssT}{{\mathfrak T}}
+\newcommand{\ssU}{{\mathfrak U}}
+\newcommand{\ssV}{{\mathfrak V}}
+\newcommand{\ssW}{{\mathfrak W}}
+\newcommand{\ssX}{{\mathfrak X}}
+\newcommand{\ssY}{{\mathfrak Y}}
+\newcommand{\ssZ}{{\mathfrak Z}}
+
+
+%\newcommand{\bbC}{\mathbb C}
+
+\newcommand{\B}{{\mathbb B}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\D}{{\mathbb D}}
+\newcommand{\E}{{\mathbb E}}
+\newcommand{\F}{{\mathbb F}}
+%\newcommand{\G}{{\mathbb G}}
+\renewcommand{\H}{{\mathbb H}}
+%\newcommand{\I}{{\mathbb I}}
+\newcommand{\J}{{\mathbb J}}
+\newcommand{\K}{{\mathbb K}}
+\renewcommand{\L}{{\mathbb L}}
+\newcommand{\M}{{\mathbb M}}
+\newcommand{\N}{{\mathbb N}}
+\renewcommand{\P}{{\mathbb P}}
+\newcommand{\Q}{{\mathbb Q}}
+\newcommand{\R}{{\mathbb R}}
+%\newcommand{\bS}{{\mathbb S}}
+
+
+\newcommand{\ov}[1]{\overline{#1}}
+\newcommand{\de}{\partial}
+\newcommand{\db}{\overline{\partial}}
+\newcommand{\mn}{\sqrt{-1}}
+\newcommand{\ddbp}{\sqrt{-1}\partial \overline{\partial} \phi}
+\newcommand{\ddbar}{\sqrt{-1} \partial \overline{\partial}}
+
+
+\newcommand{\vp}{\varphi}
+%\newcommand{\vol}{\mathrm{Vol}}
+\newcommand{\diam}{\mathrm{diam}}
+\newcommand{\ve}{\varepsilon}
+\newcommand{\LL}{\left\langle}
+\newcommand{\RL}{\right\rangle}
+\newcommand{\MS}{\mathrm{SB}}
+\newcommand{\MCh}{\mathrm{Ch}}
+\newcommand{\MLC}{\mathrm{LC}}
+\newcommand{\Ric}{\mathrm{Ric}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\newcommand{\bi}{\bar{i}}
+\newcommand{\bj}{\bar{j}}
+\newcommand{\bk}{\bar{k}}
+\newcommand{\bl}{\bar{l}}
+\newcommand{\bal}{\bar{\alpha}}
+\newcommand{\bbe}{\bar{\beta}}
+\newcommand{\bga}{\bar{\gamma}}
+\newcommand{\bde}{\bar{\delta}}
+\newcommand{\al}{{\alpha}}
+%\newcommand{\be}{{\beta}}
+\newcommand{\ga}{{\gamma}}
+%\newcommand{\de}{{\delta}}
+\newcommand{\Ga}{{\Gamma}}
+
+\newcommand{\el}{{\ell}}
+
+
+
+
+\newcommand{\bpzj}{\frac{\p}{\p \bar z^j}}
+\newcommand{\bpzi}{\frac{\p}{\p \bar z^i}}
+\newcommand{\bpzk}{\frac{\p}{\p \bar z^k}}
+\newcommand{\bpzl}{\frac{\p}{\p \bar z^\ell}}
+\newcommand{\bpzs}{\frac{\p}{\p \bar z^s}}
+\newcommand{\bpzt}{\frac{\p}{\p \bar z^t}}
+\newcommand{\bpzp}{\frac{\p}{\p \bar z^p}}
+\newcommand{\bpzq}{\frac{\p}{\p \bar z^q}}
+\newcommand{\pzi}{\frac{\p}{\p z^i}}
+\newcommand{\pzj}{\frac{\p}{\p z^j}}
+\newcommand{\pzk}{\frac{\p}{\p z^k}}
+\newcommand{\pzl}{\frac{\p}{\p z^\ell}}
+\newcommand{\pzp}{\frac{\p}{\p z^p}}
+\newcommand{\pzq}{\frac{\p}{\p z^q}}
+
+
+
+
+
+\newcommand{\ssell}{\mathfrak {l}}
+\newcommand{\ssb}{\mathfrak {h}}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\ad}{\mathrm{ad}}
+\newcommand{\ssn}{\mathfrak{n}}
+
+
+
+\newcommand{\pxi}{\frac{\p}{\p x^i}}
+\newcommand{\pxj}{\frac{\p}{\p x^j}}
+\newcommand{\pxk}{\frac{\p}{\p x^k}}
+\newcommand{\pxl}{\frac{\p}{\p x^\ell}}
+\newcommand{\pxp}{\frac{\p}{\p x^p}}
+\newcommand{\pxq}{\frac{\p}{\p x^q}}
+
+\newcommand{\inj}{\mathrm{inj}}
+\newcommand{\cut}{\mathrm{cut}}
+\newcommand{\sn}{\mathrm{sn}}
+
+
+
+\newcommand{\ci}{I_i}
+\newcommand{\cj}{I_j}
+\newcommand{\ck}{I_k}
+\newcommand{\cl}{I_\ell}
+\newcommand{\cp}{I_p}
+\newcommand{\cq}{I_q}
+\newcommand{\cs}{I_s}
+\newcommand{\ct}{I_t}
+
+\newcommand{\cbi}{I_{ \bar i}}
+\newcommand{\cbj}{I_{ \bar j}}
+\newcommand{\cbk}{I_{\bar k}}
+\newcommand{\cbl}{I_{\bar\ell}}
+\newcommand{\cbp}{I_{ \bar p}}
+\newcommand{\cbq}{I_{ \bar q}}
+\newcommand{\cbs}{I_{\bar s}}
+\newcommand{\cbt}{I_{ \bar t}}
+\renewcommand{\>}{\rightarrow}
+
+
+\renewcommand{\al}{\alpha}
+%\newcommand{\beta}{\beta}
+\renewcommand{\ga}{\gamma}
+\renewcommand{\Ga}{\Gamma}
+\newcommand{\del}{\delta}
+\newcommand{\Ta}{\Theta}
+\newcommand{\ta}{\theta}
+\newcommand{\La}{\Lambda}
+\newcommand{\lam}{\lambda}
+
+\renewcommand{\bal}{\bar{\alpha}}
+\renewcommand{\bbe}{\bar{\beta}}
+\renewcommand{\bga}{\bar{\gamma}}
+\renewcommand{\bde}{\bar{\deta}}
+
+
+
+\newcommand{\w}{{\wedge}}
+\newcommand{\bz}{{\bar{z}}}
+\renewcommand{\bi}{{\bar{i}}}
+\renewcommand{\bj}{{\bar{j}}}
+\renewcommand{\bk}{{\bar{k}}}
+\newcommand{\bel}{{\bar{\ell}}}
+\renewcommand{\p}{{\partial}}
+\renewcommand{\bp}{{\bar{\partial}}}
+\newcommand{\bbp}{{\bar{p}}}
+\newcommand{\bbq}{{\bar{q}}}
+\newcommand{\vone}{ \vskip 1\baselineskip}
+\newcommand{\vol}{\mathrm{vol}_g}
+%itemize&enumerate-->nonindent
+\setlist[itemize]{leftmargin=*}
+\setlist[enumerate]{leftmargin=*}
+
+%numbering of lists
+\renewcommand{\labelenumi}{(\arabic{enumi})} %numbering of enumerate
+\renewcommand{\labelenumii}{(\theenumi.\arabic{enumii})} %subenumerate
+\numberwithin{equation}{section} %numbering of equations
+\renewcommand\thesubsection{\thesection.\Alph{subsection}} %subsection
+
+%depth of TOC
+\setcounter{tocdepth}{1} %include till subsections in TOC
+
+%quotient
+%\newcommand{\bigslant}[2]{{\raisebox{.2em}{$#1$}\left/\raisebox{-.2em}{$#2$}\right.}}
+
+\makeatletter
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+% \pagestyle{myheadings} %\pagestyle{headings}
+\renewcommand{\leftmark}{{\scriptsize Comparison theorems in Hermitian geometry I}}
+\renewcommand{\rightmark}{{\scriptsize
+        Xiaokui Yang}}
+
+
+
+
+%informations of paper
+\title{Comparison theorems in Hermitian geometry I}
+%\date{\today}
+
+%\subjclass[2010]{53C55,14E08,32Q15}
+%\keywords{curvature operator}
+
+
+\author{Xiaokui Yang}
+
+
+
+
+
+\address{Xiaokui Yang, Department of Mathematics and Yau Mathematical Sciences Center, Tsinghua University, Beijing, 100084, China}
+\email{xkyang@mail.tsinghua.edu.cn}
+
+\begin{document}
+
+    \begin{abstract}This paper develops  second variational formulas and index forms in the context of Hermitian geometry. 
+    Building upon these analytical foundations, we establish results analogous to classical theorems in Riemannian geometry, including Myers' theorem,  Laplacian comparison theorems and volume comparison theorems.
+   \end{abstract}
+
+
+   \maketitle
+
+
+
+   \section{Introduction}
+
+   Let $(M, g, J)$ be a Hermitian manifold, where $g$ is a Riemannian metric and $J \in \mathrm{End}(T_\mathbb{R} M)$ is an integrable complex structure compatible with $g$. In the study of Hermitian geometry, several canonical metric compatible affine connections play fundamental roles.  The most prominent connections include: \bd \item The Chern connection $\nabla^{\mathrm{Ch}}$: The unique connection preserving both the Hermitian metric  and the holomorphic structure of $M$.
+
+    \item The Strominger-Bismut connection $\nabla^{\mathrm{SB}}$(\cite{Str86, Bis89}): A geometrically natural connection that emerges in heterotic string theory and plays a crucial role in the study of complex non-K\"ahler geometry.
+
+    \item The restricted Levi-Civita connection $\hat\nabla^{\mathrm{LC}}$: The projection of the complexified Levi-Civita connection $\nabla^{\mathrm{LC}}$ to the holomorphic tangent bundle $T^{1,0}M$. \ed
+   Remarkably, when $(M, g, J)$ is K\"ahler, these connections coincide, reflecting the special geometric properties of K\"ahler manifolds. Recent research has significantly advanced our understanding of these connections, particularly in applications to string theory and the study of non-K\"ahler Calabi-Yau manifolds. For a more comprehensive treatment of related topics, we refer  readers to  the works of
+    \cite{AD99, IP01, FG04, LY05, Tos07, FY08, FTY09, Fu10,  Li10,  LY12, Zha12,ACS15,
+    FY15, AU16, LY16,WYZ16, Yang16, LU17,  OUV17, Yu18, AOUV18, CZ18,  HLY18, NZ18, YZ18a, YZ18b,  FZ19, CCN19, FZ19, Yang19, YZZ19, ZZ19a, Yang20, NZ23, WY25} and the references therein.\\
+
+
+    In this paper, we establish new extensions of fundamental results from Riemannian geometric analysis to the framework of Hermitian geometry, with particular emphasis on the Strominger-Bismut connection. Our work bridges important gaps between these two geometric theories while revealing new phenomena  to the Hermitian setting.  Let $(M,g, J)$ be a Hermitian manifold and let $\omega_g$ denote the fundamental
+    $2$-form associated with the Hermitian structure $(g, J)$:
+    $$ \omega_g(X,Y)=g(JX,Y)$$
+    for $X, Y\in T_\R M$.  It is well-known that the Strominger-Bismut connection $\nabla^{\mathrm{SB}}$ on the real tangent bundle $T_{\mathbb{R}}M$ of a Hermitian manifold $(M,g,J)$ is characterized by the following relation:
+     \beq
+    g(\nabla_X^{\MS}Y,Z)=g(\nabla_X^{\MLC}Y,Z)+\frac{1}{2}\left(d\omega_g\right)(JX,JY,JZ), \label{defnSB}
+    \eeq
+ where $\nabla^{\MLC}$ is the Levi-Civita connection of $(M,g)$.  A key feature of this connection is that its torsion tensor   \beq  T^{\MS}(X,Y,Z):=g(\nabla^\MS_XY-\nabla^\MS_YX-[X,Y],Z)\label{torsion}\eeq
+   is totally skew symmetric, i.e. $T^\MS \in \Om^3(M)$. This property makes it particularly significant in complex non-K\"ahler geometry and theoretical physics. Moreover, since $T^\MS$ is totally skew-symmetric,  for any $X\in\Gamma(M,TM)$,  one can seee clearly that
+   \beq
+   \nabla^{\text{SB}}_XX=\nabla^{\text{LC}}_XX.
+   \eeq
+   In particular, if $\gamma$ is a geodesic  with respect to the Levi-Civita connection $\nabla^{\text{LC}}$, then it is also a geodesic with respect to the Strominger-Bismut connection $\nabla^{\mathrm{SB}}$. Consequently, we will not distinguish between these connections when discussing geodesics in subsequent analysis. 
+
+
+   The first main result establishes the second variation formula for the energy functional of unit speed geodesics in a Hermitian manifold $(M, g, J)$. This extends classical Riemannian variational principles to the complex-geometric setting, where the Strominger-Bismut connection  $\nabla^{\MS}$
+   plays a crucial role in characterizing the torsion-modified curvature effects.
+
+
+    \begin{thm}\label{thm-2nd}
+    Let $(M,\omega_g)$ be a Hermitian mainfold and $\gamma(t):[a,b]\to M$ be a unit speed geodesic. Then the second variation of the energy of $\gamma$ is
+    \begin{eqnarray}
+    \frac{\p^2  E(\alpha)}{\p s_1\p s_2}\bigg|_{s_1=s_2=0}
+    \nonumber&=&\int_a^b\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\RL+T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\right) dt-R^{\MS}(V,\gamma',\gamma',W)\right\}dt\\
+    &&+\left.\LL\left.\left(\bar{\nabla}^\MS_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)\right|_{s_1=s_2=0},\gamma'\RL\right|_{t=a}^{t=b},\label{2nd}
+    \end{eqnarray}
+    where  $V$ and $W$ are variational vector fields of $\alpha$, with
+    $\hat{\nabla}^{\mathrm{SB}}$ and $\bar{\nabla}^{\mathrm{SB}}$ representing the connections
+    induced on  $\gamma^*TM$ and $\alpha^*TM$ respectively via the
+    Strominger-Bismut connection $\nabla^{\mathrm{SB}}$ on $(TM, g, J)$. Moreover,  if $\alpha$ is a proper variation of $\gamma$, then \beq
+    \frac{\p^2  E(\alpha)}{\p s_1\p s_2}\bigg|_{s_1=s_2=0}=\int_a^b\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\RL+T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\right)-R^{\MS}(V,\gamma',\gamma',W)\right\}dt. \label{normalsecondvariation}
+    \eeq
+   \end{thm}
+
+\noindent
+While the energy functional $E(\alpha)$  and its second variation  $\frac{\p^2  E(\alpha)}{\p s_1\p s_2}$ are intrinsically determined by the Riemannian metric
+$g$, the explicit form of the second variation formula depends crucially on the choice of connection. In Hermitian geometry, this leads to multiple meaningful expressions:
+\bd
+    \item The Levi-Civita connection yields the classical Riemannian formulation;
+    \item The Chern connection provides a natural complex-geometric perspective;
+    \item The Strominger-Bismut connection reveals torsion effects in the variational structure.
+\ed
+Our approach utilizes the Strominger-Bismut connection to highlight the interplay between metric variations and the Hermitian torsion. In Riemannian geometry, the index form $I_\gamma: \Gamma(\gamma^*TM)\times \Gamma(\gamma^*TM)\>\R$ is classically defined using the Levi-Civita connection  $\nabla^\MLC$:
+\beq I_\gamma(V,W) =\int_a^b\left\{\LL\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}V,\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}W\RL-R^{\text{LC}}(V,\gamma',\gamma',W)\right\}dt. \eeq
+We   reformulate it by using  the Strominger-Bismut connection $\nabla^\MS$.
+
+
+
+
+    \btheorem\label{thm-index form}     Let $(M,\omega_g)$ be a Hermitian mainfold and $\gamma(t):[a,b]\to M$ be a unit speed geodesic. Then for any smooth vector fields $V$ and $W$ along $\gamma$, the index form can be written as
+   \be I_\gamma(V,W)&=&\int_a^b\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\RL+T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\right)-R^{\MS}(V,\gamma',\gamma',W)\right\}dt\\
+   &&+\left.\frac{1}{2}T^\MS(V,W,\gamma')\right|_{t=a}^{t=b}.\ee
+   In particular,
+   \beq I_\gamma(V,V)=\int_a^b\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}V\RL+T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}V\right)-R^{\MS}(V,\gamma',\gamma',V)\right\}dt.\eeq
+   \etheorem
+
+   \noindent The index form constitutes a fundamental analytical tool in geometric variational theory, with particularly profound applications in comparison theorems for both Riemannian and K\"ahler manifolds. As applications of Theorem \ref{thm-2nd} and Theorem \ref{thm-index form}, we derive results analogous to classical theorems in Riemannian geometry, including Myers’ theorem and various comparison theorems. Recall that
+   the \emph{real Ricci curvature of the Strominger-Bismut connection} is defined to be
+   \beq
+   \Ric^{\MS}(X,Y):=\sum_{i,\ell=1}^{2n}g^{i\ell} R^{\MS}\left(\frac{\p}{\p x^i},X,Y,\frac{\p}{\p x^\ell}\right), \label{realSB}
+   \eeq
+   where  $X,Y\in T_\R M$.
+    It is well-known that the first Bianchi identity fails to hold for  $R^\MS$, resulting in  $ \Ric^{\MS}$
+    not necessarily being symmetric.  It is well-known that  Ricci curvature tensors derived from the Levi-Civita connection and the Strominger-Bismut connection possess intrinsically different geometric properties, making them generally incomparable. For detailed discussions on the comparative analysis of these and other Ricci curvatures, we refer to \cite{LY12}, \cite{LY16}, and \cite{WY25}.
+     In the Hermitian setting,  the holomorphic Ricci curvature serves as the complex analogue of the real Ricci curvature and is defined by  \beq   \mathfrak{Ric}^\MS(V,\bar V):=\sum_{i,\ell=1}^nh^{i\bar\ell}R^\MS\left(\frac{\p}{\p z^i},
+    \bar V, V, \frac{\p}{\p {{\bar z}^\ell}}\right)\eeq 
+    where $V\in\Gamma(M,T^{1,0}M)$.  The following theorem is a Hermitian counterpart to Myers' theorem by using the holomorphic  Ricci curvature of the Strominger-Bismut connection $\nabla^\MS$.
+
+    \btheorem\label{Myers}  Let $(M,\omega)$ be a complete balanced Hermitian manifold of complex dimension $n$. Suppose that there exists some constant $K>0$ such that the holomorphic Ricci curvature of the Strominger-Bismut connection satisfies
+ \beq \mathfrak{Ric}^{\MS} (V,\bar V)\geq (2n-1)K |V|^2, \label{complexcurvature} \eeq 
+ for each $V\in\Gamma(M,T^{1,0}M)$. \bd \item $M$ is compact and 
+   $$
+   \diam(M, \omega)\leq \frac{\pi}{\sqrt{K}}.
+   $$
+   \item The fundamental group of $M$ is finite.
+  \item The volume comparison theorem holds:
+ \beq  \mathrm{Vol}(M,\omega)\leq \mathrm{Vol}\left(\mathbb S^{2n}\left(1/\sqrt{K}\right), g_{\mathrm{can}}\right).\eeq 
+   \ed 
+   \etheorem
+\noindent The proof of Theorem \ref{Myers} demonstrates that both the Laplacian comparison theorem and the local volume comparison theorem remain valid under the curvature condition \eqref{complexcurvature}. In the K\"ahler case ($\omega$ K\"ahler), Theorem \ref{Myers} is classical, and the manifold $M$ is known to be simply connected. However, when 
+$\omega$ is merely balanced, the question of whether $M$ retains simple connectivity remains open. On the other hand,   using perturbation methods  (e.g. \cite{LY16} and \cite{WY25}), one can easily construct  non-K\"ahler Hermitian  metrics satisfying $\mathfrak{Ric}^{\MS}>0$ while their Levi-Civita Ricci curvature need not be positive.‌\\
+
+
+
+   Holomorphic sectional curvature is also a fundamental concept in complex geometry that  carries rich geometric information, sharing important relationships with both Ricci curvature and holomorphic bisectional curvature   of complex manifolds. The holomorphic sectional curvature $\mathrm{HSC}^{\MS}$ of the Strominger-Bismut connection $\nabla^\MS$ is defined as
+  \beq
+  \mathrm{HSC}^{\MS}(X):=R^{\MS}(JX,X,X,JX)/|X|^4. \eeq
+ The following result demonstrates a structural analogy to the foundational theorems established by Sygne and Tsukamoto (\cite{Tsu57}), extending their framework within the Hermitian geometric setting.
+   \begin{thm}\label{thm-compactness from HSC}
+    Let $(M,\omega)$ be a complete Hermitian manifold. Suppose that the holomorphic sectional curvature  of the Strominger-Bismut connection $\nabla^\MS$ satisfies $$  \mathrm{HSC}^{\MS}\geq K$$  for some constant  $K>0$.  Then  $M$ is compact and
+    $$
+    \diam(M,\omega)\leq \frac{\pi}{\sqrt{K}}.
+    $$
+Moreover,  $M$ is simply connected.
+   \end{thm}
+
+
+\noindent In particular, we establish the following result, which parallels Weinstein's theorem on positive Riemannian sectional curvature and extends the K\"ahler setting in \cite{NZ18}.
+   \btheorem\label{cor-auto}
+    Let $(M,\omega_g)$ be a compact Hermitian manifold with positive holomorphic sectional curvature  $\mathrm{HSC}^{\MS}>0$. Then every isometry $F:(M,g)\>(M,g)$ has a fixed point.
+   \etheorem
+
+
+ \noindent\textbf{Acknowledgements}.  The author would like to Valentino Tosatti, Bo Yang, Kaijie Zhang and Fangyang Zheng  for their insightful discussions.   Special thanks go to  Zhitong Chen for  verifying many details in this paper.
+  %The author is partially supported by National Key R\&D
+ %Program of China 2022YFA1005400 and NSFC grants (No. 12325103, No. %12171262 and No. 12141101).
+
+
+ \vskip 2\baselineskip
+
+
+   \section{Curvature notions}
+  
+
+\noindent   Let $(M,g,J)$ be a Hermitian manifold. There is a unique affine connection $$\nabla: \Gamma(M,T_\R M)\times  \Gamma(M,T_\R M)\> \Gamma(M,T_\R M) $$ satisfying
+   \bd \item $\nabla$ is compatible with $g$ and $J$;
+   \item The  torsion tensor $$ T(X,Y,Z):=g(\nabla_XY-\nabla_YX-[X,Y],Z)$$  is totally anti-symmetric, i.e. $T\in \Om^3(M)$.
+   \ed
+   This connection is called the \textbf{Strominger-Bismut connection} and it is denoted by $\nabla^{\MS}$. Let $\omega_g$ denote the fundamental
+  $2$-form associated with the Hermitian structure:
+   $$ \omega_g(X,Y)=g(JX,Y),\ \ X, Y\in T_\R M.$$
+
+
+
+\noindent The following foundational formulation will be employed throughout our work:
+   \blemma\label{definition of Strominger connection} The Strominger connection $\nabla^\MS$ on  $(M,g, J)$ is given by
+   \beq
+   g(\nabla_X^{\MS}Y,Z)=g(\nabla_X^{\MLC}Y,Z)+\frac{1}{2}\left(d\omega_g\right)(JX,JY,JZ),  \label{defnSB1}
+   \eeq where $\nabla^{\MLC}$ is the Levi-Civita connection on $(M,g)$ and  the torsion of $\nabla^\MS$ is
+   \beq
+   T^\MS(X,Y,Z)=\left(d\omega_g\right)(JX,JY,JZ).\label{torsion1}
+   \eeq
+   \elemma
+   \bproof  It follows from a straightforward computation. \eproof 
+
+   \noindent The \emph{ curvature tensor} $R^\MS$ of the Strominger-Bismut connection $\nabla^\MS$ is defined as
+   \beq
+   R^{\MS}(X,Y,Z,W)=\LL\nabla^{\MS}_X\nabla^{\MS}_YZ-\nabla^{\MS}_Y\nabla^{\MS}_XZ-\nabla^{\MS}_{[X,Y]}Z,W\RL.
+   \eeq
+
+\noindent  The following lemma describes the essential curvature property of  Strominger-Bismut connection $\nabla^{\MS}$:   \begin{lemma}
+    For any $X,Y,Z,W\in\Gamma(M,T_\C M)$, it holds that
+    \beq
+    R^{\MS}(X,Y,Z,W)=-R^{\MS}(Y,X,Z,W)=-R^{\MS}(X,Y,W,Z).\label{skewsymmetry}
+    \eeq
+   \end{lemma}
+   \begin{proof} The first identity follows from the definition. The second identity can be derived from  the relation $    R^{\MS}(X,Y,Z,Z)=0$.
+    Indeed,
+    \be
+    &&  R^{\MS}(X,Y,Z,Z)=\LL\nabla^{\MS}_X\nabla^{\MS}_YZ-\nabla^{\MS}_Y\nabla^{\MS}_XZ-\nabla^{\MS}_{[X,Y]}Z,Z\RL\\
+    &=&X\LL\nabla^{\MS}_YZ,Z\RL-\LL\nabla^{\MS}_YZ,\nabla^{\MS}_X Z\RL-Y\LL\nabla^{\MS}_XZ,Z\RL+\LL\nabla^{\MS}_XZ,\nabla^{\MS}_Y Z\RL-\frac{1}{2}[X,Y](|Z|^2)\\
+    &=&X\left(\frac{1}{2}Y(|Z|^2)\right)-Y\left(\frac{1}{2}X(|Z|^2)\right)-\frac{1}{2}[X,Y]|Z|^2=0.
+    \ee
+    The proof is completed.
+   \end{proof}
+
+
+\noindent The curvature tensor $R^{\MS}$
+exhibits key deviations from  the symmetric properties of the Riemannian curvature tensor:
+\bd \item   the first Bianchi identity fails to hold for $R^{\MS}$. 
+\item    $R^{\MS}(X,Y,Z,W)\neq R^{\MS}(Z,W,X,Y)$ in general.
+\ed 
+
+
+   \blemma
+    For any $X\in\Gamma(M,T_\R M)$, it holds that
+    \beq
+    \nabla^{\MS}_XX=\nabla^{\MLC}_XX.
+    \eeq
+    In particular, if $\gamma$ is a geodesic on $M$, then $\hat{\nabla}^{\MS}_{\frac{d}{dt}}\gamma'=0$.
+   \elemma
+
+
+   \blemma
+    Let $\gamma:[a,b]\to M$ be a smooth curve and
+    \beq
+    E(\gamma):=\frac{1}{2}\int_a^b|\gamma'(t)|^2dt
+    \eeq
+    be the energy functional. Then for any proper variation $\alpha:[a,b]\times(-\eps,\eps)\to M$ of $\gamma$ with variational vector field $V$  it holds that
+    \beq
+    \frac{d}{d s}\bigg|_{s=0}E(\alpha(\bullet,s))=-\int_a^b\LL V,\hat{\nabla}^\MS_{\frac{d}{dt}}\gamma'\RL dt.
+    \eeq
+   \elemma
+   \begin{proof}
+    It follows from the well-known result
+    \beq
+    \frac{d}{d s}\bigg|_{s=0}E(\alpha(\bullet,s))=-\int_a^b\LL V,\hat{\nabla}_{\frac{d}{dt}}^{\text{LC}}\gamma'\RL dt
+    \eeq
+    and the fact that $\hat{\nabla}^\MS_{\frac{d}{dt}}\gamma'=\hat{\nabla}^{\MLC}_{\frac{d}{dt}}\gamma'$.
+   \end{proof}
+
+   Let $(M,g,J)$ be a Hermitian manifold.
+   Let $\gamma:[a,b]\to(M,g)$ be a smooth curve and $v\in T_{\gamma(a)}M$. Then there exists a unique vector field $V$,
+   called the \emph{Strominger-Bismut parallel vector field along $\gamma$}, such that $\hat{\nabla}_{\frac{d}{dt}}^\text{SB}V\equiv 0$ along $\gamma$ and $V(a)=v$.
+   For $t_0,t\in [a,b]$,  we define the map
+   \beq
+   P_{t_0,t;\gamma}^{\text{SB}}:T_{\gamma(t_0)}M\to T_{\gamma(t)}M
+   \eeq
+   by $P_{t_0,t;\gamma}^{\text{SB}}v_0=V(t)$ where $V$ is the unique Strominger-Bismut parallel vector field along $\gamma$ satisfying $V(t_0)=v_0$.
+   The collection of maps $P_{t_0,t;\gamma}^{\text{SB}}$ for $t_0,t\in [a,b]$ is called a \emph{Strominger-Bismut parallel transport along $\gamma$}.\\
+
+
+
+
+
+For readers' convenience, we recall  local computations on Hermitian manifolds.     Let $(M,J)$ be a complex manifold of complex dimension  $n$. By
+Newlander-Nirenberg's theorem, there exists a real coordinate system
+$\{x^i,x^I\}$ where
+$$
+\{x^i\} \qtq{for} 1\leq i\leq n;\ \ \ \ \  \{x^I\} \qtq{for} n+1\leq
+I\leq 2n \qtq{and}\ \ \ I=i+n.$$
+such that $z^i=x^i+\sq x^I$ are  local holomorphic
+coordinates on $M$ and
+$$
+J\left(\frac{\p}{\p x^i}\right)=\frac{\p}{\p x^I} \qtq{and}
+J\left(\frac{\p}{\p x^I}\right)=-\frac{\p}{\p x^i}.$$
+For $1\leq i\leq n$, $ dz^i=dx^i+\sq dx^I$, $d\bar z^i:=dx^i-\sq dx^I$
+and  $$ \frac{\p}{\p
+	z^i}=\frac{1}{2}\left(\frac{\p}{\p x^i}-\sq \frac{\p}{\p
+	x^I}\right),\ \ \ \frac{\p}{\p\bar
+	z^i}=\frac{1}{2}\left(\frac{\p}{\p x^i}+\sq \frac{\p}{\p
+	x^I}\right).$$
+Let $(M,g, J)$ be a Hermitian manifold and  $T_\C M=T_\R M\ts \C$
+be the complexification. One can extend  $g$ and $J$ to
+$T_\C M$ in the $\C$-linear way. Hence for any $X,Y\in T_\C M$, we
+still have $ g(JX,JY)=g(X,Y)$  and  the Riemannian metric $g$ is represented
+by
+$$ds_g^2=g_{i\ell}dx^i\ts dx^\ell+g_{iL}dx^i\ts dx^L+g_{I\ell} dx^I\ts dx^\ell+g_{IJ}dx^I\ts dx^J,$$
+where the metric components $g_{i\ell}, g_{iL}, g_{I\ell}$ and
+$g_{IL}$ are defined in the obvious way by using local  coordinates $\left\{\frac{\p}{\p x^i}, \frac{\p}{\p x^I}\right\}$. The symmetric $\C$-bilinear  form $g:T_\C M\times T_\C M\>\C$ has the property that $$ g\left(\frac{\p}{\p
+	z^i},\frac{\p}{\p z^j}\right)=0, \qtq{and} g\left(\frac{\p}{\p \bar z^i},\frac{\p}{\p \bar
+	z^j}\right)=0$$ Hence, it can be regarded  as a Hermitian form  $$h: T^{1,0}M\times T^{0,1}M\>\C,\ \ \ h=h_{i\bar j}dz^i\ts d\bar z^j$$ where $h_{i\bar j}=g\left(\frac{\p}{\p
+	z^i},\frac{\p}{\p \bar z^j}\right)$.\\
+
+
+We also extend  the
+Bismut-Strominger connection $\nabla^\MS$ and torsion $T^\MS$ to $T_{\C}M$ in the $\C$-linear way.
+Hence for any $a,b,c,d\in \C$ and $X,Y,Z,W\in T_\C M$,  $$
+R^\MS(aX,bY,cZ, dW)=abcd\cdot R^\MS(X,Y,Z,W).$$
+We also use the components of the complexified
+curvature tensor $R^\S$, for example, $$ R^\MS_{i\bar j k\bar
+	\ell}:=R^\MS\left(\frac{\p}{\p z^i}, \frac{\p}{\p \bar z^j},
+\frac{\p}{\p z^k}, \frac{\p}{\p \bar z^\ell}\right),$$ and
+in particular we use the following notation for the complexified
+curvature tensor: $$ R^\MS_{i j k \ell}:=R^\MS\left(\frac{\p}{\p z^i},
+\frac{\p}{\p z^j}, \frac{\p}{\p z^k}, \frac{\p}{\p z^\ell}\right).$$
+In  local holomorphic coordinates $\{z^1,\cdots, z^n\}$ on $M$,
+the complexified Christoffel symbols $\ ^\MLC\Gamma$ of  the Levi-Civita connection $\nabla^\MLC$ are given by
+\beq \nabla^\MLC_{\frac{\p}{\p z^A}}\frac{\p}{\p z^B}=\ ^\MLC\Gamma_{AB}^C\frac{\p}{\p z^C}\eeq
+where \beq
+\ ^\MLC\Gamma_{AB}^C=\sum_{E}\frac{1}{2}g^{CE}\big(\frac{\p g_{AE}}{\p
+	z^B}+\frac{\p g_{BE}}{\p z^A}-\frac{\p g_{AB}}{\p
+	z^E}\big)=\sum_{E}\frac{1}{2}h^{CE}\big(\frac{\p h_{AE}}{\p
+	z^B}+\frac{\p h_{BE}}{\p z^A}-\frac{\p h_{AB}}{\p z^E}\big)
+\eeq
+where $A,B,C,E\in \{1,\cdots,n,\bar{1},\cdots,\bar{n}\}$ and
+$z^{A}=z^{i}$ if $A=i$, $z^{A}=\bar{z}^{i}$ if $A=\bar{i}$.
+It is easy to see that
+\beq     \ ^\MLC\Gamma_{ij}^k=\frac{1}{2}h^{k\bar\ell}\left(\frac{\p h_{i\bar\ell}}{\p z^j}+\frac{\p h_{j\bar\ell}}{\p z^i}\right), \    \ ^\MLC\Gamma_{i\bar j}^k=\ ^\MLC\Gamma_{\bar j i}^k=\frac{1}{2}h^{k\bar\ell}\left(\frac{\p h_{i\bar\ell}}{\p \bar z^j}-\frac{\p h_{i\bar j}}{\p \bar z^\ell}\right),\  \ ^\MLC\Gamma_{\bar i\bar j}^k=0\eeq
+Similarly, the  complexified Christoffel symbols $\ ^\MS\Gamma$ of  $\nabla^\MS$  are
+\beq \nabla^\MS_{\frac{\p}{\p z^A}}\frac{\p}{\p z^B}=\ ^\MS\Gamma_{AB}^C\frac{\p}{\p z^C}.\eeq
+The formula \eqref{defnSB1} tells that 
+\beq \ ^\MS\Gamma_{AB}^C=\ ^\MLC\Gamma_{AB}^C+\frac{1}{2}{^{\MS}T}_{AB}^C.\eeq
+Moreover, by  formula \eqref{torsion1}, one deduces that the torsion tensor has two generators
+\beq {^{\MS}T}_{ij\ell}=\left(d\omega_g\right)\left(J\frac{\p}{\p z^i}, J\frac{\p}{\p z^j}, J\frac{\p}{\p z^\ell}\right)=0, \quad {^{\MS}T}_{ij\bar \ell}=\frac{\p h_{i\bar{\ell}}}{\p z^j}-\frac{\p h_{j\bar{\ell}}}{\p z^i}. \eeq 
+This is equivalent to   \beq    {^{\MS}T}_{ij}^k=h^{k\bar{\ell}}\left(\frac{\p h_{i\bar{\ell}}}{\p z^j}-\frac{\p h_{j\bar{\ell}}}{\p z^i}\right), \quad {^{\MS}T}_{\bar{ij}}^{k}=0,\label{torsionformula} \eeq
+and
+\beq \ ^\MS\Gamma_{ij}^k=h^{k\bar{\ell}}\frac{\p h_{i\bar{\ell}}}{\p z^j},\quad ^\MS\Gamma_{\bar j i}^k=2\ ^\MLC\Gamma_{\bar j i}^k=h^{k\bar\ell}\left(\frac{\p h_{i\bar\ell}}{\p \bar z^j}-\frac{\p h_{i\bar j}}{\p \bar z^\ell}\right),\quad ^\MS\Gamma_{i\bar j}^k=\ ^\MS\Gamma_{\bar i\bar j}^k=0.\label{Christoffel} \eeq
+On the other hand,  the condition $\nabla^\MS J=0$ implies that $\nabla^\MS$ preserves both $T^{1,0}M$ and $T^{0,1}M$. Hence,
+\beq R^\MS_{ijk\ell}= R^\MS_{i\bar j k\ell}=R^\MS_{\bar ijk\ell}=R^\MS_{\bar i\bar jk\ell}=0, \quad  R^\MS_{ij\bar k\bar \ell}= R^\MS_{i\bar j \bar k\bar \ell}=R^\MS_{\bar ij\bar k\bar \ell}=R^\MS_{\bar i\bar j\bar k\bar \ell}=0.\label{vanishing}\eeq
+
+
+
+
+
+\begin{lemma}\label{lem-curvature relation}
+	Let $(M,\omega)$ be a Hermitian manifold. For any $X,Y\in \Gamma(M, T_\C M)$, the complexification of the real Ricci curvature of $\nabla^\MS$ defined in \eqref{realSB} is
+	\beq 	\Ric^{\MS,\C}\left(X,Y\right)=h^{i\bar{\ell}}R^{\MS}\left(\pzi,X, Y,\bpzl\right)+h^{\ell\bar{i}}R^{\MS}\left(\bpzi,X,Y,\pzl\right). \label{realcomplexfication}\eeq 
+	In particular, 
+	\beq 	\Ric^{\MS,\C}\left(\frac{\p }{\p z^p},\frac{\p}{\p\bar z^q}\right)=h^{\ell\bar{i}} R^{\MS}_{\bar i p\bar q \ell}=h^{\ell\bar{i}}R^\MS_{p\bar i \ell\bar q}. \eeq 
+\end{lemma}
+\begin{proof} The first identity follows from a complexification process. Indeed,
+	\be 
+	\Ric^{\MS,\C}\left(X,Y\right)
+	&=&\sum_{i,\ell=1}^n \left(g^{i\ell}R^{\MS}\left(\pxi,X,Y,\pxl\right)+g^{i,\ell+n}R^{\MS}\left(\pxi,X,Y,\frac{\p}{\p x^{\ell+n}}\right)\right.\\
+	&&\left.+g^{i+n,\ell}R^{\MS}\left(\frac{\p}{\p x^{i+n}},X,Y,\pxl\right)+g^{i+n,\ell+n}R^{\MS}\left(\frac{\p}{\p x^{i+n}},X,Y,\frac{\p}{\p x^{\ell+n}}\right)\right).\ee 
+	By using complexification relations
+	$$\frac{\p}{\p x^i}=\pzi+\bpzi, \quad \frac{\partial}{\partial x^{i+n}}=\sqrt{-1}\left(\frac{\partial}{\partial z^i}-\frac{\partial}{\partial \bar{z}^i}\right), \quad h^{i\bar
+		j}=2\left(g^{ij}-\sq g^{i,n+j}\right)$$
+	and   similar computations as in \cite[Lemma~7.1]{LY16}	one gets \eqref{realcomplexfication}. The second identity follows from the fact that $R^{\MS}_{ij\bar k\bar\ell}=0$.
+\end{proof}
+
+
+
+\bproposition\label{curvaturecomparison} Let $(M,\omega)$ be a  balanced Hermitian manifold, i.e. $d\omega^{n-1}=0$. For any real vector field $X=X^i\frac{\p}{\p z^i}+\bar{X}^i\frac{\p}{\p \bar z^i}\in \Gamma(M,T_\R M)$, we have 
+\beq \operatorname{Ric}^{\MS}(X, X)= 2\left(h^{i\bar \ell} R^{\MS}_{i\bar j k\bar\ell}\right)X^{k}\bar X^j. \label{realricci}\eeq 
+\eproposition 
+
+\bproof 
+Let $X, Y\in \Gamma(M,T_\R M)$. One can write them as
+$$
+X=X^{1,0}+X^{0,1} \quad  \quad Y=Y^{1,0}+Y^{0,1}
+$$
+where $X^{1,0}, Y^{1,0}\in \Gamma(M, T^{1,0}M)$ and $X^{0,1}=\bar{X}^{1,0}$, $Y^{0,1}=\bar Y^{1,0}$. By the relation \eqref{realcomplexfication} and \eqref{vanishing},   we deduce that
+\begin{eqnarray} 
+&&\nonumber\operatorname{Ric}^{\MS}(X, Y)=\operatorname{Ric}^{\MS,\C}(X, Y)\\
+&= &\nonumber \sum_{i, \ell=1}^n\left[h^{i \bar{\ell}} R^{\MS}\left(\frac{\partial}{\partial z^i}, X^{1,0}+X^{0,1}, Y^{1,0}, \frac{\partial}{\partial \bar{z}^{\ell}}\right)+h^{\ell \bar{i}} R^{\MS}\left(\frac{\partial}{\partial \bar{z}^i}, X^{1,0}+X^{0,1}, Y^{0,1}, \frac{\partial}{\partial z^{\ell}}\right)\right]\\ &= & \sum_{i, \ell=1}^n 2 \operatorname{Re}\left[h^{i\bar{\ell}}\left(R^{\MS}\left(\frac{\partial}{\partial z^i}, X^{0,1}, Y^{1,0}, \frac{\partial}{\partial \bar{z}^{\ell}}\right)+R^{\MS}\left(\frac{\partial}{\partial z^i}, X^{1,0}, Y^{1,0}, \frac{\partial}{\partial \bar{z}^{\ell}}\right)\right)\right]. \end{eqnarray}
+In particular, we obtain 
+\beq \operatorname{Ric}^{\MS}(X, X)= 2\mathrm{Re}\left[\left(h^{i\bar \ell} R^{\MS}_{i\bar j k\bar\ell}\right)X^{k}\bar X^j +\left(h^{i\bar \ell} R^{\MS}_{i j k\bar\ell}\right)X^{k} X^j\right]. \eeq 
+Since $\ ^\MS\Gamma_{ i j}^{\bar k}=0$, by complexification of the curvature formula, we have
+\beq h^{i\bar \ell} R^{\MS}_{i j k\bar\ell}=\frac{\p{ }^\MS\Gamma_{
+		jk}^i}{\p z^i}-\frac{\p { }^\MS\Gamma_{ik}^{i}}{\p
+	z^j}-{ }^\MS\Gamma^{i}_{jp}{ }^\MS\Gamma^{p}_{ik}+{ }^\MS\Gamma^{i}_{
+	ip}{ }^\MS\Gamma^{p}_{jk}.\label{balance1}\eeq 
+Moreover, by using \eqref{Christoffel},
+\beq \frac{\p{ }^\MS\Gamma_{
+		jk}^i}{\p x^i}=-{ }^\MS\Gamma_{pi}^i{ }^\MS\Gamma_{jk}^p+h^{i\bar\ell}\frac{\p^2 h_{j\bar\ell}}{\p z^i\p z^k}, \quad \frac{\p{ }^\MS\Gamma_{ik}^{i}}{\p
+	x^j}=-{ }^\MS\Gamma_{pj}^i{ }^\MS\Gamma_{ik}^p+h^{i\bar\ell}\frac{\p^2 h_{i\bar\ell}}{\p z^j\p z^k}.  \label{balance2}\eeq 
+Similarly, by \eqref{torsionformula}, 
+\beq \frac{\p { }^\MS T_{ij}^{i}}{\p
+	x^k}=-{ }^\MS\Gamma_{pk}^i{ }^\MS\Gamma_{ij}^p+{ }^\MS\Gamma_{pk}^i{ }^\MS\Gamma_{ji}^p+h^{i\bar\ell}\frac{\p^2 h_{i\bar\ell}}{\p z^j\p z^k}-  h^{i\bar\ell}\frac{\p^2 h_{j\bar\ell}}{\p z^k\p z^i}. \label{balance3}\eeq 
+By  \eqref{balance1}, \eqref{balance2} and \eqref{balance3}, we obtain
+\beq h^{i\bar \ell} R^{\MS}_{i j k\bar\ell}= -\frac{\p { }^\MS T_{ij}^{i}}{\p
+	x^k}+{ }^\MS T_{ip}^i{ }^\MS\Gamma^{p}_{jk}.\eeq 
+On the other hand, by the Bochner-Kodaira formula $[\bp^*, L]=\sqrt{-1}(\partial+[\Lambda, \partial \omega])$, 
+\beq 
+\bar{\partial}^* \omega  =\sqrt{-1} \Lambda(\partial \omega) =\sqrt{-1} h^{s \bar{q}}\left(\frac{\partial h_{s \bar{q}}}{\partial z^k}-\frac{\partial h_{k \bar{q}}}{\partial z^s}\right) d z^k =\sqrt{-1}{ }^\MS T_{s k}^s d z^k .
+\eeq 
+Here we assume $M$ is compact. In general,  if $d\omega^{n-1}=0$, by using $*\p\omega^{n-1}=0$,  we obtain ${ }^\MS T_{s k}^s=0$ for each $k$ and so
+\beq h^{i\bar \ell} R^{\MS}_{i j k\bar\ell}=0.\eeq 
+By using a similar computation, one can show that
+$\left( h^{i\bar \ell} R^{\MS}_{i \bar j k\bar\ell}\right)$ 
+is a Hermitian matrix (see also \cite[Corollary~1.8]{WY25} on the formula of $	\mathfrak{R}ic^{(3)}(\omega, 1)$). Therefore, we obtain \eqref{realricci}.
+\eproof 
+
+
+
+
+   \vskip 2\baselineskip
+   \section{Index forms on Hermitian manifolds}
+
+     In this section, we formulate the second variation formula and the index form by using the Strominger-Bismut connection $\nabla^\MS$. In particular, we prove Theorem \ref{thm-2nd} and Theorem \ref{thm-index form}.\\
+
+
+
+
+
+   Let $\gamma:[a,b]\to M$ is a unit-speed geodesic in a Riemannian manifold $(M,g)$. If   $\alpha:[a,b]\times(-\eps_1,\eps_1)\times(-\eps_2,\eps_2)\to M$ is  a variation of $\gamma(t)$ with variational vector fields $V$ and  $W$, i.e.
+   $
+   \alpha(t,0,0)=\gamma(t)$
+   and
+   $$
+   \alpha_*\left(\frac{\p}{\p s_1}\right)\bigg|_{s_1=s_2=0}=V,\ \ \alpha_*\left(\frac{\p}{\p s_2}\right)\bigg|_{s_1=s_2=0}=W.
+   $$
+   It is well-known that, the second variation of the energy of $\gamma$ is given by
+   \begin{eqnarray} \frac{\p^2  E(\alpha)}{\p s_1\p s_2}\bigg|_{s_1=s_2=0}\nonumber&
+   =&\int_a^b\left\{\LL\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}V,\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}W\RL-R^{\text{LC}}(V,\gamma',\gamma',W)\right\}dt\\&&+\left.\LL\left.\left(\bar{\nabla}^\MLC_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)\right|_{s_1=s_2=0},\gamma'\RL\right|_{t=a}^{t=b},\label{secondvariation}
+   \end{eqnarray} where $\hat\nabla^{\MLC}$  and $\overline\nabla^{\MLC}$ are the induced Levi-Civita connections on $\gamma^*TM$ and $\alpha^*TM$ respectively. Recall that the index form $I_\gamma: \Gamma(\gamma^*TM)\times \Gamma(\gamma^*TM)\>\R$ is given by
+   \beq I_\gamma(V,W) =\int_a^b\left\{\LL\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}V,\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}W\RL-R^{\text{LC}}(V,\gamma',\gamma',W)\right\}dt. \eeq
+   When $\alpha$ is a proper second variation of $\gamma$, i.e. $\alpha(a, s_1,s_2)\equiv\gamma(a)$, $\alpha(b, s_1,s_2)\equiv \gamma(b)$,  one has
+   \beq     \frac{\p^2  E(\alpha)}{\p s_1\p s_2}\bigg|_{s_1=s_2=0}
+   =\int_a^b\left\{\LL\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}V,\hat{\nabla}^{\text{LC}}_{\frac{d}{dt}}W\RL-R^{\text{LC}}(V,\gamma',\gamma',W)\right\}dt. \eeq
+
+   \vskip 1\baselineskip
+
+
+   \bproof[Proof of Theorem \ref{thm-2nd}]
+   Since $\bar\nabla^\MS$ is compatible with the induced metric on $\alpha^*TM$,  a straightforward computation shows
+   \be  \frac{1}{2}\frac{\p^2}{\p s_1\p s_2}\left| \alpha_*\left(\frac{\p}{\p t}\right)\right|^2=\frac{\p}{\p s_1}\LL \bar{\nabla}_{\frac{\p}{\p s_2}}^{\MS}\alpha_*\left(\frac{\p}{\p t}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL=\frac{\p}{\p s_1}\LL \bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL \ee
+   where the second identity follows from the relation
+   $$\LL \bar{\nabla}_{\frac{\p}{\p s_2}}^{\MS}\alpha_*\left(\frac{\p}{\p t}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL=\LL \bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL$$
+   since  the torsion term $T\left(\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right) ,\alpha_*\left(\frac{\p}{\p t}\right)\right)=0$. Hence,
+   \be \frac{\p}{\p s_1}\LL \bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL &=&\LL \bar{\nabla}_{\frac{\p}{\p s_1}}^{\MS}\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL\\&&+\LL\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\bar{\nabla}_{\frac{\p}{\p s_1}}^{\MS}\alpha_*\left(\frac{\p}{\p t}\right)\RL. \ee
+   By using the curvature formula of $R^\MS$, one has
+   $$\bar{\nabla}_{\frac{\p}{\p s_1}}^{\MS}\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right)= \bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\bar{\nabla}_{\frac{\p}{\p s_1}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right)+R^{\MS}\left(\alpha_*\left(\frac{\p}{\p s_1}\right),\alpha_*\left(\frac{\p}{\p t}\right)\right)\alpha_*\left(\frac{\p}{\p s_2}\right).$$
+   Therefore,
+   \be \frac{1}{2}\frac{\p^2}{\p s_1\p s_2}\left| \alpha_*\left(\frac{\p}{\p t}\right)\right|^2
+   &=&\LL \bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\bar{\nabla}_{\frac{\p}{\p s_1}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL+\LL\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_1}\right)\RL\\&&+R^{\MS}\left(\alpha_*\left(\frac{\p}{\p s_1}\right),\alpha_*\left(\frac{\p}{\p t}\right),\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\right)\\
+   &&+T^\MS\left(\alpha_*\left(\frac{\p}{\p s_1}\right),\alpha_*\left(\frac{\p}{\p t}\right),\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right)\right). \ee
+   Note also that the first term on the right hand side can be written as
+   \be \LL \bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\bar{\nabla}_{\frac{\p}{\p s_1}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL&=&\frac{\p}{\p t}\LL\bar{\nabla}^\MS_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\RL\\&&-\LL\bar{\nabla}_{\frac{\p}{\p s_1}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p t}\right)\RL.\ee
+   When $s_1=s_2=0$,
+   $$\left.\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p t}\right)\right|_{s_1=s_2=0}=\hat{\nabla}^\MS_{\frac{d}{dt}}\gamma'=0,$$
+   $$\left.\LL\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right),\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_1}\right)\RL\right|_{s_1=s_2=0}=\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\RL,$$
+   and 
+   $$\left.T^\MS\left(\alpha_*\left(\frac{\p}{\p s_1}\right),\alpha_*\left(\frac{\p}{\p t}\right),\bar{\nabla}_{\frac{\p}{\p t}}^{\MS}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)\right|_{s_1=s_2=0}=T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\right).$$
+    Moreover, by using \eqref{skewsymmetry},
+    \beq\left. R^{\MS}\left(\alpha_*\left(\frac{\p}{\p s_1}\right),\alpha_*\left(\frac{\p}{\p t}\right),\alpha_*\left(\frac{\p}{\p s_2}\right),\alpha_*\left(\frac{\p}{\p t}\right)\right)\right|_{s_1=s_2=0}=-R^\MS(V,\gamma',\gamma', W),\eeq 
+    and
+     one obtains the desired variation formula \eqref{2nd}. If  $\alpha$ is a proper variation of $\gamma$, one has $\alpha(a, s_1,s_2)=\gamma(a)$, $\alpha(b, s_1,s_2)=\gamma(b)$, and so
+   $$\left(\bar{\nabla}^\MS_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)(a,s_1,s_2)=\left(\bar{\nabla}^\MS_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)(b,s_1,s_2)=0.$$
+   Hence, \eqref{normalsecondvariation} follows from \eqref{2nd}.
+   \eproof
+
+
+   \begin{proof}[Proof of Theorem \ref{thm-index form}]
+    By  Theorem \ref{thm-2nd} and formula \eqref{secondvariation},  for any smooth vector fields $V$ and $W$,
+    \be
+    I_\gamma(V,W)&=&\frac{\p^2E(\alpha)}{\p s_1\p s_2}\bigg|_{s_1=s_2=0}-\left.\LL\left.\left(\bar{\nabla}^\MLC_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)\right|_{s_1=s_2=0},\gamma'\RL\right|_{t=a}^{t=b}\\
+    &=&\int_a^b\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\RL+T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\right)-R^{\MS}(V,\gamma',\gamma',W)\right\}dt\\
+    &&+\left.\LL\left.\left(\bar{\nabla}^\MS_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)\right|_{s_1=s_2=0},\gamma'\RL\right|_{t=a}^{t=b}-\left.\LL\left.\left(\bar{\nabla}^\MLC_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\right)\right|_{s_1=s_2=0},\gamma'\RL\right|_{t=a}^{t=b}.\ee
+    On the other hand, by Lemma \ref{definition of Strominger connection}, the last line equals
+    \beq \LL\bar{\nabla}^{\MS}_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)-\bar{\nabla}^{\MLC}_{\frac{\p}{\p s_1}}\alpha_*\left(\frac{\p}{\p s_2}\right)\bigg|_{s_1=s_2=0},\gamma'\RL\bigg|_{t=a}^{t=b}=\frac{1}{2}T^{\MS}(V,W,\gamma')\bigg|_{t=a}^{t=b}.
+    \eeq
+    Hence, we obtain the desired expression.
+   \end{proof}
+
+
+
+   \vskip 1\baselineskip
+
+
+
+   \section{Proofs of comparison theorems}
+
+   In this section we prove Theorem \ref{Myers},  Theorem \ref{thm-compactness from HSC} and Theorem \ref{cor-auto}.
+
+   \bproof[Proof of Theorem \ref{Myers}]  Suppose, by contradiction, that $\gamma:[0,L]\to M$ is a unit speed minimal geodesic with length $L>\pi/\sqrt{K}$.
+   Let $\alpha:[a,b]\times(-\eps_1,\eps_1)\times(-\eps_2,\eps_2)\to M$ be a \textbf{proper} second variation of $\gamma$ with variational vector fields
+   \beq
+   \alpha_*\left(\frac{\p}{\p s_1}\right)\bigg|_{s_1=s_2=0}=\alpha_*\left(\frac{\p}{\p s_2}\right)\bigg|_{s_1=s_2=0}=V.
+   \eeq
+   Let $\{e_1,\ldots,e_n,e_{n+1},\ldots,e_{2n}\}$ be an orthonormal basis for $T_{\gamma(0)}M$ such that $Je_i=e_{i+n},e_1=\gamma'(0)$.
+   Consider $(2n-1)$ variation fields
+   $$
+   V_j(t)=f(t)\cdot P^{\text{SB}}_{0,t;\gamma}e_j
+   $$ for $2\leq j\leq 2n$  and $f(0)=f(L)=0$.
+   Then
+   $$
+   \hat{\nabla}^{\text{SB}}_{\frac{d}{d t}}V_j=f'(t)P^{\text{SB}}_{0,t;\gamma}e_j.
+   $$
+ By Theorem \ref{thm-2nd}, we obtain
+   \be
+   0&\leq&\sum_{j=2}^{2n}\int_0^L\bigg(\LL\hat{\nabla}^\MS_{\frac{d}{d t}}V_j,\hat{\nabla}^{\MS}_{\frac{d}{d t}}V_j\RL+T\left(V_j,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}V_j\right)-R^{\MS}(V_j,\gamma',\gamma',V_j)\bigg)dt\\
+   &=&\int_0^L (2n-1)(f'(t))^2-(f(t))^2\Ric^{\MS}\left(\gamma',\gamma'\right)dt.
+   \ee
+   Suppose that  \beq \mathfrak{Ric}^{\MS} (V,\bar V)\geq (2n-1)K |V|^2, \eeq 
+   for each $V\in\Gamma(M,T^{1,0}M)$, then by Proposition \ref{curvaturecomparison},
+   \beq \Ric^{\MS}\left(\gamma',\gamma'\right)\geq (2n-1)K.\eeq 
+   If we choose $f(t)=\sin(\pi t/L)$, then
+   \be
+   0&\leq& (2n-1)\int_0^L \left(\frac{\pi^2}{L^2}\cos^2(\pi t/L)-K\sin^2(\pi t/L)\right)dt\\
+   &=&(2n-1)\int_0^L\sin^2(\pi t/L)\left(\frac{\pi^2}{L^2}-K\right)dt<0.
+   \ee
+ This is a contradiction.  Therefore we conclude that
+   $ L\leq\pi/\sqrt{K}$ and  $M$ is compact. By considering the universal of $M$, we deduce that $\pi_1(M)$ is finite. \\
+   
+   We give a sketched proof of the Laplacian comparison theorem under the curvature condition \eqref{complexcurvature}.
+   Suppose $q\in M\setminus(\mathrm{cut}(p)\cup\{p\})$. Let $\gamma:[0,b]\to M$ be the unit speed minimal geodesic such that $\gamma(0)=p,\gamma(b)=q$.
+   Let $\{e_1,\ldots,e_n,e_{n+1},\ldots,e_{2n}\}$ be an orthonormal basis for $T_pM$ such that $Je_i=e_{i+n},e_1=\gamma'(0)$.
+   Define the parallel transport of $e_i$ along $\gamma$ with respect to the Strominger-Bismut connection $\nabla^\MS$
+   $$
+   e^\MS_i(t)=P_{0,t;\gamma}^{\MS}e_i,\ \ \  1\leq i\leq 2n.
+   $$
+   Let $X_i(t)$ be the Jacobi field along $\gamma$ such that $X_i(0)=0,X_i(b)=e^\MS_i(b)$, i.e.
+   $$\hat\nabla^{\MLC}_{\frac{d}{dt}}\hat\nabla^{\MLC}_{\frac{d}{dt}} X_i+R^{\MLC}(X_i,\gamma')\gamma'=0.$$
+   It is easy to see that
+   $X_1(t)=\frac{t \gamma'}{b}$ and $\LL X_i,\gamma'\RL=0$ for $i\geq 2$.
+   It is well-known that for any normal Jacobi
+   field $X$ along $\gamma$ with $X(0)=0$ and
+   any vector field $W(t)$ along $\gamma$ with $W(0)=0$, one has
+   \begin{eqnarray} \left( \mathrm{Hess}\ r\right) (X(s), W(s))\nonumber&=&I_\gamma (X(s), W(s))\\ \nonumber&=&\int_0^s \left(\left\la \hat\nabla^{\MLC}_{\frac{d}{dt}} X(t), \hat\nabla^{\MLC}_{\frac{d}{dt}} W(t)\right\ra- R^{\MLC}(X(t),\gamma'(t),\gamma'(t), W(t))\right)dt.\end{eqnarray}
+   Since $ \left( \mathrm{Hess}\ r\right) (\gamma'(b), \gamma'(b))=0$,   one obtains
+   \beq
+   \Delta_g r(q)=\sum_{i=2}^{2n}I_\gamma(X_i(b),X_i(b)).
+   \eeq
+   We define
+   $
+   Z_i(t)=f(t)e^\MS_i(t)
+   $
+   with $f(t)=\frac{\sn_k(t)}{\sn_k(b)}$ for $i=2,\cdots, 2n$.   Then $Z_i(a)=X_i(a)=0$ and $Z_i(b)=X_i(b)$. This implies
+   \beq \Delta_g r(q)=\sum_{i=2}^{2n}I_\gamma (X_i(b),X_i(b))\leq \sum_{i=2}^{2n}I_\gamma(Z_i(b),Z_i(b)).\eeq
+   For $2\leq i\leq 2n$, by Theorem \ref{thm-index form},
+   \be I_\gamma(Z_i(b),Z_i(b))&=&\int_0^b\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}Z_i,\hat{\nabla}^{\MS}_{\frac{d}{d t}}Z_i\RL+T^{\MS}\left(Z_i,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}Z_i\right)-R^{\MS}(Z_i,\gamma',\gamma',Z_i)\right\}dt\\
+   &=&\int_0^b\left(|f'(t)|^2-f^2(t)R^{\MS}(e^\MS_i,\gamma',\gamma',e^\MS_i) \right)dt.\ee
+ On the other hand,  we have the estimate
+   $$\sum_{i=1}^{2n} R^{\MS}(e^\MS_i,\gamma',\gamma',e^\MS_i) \geq (2n-1)K.$$
+   Hence
+   \beq
+   \Delta_g r(q)
+   \leq(2n-1)\int_0^b\left(|f'(t)|^2-Kf^2(t)\right)dt
+   =(2n-1)  \frac{\sn'_K(r)}{\sn_K(r)}.\label{Laplacian}
+   \eeq 
+   
+   \vskip 1\baselineskip
+   
+   It is well-established that the Bishop-Gromov volume comparison theorem follows from the Laplacian comparison theorem and Myers' diameter estimate under Ricci curvature bounds. We adopt an analogous approach in our setting, leveraging the identical geodesic structures and exponential maps between two frameworks. Let $p\in M$ and$U=M\setminus \mathrm{cut}(p)$.  Let $B(p,\delta)$ be the
+   {metric ball} centered at $p$ with radius $\delta$, and $g_K$
+   be the constant curvature metric.   Consider the trivialization map in the normal coordinates on the domain of injective radius
+$\Sigma(p)$, 
+$$\R^+\times \S^{2n-1}\stackrel{\Phi}{\>}T_pM\backslash\{0\}\cong
+\R^{2n}\backslash\{0\}\>U\backslash\{p\}$$ given by $\Phi(\rho,\omega)=\rho\omega$,
+\begin{eqnarray} \mathrm{Vol}_g\left(B(p,\delta)\right)&=&\nonumber\mathrm{Vol}_g\left(\exp_p(B(0,\delta)\cap \Sigma(p))\right)\\
+&=&\int_{\S^{2n-1}}\int_0^\delta \chi_{\Sigma(p)}\cdot \sqrt{\det g}
+\circ \Phi(\rho,\omega)\cdot  \rho^{2n-1}\cdot  d\rho
+d{\mathrm{vol}}_{\S^{2n-1}}.
+\end{eqnarray}
+For each fixed $\omega\in\S^{n-1}$
+the volume density ratio is defined as \beq \lambda(\rho,\omega)=
+\frac{\rho^{2n-1}\sqrt{\det g}\circ \Phi(\rho,
+	\omega)}{\sn_K^{2n-1}(\rho)}. \eeq
+By using the Laplacian comparison result \eqref{Laplacian}, one has \beq \p_r \log \left( r^{2n-1}\sqrt{\det g}\right)=\Delta_g r\geq (2n-1)\frac{\sn_K'(r)}{\sn_K(r)}=\p_r\log\left(\sn_K^{2n-1}(r)\right). \eeq 
+Hence, the volume density ratio
+$\lambda(\rho,\omega)$ is  decreasing in $\rho\in (0,\delta)$ and $
+\lim\limits_{\rho\>0}\lambda(\rho,\omega)=1$.
+ If $K=1/R^2>0$,
+$$ \frac{\mathrm{Vol}_g(B(p,\delta))}{\mathrm{Vol}_{g_k}(B(p,\delta))}=\frac{1}{\mathrm{Vol}(\S^{2n-1})}\int_{\S^{2n-1}}\left(\frac{\int_0^\delta \chi_{\Sigma(p)}\cdot \rho^{2n-1}\sqrt{\det g}\circ \Phi(\rho, \omega)d\rho}{\int_0^\delta\chi_{B(0,\pi R)}\cdot \sn_K^{2n-1}(\rho) d\rho}\right)d\mathrm{vol}_{\S^{2n-1}}.$$
+By first part of Theorem \ref{Myers}, $\diam(M,g)\leq \pi R$.  Therefore, $\Sigma(p)\subset B(0,\pi R)$ and $$\tilde  \lambda(\rho,\omega)= \frac{\chi_{\Sigma(p)}\cdot\rho^{2n-1}\sqrt{\det g}\circ \Phi(\rho, \omega)}{\chi_{B(0,\pi R)}\cdot\sn_K^{2n-1}(\rho)} $$ is nonincreasing in $\rho$. Hence $
+\frac{\mathrm{Vol}_g(B(p,\delta))}{\mathrm{Vol}_{g_K}(B(p,\delta))}$
+is nonincreasing in $\rho$. On ther other hand,
+$\lim\limits_{\delta\>0}\frac{\mathrm{Vol}_g(B(p,\delta))}{\mathrm{Vol}_{g_K}(B(p,\delta))}=1$, 
+we deduced that $
+\mathrm{Vol}_g(B(p,\delta))\leq \mathrm{Vol}_{g_K}(B(p,\delta))$.   When $\delta$ approaches $\pi/\sqrt{K}$, one deduces that $ \mathrm{Vol}(M,\omega)\leq \mathrm{Vol}\left(\mathbb S^{2n}\left(1/\sqrt{K}\right), g_{\mathrm{can}}\right)$.
+\eproof 
+
+\bremark It is obvious that Theorem \ref{Myers} also holds if the curvature condition \eqref{complexcurvature} is replaced by $$\Ric^{\MS} (X,X)\geq (2n-1)K |X|^2_g,\quad  X\in T_\R M.$$
+\eremark 
+  
+  \bproof[Proof of Theorem \ref{thm-compactness from HSC}]   Suppose $\gamma:[0,L]\to M$ is a unit speed minimal geodesic with length $L>\pi/\sqrt{K}$.
+   Let $\alpha:[a,b]\times(-\eps_1,\eps_1)\times(-\eps_2,\eps_2)\to M$ be a \textbf{proper} second variation of $\gamma$ with variational vector fields $V$ and $W$.
+   In particular, we choose  \beq V(t)=W(t)=\sin\left(\frac{\pi t}{L}\right)J\gamma'(t). \eeq
+   where $J$ is the complex structure of $(M,\omega)$.    A simple calculation shows that
+  \beq
+   \hat{\nabla}^{\MS}_{\frac{d}{d t}}\left(J\gamma'(t)\right)=J\left(\hat{\nabla}^{\MS}_{\frac{d}{d t}}\gamma'(t)\right)=0.
+\eeq
+   Hence, by Theorem \ref{thm-2nd}, we obtain
+   $$0\leq \frac{\p^2 E(\alpha)}{\p s_1\p s_2}\bigg|_{s_1=s_2=0}
+   =\int_0^L\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\RL+T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\right)-R^{\MS}(V,\gamma',\gamma',W)\right\}dt.$$    Moreover, since $T$ is totally skew-symmetric,
+   \beq T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}W\right)=\frac{\pi}{L}\sin\left(\frac{\pi t}{L}\right)\cos\left(\frac{\pi t}{L}\right)T^\MS(J\gamma',\gamma', J\gamma')=0. \eeq  Therefore, we have
+   \be  \frac{\p^2 E(\alpha)}{\p s_1\p s_2}\bigg|_{s_1=s_2=0}
+   &=&\int_0^L\left(\frac{\pi^2}{L^2}\cos^2\left(\frac{\pi t}{L}\right)-\sin^2\left(\frac{\pi t}{L}\right)R^{\MS}(J\gamma',\gamma',\gamma',J\gamma')\right)dt\\
+   &\leq&\int_0^L\left(\frac{\pi^2}{L^2}\cos^2\left(\frac{\pi t}{L}\right)-\sin^2\left(\frac{\pi t}{L}\right)K\right) dt\\&=&\int_0^L\cos^2\left(\frac{\pi t}{L}\right)\left(\frac{\pi^2}{L^2}-K\right) dt<0.
+   \ee
+   This is  a contradiction. Hence, the diameter of $M$ is bounded by $\pi/\sqrt{K}$.\\
+
+
+
+   Moreover,
+   suppose $\pi_1(M)$ is not trivial.
+   Let $\gamma:[0, \ell]\to M$ be a unit speed closed geodesic representing a nontrivial element in $\pi_1(M)$  that has minimum length in the free homotopy class of $\gamma$.  Let $V(t)=J\gamma'(t)$ and define  a variation $\alpha:[0,\ell]\times(-\eps,\eps)\to M$ of $\gamma(t)$ as
+   $$\alpha(t,s)=\exp_{\gamma(t)}(sV(t)).$$ Recall that geodesics for $\nabla^{\MLC}$ and $\nabla^\MS$ are the same and so  exponential maps of them are the same.
+    It is easy to see that $\alpha$ is a smooth   variation of $\gamma$ by loops in the free homotopy class, i.e.
+   \beq \alpha(t,0)=\gamma(t),\ \ \alpha(0,s)=\alpha(\ell, s),\ \ \forall s\in(-\eps,\eps).\label{loop} \eeq  Hence,
+   \beq \frac{\p^2 E(\alpha)}{\p s^2}\bigg|_{s=0}\geq 0. \eeq
+   By  using \eqref{2nd} in Theorem \ref{thm-2nd}, we have
+   \beq \frac{\p^2 E(\alpha)}{\p s^2}\bigg|_{s=0} =-\int_0^\ell R^{\MS}(J\gamma',\gamma',\gamma',J\gamma')dt
+   + \left.\LL\left.\left(\bar{\nabla}^\MS_{\frac{\p}{\p s}}\alpha_*\left(\frac{\p}{\p s}\right)\right)\right|_{s=0},\gamma'\RL\right|_{t=0}^{t=\ell}. \eeq
+   By \eqref{loop}, the second term on the right hand side is zero. Hence
+   $
+   \frac{\p^2 E(\alpha)}{\p s^2}\bigg|_{s=0}<0
+   $ and this is
+   a contradiction.
+   \eproof
+
+ 
+
+     \noindent \bproof[Proof of  Theorem \ref{cor-auto}]    Let $F:(M,g)\>(M,g)$ be an isometry. Suppose to the contrary that $F$  has no fixed point. Then the displacement function  $\delta_F(x)=d(x,
+     F(x))$ has a  minimum $\ell>0$. Suppose $\delta_F$ takes its minimum at point $p\in M$. Let $\gamma:[0,\ell]\>M$ be a minimal  unit speed geodesic connecting $p$ and $q=F(p)$. By a simple computation (e.g. \cite[Lemma~6.2.7]{Pet16}),  $\gamma$ extends to an axis of $F$, i.e. $\gamma:\R\>M$ satisfies
+   \beq F(\gamma(t))=\gamma(t+\ell).\eeq 
+     In particular, $\gamma'(\ell)=F_{*}\gamma'(0)$.\\
+
+    We employ a setup similar to that in the previous paragraph.  Let $V(t)=J\gamma'(t)$ and define  a variation $\alpha:[0,\ell]\times(-\eps,\eps)\to M$ of $\gamma(t)$ by
+     $$\alpha(t,s)=\exp_{\gamma(t)}(sV(t)).$$
+     A straightforward computation shows
+     \beq V(\ell)=J\gamma'(\ell)=J\circ F_{*p}(\gamma'(0))=F_{*p}(J\gamma'(0))=F_{*p}(V(0)). \eeq 
+    Since  the geodesic is unique  with respect to the given initial values, we deduce that \beq \alpha(\ell,s)=F\circ \alpha(0,s). \eeq  By  using \eqref{2nd} in Theorem \ref{thm-2nd} again, the second variation of the
+     energy of $\gamma(t)$ is
+     \begin{eqnarray} \left. \frac{\p^2}{\p s^2}\right|_{s=0}E(\alpha(\bullet, s))\nonumber
+     &=&\int_0^\ell\left\{\LL\hat{\nabla}^{\MS}_{\frac{d}{d t}}V,\hat{\nabla}^{\MS}_{\frac{d}{d t}}V\RL+T^{\MS}\left(V,\gamma',\hat{\nabla}^{\MS}_{\frac{d}{d t}}V\right) dt-R^{\MS}(V,\gamma',\gamma',V)\right\}dt\\
+     &&+\left.\LL\left.\left(\bar{\nabla}^\MS_{\frac{\p}{\p s}}\alpha_*\left(\frac{\p}{\p s}\right)\right)\right|_{s=0},\gamma'\RL\right|_{t=0}^{t=\ell}    \\
+     &=&-\int_0^\ell R^\MS(V,\gamma',\gamma', V) dt+\left.\LL\left.\left(\bar{\nabla}^\MS_{\frac{\p}{\p s}}\alpha_*\left(\frac{\p}{\p s}\right)\right)\right|_{s=0},\gamma'\RL\right|_{t=0}^{t=\ell}.\end{eqnarray}
+     
+     
+     
+     
+     
+ \noindent     If we set $c(s)=\alpha(0,s)$ and $\tilde c(s)=F(c(s))$, then
+     \be \LL \left(\left. \bar{\nabla}^\MS_{\frac{\p}{\p s}} \alpha_*\left(\frac{\p}{\p s}\right)\right)\right|_{s=0,t=\ell},\gamma'(\ell) \RL&=& \LL \left(\left. \bar{\nabla}^\MS_{\frac{\p}{\p s}}\tilde c'(s)\right)\right|_{s=0},\gamma'(\ell) \RL\\
+     &=&\LL F_*\left(\left(\left.\bar{\nabla}^\MS_{\frac{\p}{\p s}} c'(s)\right)\right|_{s=0}\right), F_*(\gamma'(0))\RL\\
+     &=&\LL \left(\left.\bar{\nabla}^\MS_{\frac{\p}{\p s}} \alpha_*\left(\frac{\p}{\p s}\right)\right)\right|_{s=0,t=0},\gamma'(0) \RL
+     \ee
+     where the second identity follows form the fact that $F$ is an isometry. Hence,
+     \beq \left. \frac{\p^2}{\p s^2}\right|_{s=0}E(\alpha(\bullet, s))\nonumber=-\int_0^\ell R^\MS(V,\gamma',\gamma', V) dt=-\int_0^\ell R^{\MS}(J\gamma',\gamma',\gamma',J\gamma')dt<0.\eeq
+     This is a contradiction since $\gamma$ is a minimum geodesic connecting $p$ and $F(p)$.
+   \eproof
+
+
+\vskip 1\baselineskip
+
+
+
+
+
+
+   \begin{thebibliography}{Kawamata85}
+
+
+    \bibitem[{ACS15}]{ACS15} Angella, D., Calamai, S., Spott, C. On Chern-Yamabe problem.
+    \emph{Math. Res. Lett.} \textbf{24} (2017), no. 3, 645--677.
+
+
+
+
+    \bibitem[AOUV18]{AOUV18} Angella, D., Otal, A., Ugarte, L., Villacampa, R.
+    On Gauduchon connections with K\"ahler-like curvatures. \emph{Comm. Anal. Geom.} \textbf{30} (2022), no. 5, 961--1006.
+
+    \bibitem[AU16]{AU16} Angella, D., Ugarte, L. Locally conformal Hermitian metrics on
+    complex non-K\"ahler manifolds, \emph{Mediterr. J. Math.}
+    \textbf{13} (2016) 2105--2145.
+
+    \bibitem[AD99]{AD99} Apostolov, V., Draghici, T. Hermitian conformal classes and
+    almost K\"ahler structures on 4-manifolds. \emph{Differential Geom.
+        Appl.} \textbf{11} (1999), no. 2, 179--195.
+
+    \bibitem[Bis89]{Bis89} Bismut, J.-M.  A local index theorem for non-K\"ahler manifolds.
+    \emph{Math. Ann.} \textbf{284} (1989), no. 4, 681--699.
+
+
+
+
+    \bibitem[CCN19]{CCN19} Chen, H.-J., Chen, L.-L., Nie, X.-L.
+    Chern-Ricci curvatures, holomorphic sectional curvature and
+    Hermitian metrics. \emph{Sci. China Math.}  \textbf{64} (2021), no. 4, 763--780.
+
+
+
+
+
+    \bibitem[CZ18]{CZ18} Chen, H.-J., Zhang, W.-Y. Kodaira dimensions of almost complex manifolds. \emph{Amer. J. Math.} \textbf{145} (2023), no. 2, 477--514.
+
+    \bibitem[FY15]{FY15} Fei, T., Yau, S.-T. Invariant solutions to the Strominger system on complex Lie groups and their quotients.
+    \emph{Comm. Math. Phys.} \textbf{338} (2015), no. 3, 1183--1195.
+
+    \bibitem[FG04]{FG04} Fino, A., Grantcharov, G.
+    Properties of manifolds with skew-symmetric torsion and special
+    holonomy. \emph{Adv. Math.} \textbf{189} (2004), no. 2, 439--450.
+
+    \bibitem[FU13]{FU13} Fino, A., Ugarte, L. On generalized Gauduchon metrics.
+    \emph{Proc. Edinb. Math. Soc. (2)}  \textbf{56} (2013), no. 3,
+    733--753.
+
+
+    \bibitem[Fu10]{Fu10} Fu, J.-X. On non-K\"ahler Calabi-Yau threefolds with balanced metrics.
+    \emph{Proceedings of the International Congress of Mathematicians.}
+    Volume II, 705--716, 2010.
+
+
+    \bibitem[FTY09]{FTY09} Fu, J.-X., Tseng, L.-S., Yau, S. -T. Local heterotic torsional models.
+    \emph{Comm. Math. Phys.} \textbf{289}(2009), no. 3, 1151--1169.
+
+    \bibitem[FY08]{FY08} Fu, J.- X., Yau, S.-T. The theory of superstring with flux on non-K\"ahler manifolds and the complex Monge-Amp\'ere equation.
+    \emph{J. Differential Geom.} \textbf{78} (2008), no. 3, 369--428.
+
+    \bibitem[FZ19]{FZ19} Fu, J.-X., Zhou, X.-C. Scalar curvatures in almost Hermitian geometry and some
+    applications. \emph{Sci. China Math.} \textbf{65} (2022), no. 12, 2583--2600.
+
+
+    \bibitem[{HLY18}]{HLY18} He, J., Liu, K.-F., Yang, X.-K. Levi-Civita Ricci-flat metrics on compact complex manifolds.
+    \emph{J. Geom. Anal.} \textbf{30} (2020), no. 1, 646--666.
+
+\bibitem[IP01]{IP01} Ivanov, S.; Papadopoulos, G. Vanishing theorems and string backgrounds. Classical Quantum Gravity \textbf{18} (2001), no. 6, 1089--1110.
+    \bibitem[Li10]{Li10} Li, T.-J.  Symplectic Calabi-Yau surfaces.
+    \emph{Handbook of geometric analysis,} No. 3, 231-356, \emph{Adv.
+        Lect. Math. (ALM), 14,} Int. Press, Somerville, MA, 2010.
+
+
+    \bibitem[LU17]{LU17} Lejmi, M., Upmeier, M. Integrability theorems and conformally constant Chern
+    scalar curvature metrics in almost Hermitian geometry. \emph{Comm. Anal. Geom.}  \textbf{28} (2020), no. 7, 1603--1645.
+
+    \bibitem[LY05]{LY05} Li, J., Yau, S.-T. The existence of supersymmetric string theory with torsion.
+    \emph{J. Differential Geom.} \textbf{70}(2005), no. 1, 143--181.
+
+    \bibitem[LY12]{LY12} Liu, K.-F., Yang, X.-K. Geometry of Hermitian manifolds.
+    \emph{Internat. J. Math.} \textbf{23} (2012) 40pp.
+
+
+
+    \bibitem[LY17]{LY16} Liu, K.-F., Yang, X.-K. Ricci curvatures on Hermitian manifolds.
+    \emph{Trans. Amer. Math. Soc.} \textbf{369} (2017), no. 7,
+    5157--5196.
+
+    \bibitem[LY18]{LY17} Liu, K.-F., Yang, X.-K. Minimal complex surface with Levi-Civita Ricci flat metrics.
+    \emph{Acta. Math. Sinica.} \textbf{34}(2018), 1195--1207.
+
+     \bibitem[NZ18]{NZ18}
+ Ni, L.,   Zheng, F.-Y.
+    \newblock Comparison and vanishing theorems for {K}\"ahler manifolds.
+    \newblock {\em Calc. Var. Partial Differential Equations}, 57(6):Paper No. 151, 31, 2018.
+
+
+    \bibitem[NZ23]{NZ23}
+     Ni, L.,   Zheng, F.-Y.
+    On Hermitian manifolds whose Chern connection is Ambrose-Singer.
+    \emph{Trans. Amer. Math. Soc.} 376 (2023), no. 9, 6681--6707.
+
+
+
+    \bibitem[OUV17]{OUV17} Otal, A., Ugarte, L., Villacampa, R., Invariant
+    solutions to the Strominger system and the heterotic equations of
+    motion. \emph{Nuclear Phys. B} \textbf{920} (2017), 442--474.
+
+ \bibitem[Pet16]{Pet16}
+ Petersen, P. \emph{Riemannian Geometry}. 3nd edition. Springer, 2016.
+
+
+
+
+
+    \bibitem[Str86]{Str86} Strominger, A. Superstrings with Torsion,
+    \emph{Nuclear Phys. B} \textbf{274} (1986), 253--284.
+
+
+\bibitem[Tos07]{Tos07}
+Tosatti, V.
+A general Schwarz lemma for almost-Hermitian manifolds.
+\emph{Comm. Anal. Geom.} \textbf{15} (2007), no. 5, 1063--1086.
+
+   \bibitem[Tsu57]{Tsu57}
+   Y\^otar\^o Tsukamoto.
+   \newblock On {K}\"ahlerian manifolds with positive holomorphic sectional curvature.
+   \newblock {\em Proc. Japan Acad.}, 33:333--335, 1957.
+
+    \bibitem[WY25]{WY25}  Wang, J.,  Yang, X.-K.  Curvatures of real
+    connections on Hermitian manifolds.
+    \emph{Pacific J. Math.} \textbf{337} (2025), no. 2, 365--391.
+
+    \bibitem[WYZ16]{WYZ16} Wang, Q.,Yang, B. and Zheng, F.-Y. On Bismut flat manifolds. \emph{Trans. Amer. Math. Soc.} \textbf{373} (2020), no. 8, 5747--5772.
+
+
+    \bibitem[YZ18a]{YZ18a} Yang, B., Zheng, F.-Y. On curvature tensors of Hermitian manifolds,
+    \emph{Comm. Anal. Geom.} \textbf{26} (2018), no. 5, 1195--1222.
+
+
+    \bibitem[YZ18b]{YZ18b} Yang, B., Zheng, F.-Y. On compact Hermitian manifolds with flat Gauduchon conmnections,
+    \emph{Acta Math. Sinica (English Series).} \textbf{34} (2018)
+    1259--1268.
+
+
+    \bibitem[Yang16]{Yang16} Yang, X.-K. Hermitian manifolds with semipositive holomorphic sectional curvature.
+    \emph{Math. Res. Lett.} \textbf{23} (2016), no.3, 939--952.
+
+
+
+
+    \bibitem[Yang19]{Yang19} Yang, X.-K. Scalar curvature on compact complex manifolds.
+    \emph{Trans. Amer. Math. Soc.}  \textbf{371} (2019), no. 3,
+    2073--2087.
+
+
+
+
+    \bibitem[Yang20]{Yang20} Yang, X.-K. Scalar curvature, Kodaira dimension and $\hat
+    A$-genus. \emph{Math. Z.} \textbf {95} (2020), 365--380.
+
+
+    \bibitem[YZZ19]{YZZ19} Yau, S.-T., Zhao, Q.-T., Zheng, F.-Y.
+    On Strominger K\"{a}hler-like manifolds with degenerate torsion. \emph{Trans. Amer. Math. Soc.}  \textbf{376} (2023), no. 5, 3063--3085.
+
+ \bibitem[Yu18]{Yu18}
+Yu, C.-J.
+Hessian comparison and spectrum lower bound of almost Hermitian manifolds.
+\emph{Chinese Ann. Math. Ser. B} 39 (2018), no. 4, 755--772.
+
+
+    \bibitem[ZZ19]{ZZ19a} Zhao, Q.-T., Zheng, F.-Y. Strominger connection and pluri-closed metrics.  \emph{J. Reine Angew. Math.} \textbf{796} (2023), 245--267.
+
+    
+
+    \bibitem[Zha12]{Zha12} Zhang, X. Hermitian harmonic maps between almost Hermitian manifolds.
+    \emph{Recent developments in geometry and analysis}, 485--493,
+    \emph{Adv. Lect. Math.} 2012.
+
+
+
+
+   \end{thebibliography}
+
+
+
+
+
+%   \renewcommand\refname{Reference}
+  %  \bibliographystyle{alpha}
+ %   \bibliography{Reference}
+
+\end{document}
